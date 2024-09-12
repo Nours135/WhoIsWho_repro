@@ -1,3 +1,4 @@
+import time
 import torch
 import random
 import torch.nn.functional as F
@@ -137,6 +138,7 @@ class BONDTrainer:
 
         f1_list = []
         for name in names:
+            start = time.time()
             print("trainning:", name)
             results[name] = []
 
@@ -229,6 +231,7 @@ class BONDTrainer:
 
                 # Save results
                 results[name] = pred
+                print(f'author, pub count: {len(name_pubs)}, time use: {(time.time() - start) / 60:.2f} min')
 
         result_path = save_results(names, pubs, results)
         print("Done! Results saved:", result_path)

@@ -44,7 +44,7 @@ def dump_paper_emb(raw_data_root,processed_data_root,model_name):
     """
     dump paper's [title, org, keywords] average word-embedding as semantic feature.
     """
-    model_path = join(processed_data_root, 'out','model')
+    model_path = join(processed_data_root, 'out', 'model')
     w2v_model = word2vec.Word2Vec.load(join(model_path, f'{model_name}.model'))
 
     for mode in ['train', 'valid', 'test']:
