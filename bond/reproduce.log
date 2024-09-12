@@ -1,0 +1,2097 @@
+  0%|          | 0/160 [00:00<?, ?it/s]  2%|▏         | 3/160 [00:00<00:05, 27.58it/s]  4%|▍         | 7/160 [00:00<00:05, 29.01it/s]  6%|▋         | 10/160 [00:00<00:05, 26.51it/s]  8%|▊         | 13/160 [00:00<00:05, 25.75it/s] 10%|█         | 16/160 [00:00<00:05, 25.69it/s] 12%|█▎        | 20/160 [00:00<00:04, 28.04it/s] 14%|█▍        | 23/160 [00:00<00:04, 28.09it/s] 18%|█▊        | 28/160 [00:00<00:04, 32.98it/s] 20%|██        | 32/160 [00:01<00:04, 29.94it/s] 22%|██▎       | 36/160 [00:01<00:04, 27.01it/s] 26%|██▌       | 41/160 [00:01<00:03, 32.04it/s] 28%|██▊       | 45/160 [00:01<00:03, 33.99it/s] 31%|███▏      | 50/160 [00:01<00:02, 37.70it/s] 34%|███▍      | 54/160 [00:01<00:02, 37.38it/s] 36%|███▋      | 58/160 [00:01<00:02, 36.39it/s] 39%|███▉      | 62/160 [00:02<00:04, 23.75it/s] 41%|████      | 65/160 [00:02<00:04, 22.24it/s] 42%|████▎     | 68/160 [00:02<00:04, 22.26it/s] 46%|████▋     | 74/160 [00:02<00:02, 29.66it/s] 49%|████▉     | 78/160 [00:02<00:02, 28.12it/s] 51%|█████▏    | 82/160 [00:02<00:02, 26.98it/s] 54%|█████▍    | 86/160 [00:02<00:02, 29.48it/s] 56%|█████▋    | 90/160 [00:03<00:02, 30.52it/s] 59%|█████▉    | 94/160 [00:03<00:02, 28.09it/s] 61%|██████▏   | 98/160 [00:03<00:02, 30.78it/s] 64%|██████▍   | 102/160 [00:03<00:02, 27.43it/s] 66%|██████▋   | 106/160 [00:03<00:01, 29.75it/s] 69%|██████▉   | 111/160 [00:03<00:01, 33.08it/s] 72%|███████▎  | 116/160 [00:03<00:01, 35.93it/s] 75%|███████▌  | 120/160 [00:04<00:01, 29.97it/s] 79%|███████▉  | 127/160 [00:04<00:00, 37.72it/s] 82%|████████▎ | 132/160 [00:04<00:00, 32.92it/s] 85%|████████▌ | 136/160 [00:04<00:00, 33.52it/s] 88%|████████▊ | 140/160 [00:04<00:00, 32.96it/s] 91%|█████████ | 145/160 [00:04<00:00, 32.82it/s] 94%|█████████▍| 150/160 [00:04<00:00, 35.96it/s] 96%|█████████▋| 154/160 [00:05<00:00, 30.98it/s] 99%|█████████▉| 158/160 [00:05<00:00, 21.82it/s]100%|██████████| 160/160 [00:05<00:00, 29.29it/s]
+  0%|          | 0/80 [00:00<?, ?it/s]  4%|▍         | 3/80 [00:00<00:03, 24.24it/s]  8%|▊         | 6/80 [00:00<00:03, 21.21it/s] 11%|█▏        | 9/80 [00:00<00:03, 23.28it/s] 15%|█▌        | 12/80 [00:00<00:03, 21.97it/s] 19%|█▉        | 15/80 [00:00<00:02, 23.54it/s] 22%|██▎       | 18/80 [00:00<00:02, 23.08it/s] 26%|██▋       | 21/80 [00:00<00:02, 19.76it/s] 30%|███       | 24/80 [00:01<00:02, 21.98it/s] 34%|███▍      | 27/80 [00:01<00:02, 22.03it/s] 39%|███▉      | 31/80 [00:01<00:02, 23.68it/s] 42%|████▎     | 34/80 [00:01<00:01, 23.62it/s] 46%|████▋     | 37/80 [00:01<00:01, 23.61it/s] 50%|█████     | 40/80 [00:01<00:01, 23.54it/s] 54%|█████▍    | 43/80 [00:01<00:01, 25.13it/s] 57%|█████▊    | 46/80 [00:02<00:01, 20.33it/s] 61%|██████▏   | 49/80 [00:02<00:01, 20.88it/s] 65%|██████▌   | 52/80 [00:02<00:01, 20.70it/s] 69%|██████▉   | 55/80 [00:02<00:01, 22.26it/s] 72%|███████▎  | 58/80 [00:02<00:01, 21.30it/s] 76%|███████▋  | 61/80 [00:02<00:00, 21.74it/s] 81%|████████▏ | 65/80 [00:02<00:00, 24.28it/s] 85%|████████▌ | 68/80 [00:02<00:00, 24.78it/s] 90%|█████████ | 72/80 [00:03<00:00, 26.62it/s] 94%|█████████▍| 75/80 [00:03<00:00, 25.66it/s] 98%|█████████▊| 78/80 [00:03<00:00, 23.55it/s]100%|██████████| 80/80 [00:03<00:00, 22.94it/s]
+  0%|          | 0/80 [00:00<?, ?it/s]  4%|▍         | 3/80 [00:00<00:03, 22.78it/s]  8%|▊         | 6/80 [00:00<00:02, 24.85it/s] 11%|█▏        | 9/80 [00:00<00:02, 26.66it/s] 15%|█▌        | 12/80 [00:00<00:02, 26.44it/s] 19%|█▉        | 15/80 [00:00<00:02, 27.58it/s] 22%|██▎       | 18/80 [00:00<00:02, 23.03it/s] 26%|██▋       | 21/80 [00:00<00:02, 22.82it/s] 30%|███       | 24/80 [00:00<00:02, 23.45it/s] 34%|███▍      | 27/80 [00:01<00:02, 24.27it/s] 38%|███▊      | 30/80 [00:01<00:02, 19.74it/s] 41%|████▏     | 33/80 [00:01<00:02, 20.18it/s] 45%|████▌     | 36/80 [00:01<00:02, 19.21it/s] 49%|████▉     | 39/80 [00:01<00:01, 20.97it/s] 52%|█████▎    | 42/80 [00:01<00:01, 20.09it/s] 56%|█████▋    | 45/80 [00:02<00:01, 21.28it/s] 60%|██████    | 48/80 [00:02<00:01, 21.92it/s] 65%|██████▌   | 52/80 [00:02<00:01, 25.28it/s] 69%|██████▉   | 55/80 [00:02<00:00, 26.07it/s] 74%|███████▍  | 59/80 [00:02<00:00, 26.54it/s] 78%|███████▊  | 62/80 [00:02<00:00, 23.66it/s] 81%|████████▏ | 65/80 [00:02<00:00, 21.31it/s] 86%|████████▋ | 69/80 [00:03<00:00, 22.80it/s] 90%|█████████ | 72/80 [00:03<00:00, 22.03it/s] 94%|█████████▍| 75/80 [00:03<00:00, 21.85it/s] 99%|█████████▉| 79/80 [00:03<00:00, 25.79it/s]100%|██████████| 80/80 [00:03<00:00, 23.17it/s]
+0it [00:00, ?it/s]6it [00:00, 48.23it/s]11it [00:00, 39.03it/s]15it [00:00, 32.52it/s]22it [00:00, 39.29it/s]30it [00:00, 45.61it/s]35it [00:00, 41.11it/s]42it [00:00, 47.40it/s]50it [00:01, 53.96it/s]56it [00:01, 54.21it/s]62it [00:01, 41.22it/s]67it [00:01, 38.06it/s]75it [00:01, 45.40it/s]80it [00:01, 45.95it/s]85it [00:01, 40.78it/s]91it [00:02, 38.32it/s]97it [00:02, 42.51it/s]102it [00:02, 41.77it/s]109it [00:02, 47.04it/s]116it [00:02, 52.21it/s]122it [00:02, 49.12it/s]129it [00:02, 50.85it/s]135it [00:02, 51.83it/s]141it [00:03, 44.87it/s]146it [00:03, 45.44it/s]153it [00:03, 50.51it/s]159it [00:03, 36.98it/s]160it [00:03, 43.74it/s]
+Finish train data extracted.
+0it [00:00, ?it/s]4it [00:00, 39.76it/s]8it [00:00, 38.05it/s]12it [00:00, 30.13it/s]16it [00:00, 32.03it/s]21it [00:00, 31.07it/s]26it [00:00, 35.14it/s]30it [00:00, 35.69it/s]34it [00:00, 35.20it/s]38it [00:01, 32.39it/s]43it [00:01, 35.98it/s]47it [00:01, 29.94it/s]51it [00:01, 30.20it/s]56it [00:01, 33.24it/s]60it [00:01, 33.12it/s]64it [00:01, 31.81it/s]69it [00:02, 33.75it/s]74it [00:02, 36.73it/s]78it [00:02, 35.15it/s]80it [00:02, 33.75it/s]
+Finish valid data extracted.
+0it [00:00, ?it/s]4it [00:00, 37.83it/s]9it [00:00, 43.70it/s]14it [00:00, 43.49it/s]19it [00:00, 32.31it/s]24it [00:00, 34.98it/s]28it [00:00, 35.47it/s]32it [00:00, 30.64it/s]36it [00:01, 30.09it/s]40it [00:01, 27.49it/s]44it [00:01, 27.54it/s]48it [00:01, 27.32it/s]53it [00:01, 31.83it/s]58it [00:01, 35.50it/s]62it [00:01, 34.17it/s]66it [00:02, 32.83it/s]71it [00:02, 31.67it/s]75it [00:02, 31.62it/s]80it [00:02, 33.09it/s]
+Finish test data extracted.
+All paper features extracted.
+preprocess dataset:  train
+  0%|          | 0/160 [00:00<?, ?it/s]  1%|          | 1/160 [00:00<00:40,  3.96it/s]  1%|▏         | 2/160 [00:01<02:14,  1.18it/s]  2%|▏         | 3/160 [00:01<01:22,  1.90it/s]  2%|▎         | 4/160 [00:01<01:02,  2.48it/s]  4%|▍         | 6/160 [00:02<00:49,  3.09it/s]  4%|▍         | 7/160 [00:03<01:26,  1.78it/s]  5%|▌         | 8/160 [00:03<01:07,  2.26it/s]  6%|▌         | 9/160 [00:03<00:53,  2.82it/s]  6%|▋         | 10/160 [00:06<02:12,  1.13it/s]  7%|▋         | 11/160 [00:06<01:46,  1.39it/s]  8%|▊         | 12/160 [00:07<02:04,  1.19it/s]  8%|▊         | 13/160 [00:08<01:55,  1.27it/s]  9%|▉         | 14/160 [00:09<02:04,  1.17it/s]  9%|▉         | 15/160 [00:09<01:44,  1.39it/s] 10%|█         | 16/160 [00:09<01:19,  1.81it/s] 11%|█         | 17/160 [00:09<01:06,  2.15it/s] 11%|█▏        | 18/160 [00:10<00:51,  2.78it/s] 12%|█▎        | 20/160 [00:11<01:00,  2.32it/s] 14%|█▍        | 22/160 [00:12<01:14,  1.85it/s] 14%|█▍        | 23/160 [00:12<01:01,  2.23it/s] 16%|█▌        | 25/160 [00:13<00:46,  2.89it/s] 17%|█▋        | 27/160 [00:13<00:41,  3.22it/s] 18%|█▊        | 29/160 [00:13<00:30,  4.24it/s] 19%|█▉        | 30/160 [00:14<00:56,  2.30it/s] 19%|█▉        | 31/160 [00:16<01:23,  1.55it/s] 21%|██        | 33/160 [00:16<00:55,  2.29it/s] 21%|██▏       | 34/160 [00:19<01:56,  1.08it/s] 22%|██▏       | 35/160 [00:19<01:39,  1.25it/s] 22%|██▎       | 36/160 [00:20<01:28,  1.40it/s] 23%|██▎       | 37/160 [00:20<01:17,  1.58it/s] 24%|██▍       | 39/160 [00:20<00:47,  2.52it/s] 26%|██▌       | 41/160 [00:20<00:34,  3.40it/s] 26%|██▋       | 42/160 [00:21<00:32,  3.68it/s] 28%|██▊       | 44/160 [00:21<00:25,  4.49it/s] 28%|██▊       | 45/160 [00:21<00:27,  4.14it/s] 29%|██▉       | 47/160 [00:21<00:21,  5.29it/s] 31%|███       | 49/160 [00:22<00:17,  6.19it/s] 31%|███▏      | 50/160 [00:22<00:19,  5.79it/s] 32%|███▏      | 51/160 [00:22<00:23,  4.63it/s] 32%|███▎      | 52/160 [00:22<00:22,  4.85it/s] 33%|███▎      | 53/160 [00:23<00:19,  5.36it/s] 34%|███▍      | 54/160 [00:23<00:24,  4.26it/s] 34%|███▍      | 55/160 [00:23<00:28,  3.64it/s] 35%|███▌      | 56/160 [00:24<00:26,  3.87it/s] 36%|███▌      | 57/160 [00:24<00:23,  4.39it/s] 36%|███▋      | 58/160 [00:24<00:27,  3.73it/s] 37%|███▋      | 59/160 [00:28<02:21,  1.40s/it] 38%|███▊      | 60/160 [00:32<03:38,  2.18s/it] 38%|███▊      | 61/160 [00:32<02:38,  1.60s/it] 39%|███▉      | 62/160 [00:33<01:54,  1.16s/it] 39%|███▉      | 63/160 [00:34<01:51,  1.15s/it] 40%|████      | 64/160 [00:36<02:10,  1.36s/it] 41%|████      | 65/160 [00:36<01:35,  1.00s/it] 41%|████▏     | 66/160 [00:37<01:46,  1.14s/it] 42%|████▏     | 67/160 [00:37<01:17,  1.20it/s] 42%|████▎     | 68/160 [00:38<01:06,  1.38it/s] 43%|████▎     | 69/160 [00:38<00:49,  1.84it/s] 44%|████▍     | 71/160 [00:38<00:30,  2.93it/s] 46%|████▌     | 73/160 [00:38<00:21,  4.03it/s] 46%|████▋     | 74/160 [00:39<00:21,  3.98it/s] 47%|████▋     | 75/160 [00:39<00:23,  3.64it/s] 48%|████▊     | 76/160 [00:39<00:19,  4.35it/s] 48%|████▊     | 77/160 [00:40<00:36,  2.26it/s] 49%|████▉     | 78/160 [00:41<00:41,  1.97it/s] 49%|████▉     | 79/160 [00:41<00:34,  2.36it/s] 50%|█████     | 80/160 [00:41<00:26,  2.98it/s] 51%|█████     | 81/160 [00:41<00:22,  3.54it/s] 51%|█████▏    | 82/160 [00:44<01:20,  1.03s/it] 52%|█████▏    | 83/160 [00:44<01:02,  1.23it/s] 52%|█████▎    | 84/160 [00:44<00:46,  1.65it/s] 53%|█████▎    | 85/160 [00:45<00:37,  2.02it/s] 54%|█████▍    | 86/160 [00:45<00:30,  2.46it/s] 55%|█████▌    | 88/160 [00:45<00:20,  3.51it/s] 56%|█████▌    | 89/160 [00:45<00:20,  3.51it/s] 56%|█████▋    | 90/160 [00:46<00:21,  3.26it/s] 57%|█████▋    | 91/160 [00:48<00:53,  1.29it/s] 57%|█████▊    | 92/160 [00:48<00:42,  1.60it/s] 58%|█████▊    | 93/160 [00:48<00:32,  2.07it/s] 59%|█████▉    | 94/160 [00:48<00:27,  2.38it/s] 59%|█████▉    | 95/160 [00:49<00:25,  2.50it/s] 60%|██████    | 96/160 [00:49<00:20,  3.19it/s] 61%|██████    | 97/160 [00:49<00:16,  3.89it/s] 61%|██████▏   | 98/160 [00:49<00:15,  4.12it/s] 62%|██████▏   | 99/160 [00:51<00:38,  1.60it/s] 62%|██████▎   | 100/160 [00:52<00:43,  1.39it/s] 63%|██████▎   | 101/160 [00:52<00:35,  1.68it/s] 64%|██████▍   | 103/160 [00:52<00:21,  2.63it/s] 65%|██████▌   | 104/160 [00:53<00:20,  2.71it/s] 66%|██████▌   | 105/160 [00:53<00:18,  2.99it/s] 66%|██████▋   | 106/160 [00:53<00:15,  3.53it/s] 67%|██████▋   | 107/160 [00:54<00:20,  2.56it/s] 68%|██████▊   | 109/160 [00:54<00:13,  3.78it/s] 69%|██████▉   | 110/160 [00:54<00:11,  4.43it/s] 69%|██████▉   | 111/160 [00:54<00:10,  4.68it/s] 70%|███████   | 112/160 [00:54<00:09,  4.85it/s] 71%|███████▏  | 114/160 [00:55<00:08,  5.56it/s] 72%|███████▏  | 115/160 [00:55<00:07,  5.70it/s] 73%|███████▎  | 117/160 [00:55<00:06,  7.11it/s] 74%|███████▍  | 118/160 [00:57<00:28,  1.48it/s] 74%|███████▍  | 119/160 [00:58<00:29,  1.40it/s] 75%|███████▌  | 120/160 [00:59<00:23,  1.70it/s] 76%|███████▋  | 122/160 [00:59<00:13,  2.73it/s] 77%|███████▋  | 123/160 [00:59<00:11,  3.28it/s] 78%|███████▊  | 124/160 [00:59<00:09,  3.85it/s] 79%|███████▉  | 126/160 [00:59<00:06,  5.54it/s] 80%|████████  | 128/160 [01:01<00:12,  2.57it/s] 81%|████████  | 129/160 [01:01<00:14,  2.09it/s] 81%|████████▏ | 130/160 [01:02<00:15,  1.91it/s] 82%|████████▏ | 131/160 [01:02<00:12,  2.31it/s] 83%|████████▎ | 133/160 [01:02<00:08,  3.27it/s] 84%|████████▍ | 135/160 [01:03<00:07,  3.21it/s] 85%|████████▌ | 136/160 [01:03<00:07,  3.13it/s] 86%|████████▌ | 137/160 [01:04<00:08,  2.86it/s] 86%|████████▋ | 138/160 [01:04<00:08,  2.59it/s] 87%|████████▋ | 139/160 [01:05<00:06,  3.06it/s] 88%|████████▊ | 140/160 [01:05<00:05,  3.49it/s] 88%|████████▊ | 141/160 [01:05<00:04,  3.95it/s] 89%|████████▉ | 142/160 [01:05<00:06,  2.89it/s] 90%|█████████ | 144/160 [01:06<00:03,  4.59it/s] 91%|█████████ | 145/160 [01:07<00:06,  2.43it/s] 91%|█████████▏| 146/160 [01:07<00:05,  2.73it/s] 92%|█████████▎| 148/160 [01:07<00:03,  3.81it/s] 94%|█████████▍| 150/160 [01:08<00:02,  3.98it/s] 95%|█████████▌| 152/160 [01:08<00:01,  5.25it/s] 96%|█████████▌| 153/160 [01:09<00:02,  3.10it/s] 96%|█████████▋| 154/160 [01:11<00:04,  1.27it/s] 97%|█████████▋| 155/160 [01:11<00:03,  1.54it/s] 98%|█████████▊| 156/160 [01:12<00:02,  1.67it/s] 98%|█████████▊| 157/160 [01:13<00:02,  1.44it/s] 99%|█████████▉| 158/160 [01:25<00:08,  4.07s/it]100%|██████████| 160/160 [01:26<00:00,  2.41s/it]100%|██████████| 160/160 [01:26<00:00,  1.85it/s]
+preprocess dataset:  valid
+  0%|          | 0/80 [00:00<?, ?it/s]  1%|▏         | 1/80 [00:00<00:16,  4.65it/s]  2%|▎         | 2/80 [00:00<00:27,  2.86it/s]  4%|▍         | 3/80 [00:01<00:38,  1.99it/s]  5%|▌         | 4/80 [00:01<00:42,  1.80it/s]  6%|▋         | 5/80 [00:02<00:44,  1.69it/s]  8%|▊         | 6/80 [00:03<00:51,  1.42it/s]  9%|▉         | 7/80 [00:04<00:46,  1.57it/s] 10%|█         | 8/80 [00:04<00:35,  2.05it/s] 11%|█▏        | 9/80 [00:05<00:41,  1.70it/s] 12%|█▎        | 10/80 [00:06<00:54,  1.29it/s] 14%|█▍        | 11/80 [00:06<00:40,  1.69it/s] 15%|█▌        | 12/80 [00:07<00:50,  1.36it/s] 16%|█▋        | 13/80 [00:07<00:45,  1.49it/s] 18%|█▊        | 14/80 [00:08<00:43,  1.52it/s] 19%|█▉        | 15/80 [00:08<00:36,  1.80it/s] 20%|██        | 16/80 [00:10<00:50,  1.26it/s] 21%|██▏       | 17/80 [00:10<00:46,  1.36it/s] 22%|██▎       | 18/80 [00:11<00:36,  1.68it/s] 24%|██▍       | 19/80 [00:11<00:32,  1.86it/s] 25%|██▌       | 20/80 [00:12<00:32,  1.83it/s] 26%|██▋       | 21/80 [00:15<01:29,  1.52s/it] 28%|██▊       | 22/80 [00:16<01:10,  1.22s/it] 29%|██▉       | 23/80 [00:16<00:57,  1.02s/it] 30%|███       | 24/80 [00:17<00:42,  1.33it/s] 31%|███▏      | 25/80 [00:17<00:33,  1.66it/s] 32%|███▎      | 26/80 [00:17<00:31,  1.73it/s] 34%|███▍      | 27/80 [00:19<00:45,  1.17it/s] 35%|███▌      | 28/80 [00:19<00:37,  1.39it/s] 36%|███▋      | 29/80 [00:20<00:29,  1.75it/s] 38%|███▊      | 30/80 [00:20<00:24,  2.00it/s] 39%|███▉      | 31/80 [00:21<00:29,  1.65it/s] 40%|████      | 32/80 [00:21<00:26,  1.83it/s] 41%|████▏     | 33/80 [00:22<00:28,  1.67it/s] 42%|████▎     | 34/80 [00:23<00:28,  1.62it/s] 44%|████▍     | 35/80 [00:24<00:39,  1.15it/s] 45%|████▌     | 36/80 [00:24<00:30,  1.46it/s] 46%|████▋     | 37/80 [00:25<00:24,  1.73it/s] 48%|████▊     | 38/80 [00:25<00:23,  1.75it/s] 49%|████▉     | 39/80 [00:26<00:24,  1.67it/s] 50%|█████     | 40/80 [00:26<00:21,  1.83it/s] 51%|█████▏    | 41/80 [00:27<00:18,  2.08it/s] 52%|█████▎    | 42/80 [00:27<00:16,  2.32it/s] 54%|█████▍    | 43/80 [00:27<00:14,  2.48it/s] 55%|█████▌    | 44/80 [00:33<01:12,  2.00s/it] 56%|█████▋    | 45/80 [00:33<00:54,  1.56s/it] 57%|█████▊    | 46/80 [00:34<00:40,  1.18s/it] 59%|█████▉    | 47/80 [00:34<00:31,  1.06it/s] 60%|██████    | 48/80 [00:35<00:24,  1.28it/s] 61%|██████▏   | 49/80 [00:36<00:26,  1.15it/s] 62%|██████▎   | 50/80 [00:38<00:35,  1.20s/it] 64%|██████▍   | 51/80 [00:38<00:25,  1.13it/s] 65%|██████▌   | 52/80 [00:38<00:20,  1.35it/s] 66%|██████▋   | 53/80 [00:39<00:17,  1.57it/s] 68%|██████▊   | 54/80 [00:39<00:15,  1.64it/s] 69%|██████▉   | 55/80 [00:39<00:12,  1.94it/s] 70%|███████   | 56/80 [00:40<00:13,  1.83it/s] 71%|███████▏  | 57/80 [00:40<00:11,  2.05it/s] 72%|███████▎  | 58/80 [00:42<00:16,  1.34it/s] 74%|███████▍  | 59/80 [00:42<00:13,  1.60it/s] 75%|███████▌  | 60/80 [00:42<00:11,  1.81it/s] 76%|███████▋  | 61/80 [00:43<00:13,  1.45it/s] 78%|███████▊  | 62/80 [00:44<00:09,  1.87it/s] 79%|███████▉  | 63/80 [00:44<00:08,  2.09it/s] 80%|████████  | 64/80 [00:44<00:07,  2.13it/s] 81%|████████▏ | 65/80 [00:45<00:06,  2.33it/s] 82%|████████▎ | 66/80 [00:45<00:05,  2.67it/s] 84%|████████▍ | 67/80 [00:45<00:04,  3.10it/s] 85%|████████▌ | 68/80 [00:46<00:05,  2.27it/s] 86%|████████▋ | 69/80 [00:46<00:05,  2.13it/s] 88%|████████▊ | 70/80 [00:47<00:03,  2.59it/s] 89%|████████▉ | 71/80 [00:47<00:03,  2.87it/s] 90%|█████████ | 72/80 [00:47<00:02,  2.92it/s] 91%|█████████▏| 73/80 [00:48<00:02,  2.40it/s] 92%|█████████▎| 74/80 [00:49<00:03,  1.95it/s] 94%|█████████▍| 75/80 [00:49<00:02,  2.09it/s] 95%|█████████▌| 76/80 [00:49<00:01,  2.41it/s] 96%|█████████▋| 77/80 [00:51<00:02,  1.28it/s] 98%|█████████▊| 78/80 [00:52<00:01,  1.24it/s] 99%|█████████▉| 79/80 [00:52<00:00,  1.56it/s]100%|██████████| 80/80 [00:53<00:00,  1.53it/s]100%|██████████| 80/80 [00:53<00:00,  1.51it/s]
+preprocess dataset:  test
+  0%|          | 0/80 [00:00<?, ?it/s]  1%|▏         | 1/80 [00:00<00:30,  2.58it/s]  2%|▎         | 2/80 [00:00<00:35,  2.18it/s]  4%|▍         | 3/80 [00:01<00:39,  1.97it/s]  5%|▌         | 4/80 [00:02<00:42,  1.77it/s]  6%|▋         | 5/80 [00:02<00:34,  2.15it/s]  8%|▊         | 6/80 [00:02<00:34,  2.12it/s]  9%|▉         | 7/80 [00:03<00:34,  2.12it/s] 10%|█         | 8/80 [00:03<00:29,  2.45it/s] 11%|█▏        | 9/80 [00:03<00:24,  2.92it/s] 12%|█▎        | 10/80 [00:04<00:24,  2.87it/s] 14%|█▍        | 11/80 [00:05<00:36,  1.90it/s] 15%|█▌        | 12/80 [00:05<00:33,  2.04it/s] 16%|█▋        | 13/80 [00:05<00:29,  2.25it/s] 18%|█▊        | 14/80 [00:06<00:27,  2.43it/s] 19%|█▉        | 15/80 [00:06<00:30,  2.10it/s] 20%|██        | 16/80 [00:09<01:19,  1.25s/it] 21%|██▏       | 17/80 [00:10<01:05,  1.05s/it] 22%|██▎       | 18/80 [00:10<00:49,  1.24it/s] 24%|██▍       | 19/80 [00:11<00:55,  1.10it/s] 25%|██▌       | 20/80 [00:12<00:47,  1.26it/s] 26%|██▋       | 21/80 [00:12<00:37,  1.56it/s] 28%|██▊       | 22/80 [00:13<00:32,  1.78it/s] 29%|██▉       | 23/80 [00:13<00:32,  1.73it/s] 30%|███       | 24/80 [00:14<00:29,  1.93it/s] 31%|███▏      | 25/80 [00:14<00:24,  2.21it/s] 32%|███▎      | 26/80 [00:14<00:28,  1.92it/s] 34%|███▍      | 27/80 [00:15<00:26,  2.00it/s] 35%|███▌      | 28/80 [00:15<00:25,  2.02it/s] 36%|███▋      | 29/80 [00:20<01:24,  1.65s/it] 38%|███▊      | 30/80 [00:20<01:07,  1.35s/it] 39%|███▉      | 31/80 [00:21<00:57,  1.16s/it] 40%|████      | 32/80 [00:22<00:49,  1.03s/it] 41%|████▏     | 33/80 [00:22<00:42,  1.11it/s] 42%|████▎     | 34/80 [00:25<01:03,  1.38s/it] 44%|████▍     | 35/80 [00:26<00:54,  1.22s/it] 45%|████▌     | 36/80 [00:26<00:40,  1.09it/s] 46%|████▋     | 37/80 [00:26<00:30,  1.40it/s] 48%|████▊     | 38/80 [00:27<00:26,  1.58it/s] 49%|████▉     | 39/80 [00:28<00:28,  1.44it/s] 50%|█████     | 40/80 [00:30<00:54,  1.35s/it] 51%|█████▏    | 41/80 [00:31<00:39,  1.02s/it] 52%|█████▎    | 42/80 [00:31<00:29,  1.29it/s] 54%|█████▍    | 43/80 [00:32<00:27,  1.34it/s] 55%|█████▌    | 44/80 [00:32<00:28,  1.27it/s] 56%|█████▋    | 45/80 [00:33<00:23,  1.51it/s] 57%|█████▊    | 46/80 [00:33<00:18,  1.88it/s] 59%|█████▉    | 47/80 [00:33<00:15,  2.08it/s] 60%|██████    | 48/80 [00:35<00:24,  1.28it/s] 61%|██████▏   | 49/80 [00:35<00:22,  1.38it/s] 62%|██████▎   | 50/80 [00:36<00:17,  1.69it/s] 64%|██████▍   | 51/80 [00:36<00:14,  2.05it/s] 65%|██████▌   | 52/80 [00:36<00:11,  2.44it/s] 66%|██████▋   | 53/80 [00:36<00:09,  2.85it/s] 68%|██████▊   | 54/80 [00:37<00:08,  2.94it/s] 69%|██████▉   | 55/80 [00:37<00:10,  2.28it/s] 70%|███████   | 56/80 [00:38<00:09,  2.41it/s] 71%|███████▏  | 57/80 [00:38<00:09,  2.41it/s] 72%|███████▎  | 58/80 [00:38<00:07,  2.77it/s] 74%|███████▍  | 59/80 [00:39<00:09,  2.30it/s] 75%|███████▌  | 60/80 [00:40<00:12,  1.65it/s] 76%|███████▋  | 61/80 [00:41<00:16,  1.18it/s] 78%|███████▊  | 62/80 [00:42<00:12,  1.45it/s] 79%|███████▉  | 63/80 [00:43<00:14,  1.14it/s] 80%|████████  | 64/80 [00:44<00:14,  1.14it/s] 81%|████████▏ | 65/80 [00:45<00:13,  1.08it/s] 82%|████████▎ | 66/80 [00:45<00:10,  1.39it/s] 84%|████████▍ | 67/80 [00:46<00:07,  1.66it/s] 85%|████████▌ | 68/80 [00:46<00:06,  2.00it/s] 86%|████████▋ | 69/80 [00:47<00:07,  1.41it/s] 88%|████████▊ | 70/80 [00:47<00:05,  1.81it/s] 89%|████████▉ | 71/80 [00:48<00:06,  1.38it/s] 90%|█████████ | 72/80 [00:50<00:06,  1.17it/s] 91%|█████████▏| 73/80 [00:50<00:04,  1.52it/s] 92%|█████████▎| 74/80 [00:50<00:03,  1.58it/s] 94%|█████████▍| 75/80 [00:52<00:04,  1.08it/s] 95%|█████████▌| 76/80 [00:52<00:02,  1.44it/s] 96%|█████████▋| 77/80 [00:52<00:01,  1.73it/s] 98%|█████████▊| 78/80 [00:53<00:00,  2.12it/s] 99%|█████████▉| 79/80 [00:53<00:00,  2.59it/s]100%|██████████| 80/80 [00:53<00:00,  2.34it/s]100%|██████████| 80/80 [00:53<00:00,  1.49it/s]
+trainning: guanhua_du
+epoch:   0 cluster loss: 1.8442 recon loss: 34.5388 ALL loss: 18.1915
+epoch:   5 cluster loss: 0.5215 recon loss: 34.5388 ALL loss: 17.5301
+epoch:  10 cluster loss: 0.5925 recon loss: 34.5388 ALL loss: 17.5656
+epoch:  15 cluster loss: 0.4801 recon loss: 34.5388 ALL loss: 17.5095
+epoch:  20 cluster loss: 0.1519 recon loss: 34.5388 ALL loss: 17.3453
+epoch:  25 cluster loss: 0.1579 recon loss: 34.5379 ALL loss: 17.3479
+epoch:  30 cluster loss: 0.0964 recon loss: 34.5388 ALL loss: 17.3176
+epoch:  35 cluster loss: 0.1662 recon loss: 34.5380 ALL loss: 17.3521
+epoch:  40 cluster loss: 0.1489 recon loss: 34.5388 ALL loss: 17.3439
+epoch:  45 cluster loss: 0.1177 recon loss: 34.5388 ALL loss: 17.3283
+post matching 0 outliers
+author, pub count: 339, time use: 0.23 min
+trainning: bin_yu
+epoch:   0 cluster loss: 51.1423 recon loss: 20.7688 ALL loss: 35.9556
+epoch:   5 cluster loss: 28.6697 recon loss: 17.9940 ALL loss: 23.3318
+epoch:  10 cluster loss: 17.2991 recon loss: 16.0738 ALL loss: 16.6865
+epoch:  15 cluster loss: 11.5700 recon loss: 13.6248 ALL loss: 12.5974
+epoch:  20 cluster loss: 8.3433 recon loss: 12.1256 ALL loss: 10.2344
+epoch:  25 cluster loss: 6.4805 recon loss: 10.4425 ALL loss: 8.4615
+epoch:  30 cluster loss: 5.4253 recon loss: 9.1057 ALL loss: 7.2655
+epoch:  35 cluster loss: 4.6166 recon loss: 7.9628 ALL loss: 6.2897
+epoch:  40 cluster loss: 4.0812 recon loss: 7.1839 ALL loss: 5.6326
+epoch:  45 cluster loss: 3.6636 recon loss: 6.3928 ALL loss: 5.0282
+post matching 13 outliers
+author, pub count: 1015, time use: 0.29 min
+trainning: yongkun_li
+epoch:   0 cluster loss: 5.3172 recon loss: 30.6345 ALL loss: 17.9758
+epoch:   5 cluster loss: 2.5854 recon loss: 30.4550 ALL loss: 16.5202
+epoch:  10 cluster loss: 2.2117 recon loss: 30.4534 ALL loss: 16.3326
+epoch:  15 cluster loss: 2.7716 recon loss: 30.2826 ALL loss: 16.5271
+epoch:  20 cluster loss: 0.5731 recon loss: 30.4612 ALL loss: 15.5172
+epoch:  25 cluster loss: 0.4613 recon loss: 30.5156 ALL loss: 15.4884
+epoch:  30 cluster loss: 0.3429 recon loss: 30.4158 ALL loss: 15.3793
+epoch:  35 cluster loss: 0.3096 recon loss: 30.5262 ALL loss: 15.4179
+epoch:  40 cluster loss: 0.2753 recon loss: 30.0398 ALL loss: 15.1576
+epoch:  45 cluster loss: 0.2226 recon loss: 29.8913 ALL loss: 15.0570
+post matching 0 outliers
+author, pub count: 315, time use: 0.13 min
+trainning: haiyan_du
+epoch:   0 cluster loss: 41.3476 recon loss: 28.6139 ALL loss: 34.9808
+epoch:   5 cluster loss: 12.7918 recon loss: 27.6454 ALL loss: 20.2186
+epoch:  10 cluster loss: 3.4137 recon loss: 26.6409 ALL loss: 15.0273
+epoch:  15 cluster loss: 2.4575 recon loss: 23.9419 ALL loss: 13.1997
+epoch:  20 cluster loss: 2.6015 recon loss: 17.3571 ALL loss: 9.9793
+epoch:  25 cluster loss: 2.2304 recon loss: 12.1858 ALL loss: 7.2081
+epoch:  30 cluster loss: 3.8285 recon loss: 10.2211 ALL loss: 7.0248
+epoch:  35 cluster loss: 4.5022 recon loss: 8.8459 ALL loss: 6.6740
+epoch:  40 cluster loss: 3.2697 recon loss: 8.4781 ALL loss: 5.8739
+epoch:  45 cluster loss: 2.2891 recon loss: 8.4000 ALL loss: 5.3446
+post matching 0 outliers
+author, pub count: 353, time use: 0.33 min
+trainning: jianzhou_wang
+epoch:   0 cluster loss: 26.3192 recon loss: 24.1186 ALL loss: 25.2189
+epoch:   5 cluster loss: 13.9872 recon loss: 23.7507 ALL loss: 18.8689
+epoch:  10 cluster loss: 5.5169 recon loss: 23.8170 ALL loss: 14.6669
+epoch:  15 cluster loss: 2.9668 recon loss: 23.2249 ALL loss: 13.0958
+epoch:  20 cluster loss: 2.1855 recon loss: 22.7502 ALL loss: 12.4678
+epoch:  25 cluster loss: 1.6500 recon loss: 22.8378 ALL loss: 12.2439
+epoch:  30 cluster loss: 1.3025 recon loss: 23.1716 ALL loss: 12.2371
+epoch:  35 cluster loss: 1.1298 recon loss: 22.8634 ALL loss: 11.9966
+epoch:  40 cluster loss: 0.9404 recon loss: 22.7399 ALL loss: 11.8402
+epoch:  45 cluster loss: 0.7876 recon loss: 22.5955 ALL loss: 11.6916
+post matching 0 outliers
+author, pub count: 197, time use: 0.03 min
+trainning: feng_cao
+epoch:   0 cluster loss: 47.9709 recon loss: 20.1614 ALL loss: 34.0662
+epoch:   5 cluster loss: 27.1711 recon loss: 17.5252 ALL loss: 22.3482
+epoch:  10 cluster loss: 15.7130 recon loss: 15.7924 ALL loss: 15.7527
+epoch:  15 cluster loss: 10.6868 recon loss: 15.0730 ALL loss: 12.8799
+epoch:  20 cluster loss: 7.3085 recon loss: 13.6518 ALL loss: 10.4801
+epoch:  25 cluster loss: 5.5109 recon loss: 13.4032 ALL loss: 9.4570
+epoch:  30 cluster loss: 4.1308 recon loss: 12.3594 ALL loss: 8.2451
+epoch:  35 cluster loss: 3.3878 recon loss: 11.2869 ALL loss: 7.3373
+epoch:  40 cluster loss: 2.9009 recon loss: 10.3293 ALL loss: 6.6151
+epoch:  45 cluster loss: 2.4141 recon loss: 9.6169 ALL loss: 6.0155
+post matching 0 outliers
+author, pub count: 514, time use: 0.11 min
+trainning: liang_gao
+epoch:   0 cluster loss: 57.8642 recon loss: 23.7374 ALL loss: 40.8008
+epoch:   5 cluster loss: 30.1269 recon loss: 22.5784 ALL loss: 26.3527
+epoch:  10 cluster loss: 15.6324 recon loss: 19.0543 ALL loss: 17.3433
+epoch:  15 cluster loss: 9.4386 recon loss: 16.9706 ALL loss: 13.2046
+epoch:  20 cluster loss: 6.5512 recon loss: 14.8235 ALL loss: 10.6874
+epoch:  25 cluster loss: 5.0600 recon loss: 13.0783 ALL loss: 9.0692
+epoch:  30 cluster loss: 4.0746 recon loss: 12.1819 ALL loss: 8.1282
+epoch:  35 cluster loss: 3.3895 recon loss: 11.0370 ALL loss: 7.2133
+epoch:  40 cluster loss: 2.9327 recon loss: 9.6933 ALL loss: 6.3130
+epoch:  45 cluster loss: 2.5667 recon loss: 8.6966 ALL loss: 5.6316
+post matching 0 outliers
+author, pub count: 832, time use: 0.48 min
+trainning: shuqi_wang
+epoch:   0 cluster loss: 20.5262 recon loss: 17.7496 ALL loss: 19.1379
+epoch:   5 cluster loss: 9.7091 recon loss: 14.7699 ALL loss: 12.2395
+epoch:  10 cluster loss: 5.4434 recon loss: 11.4899 ALL loss: 8.4666
+epoch:  15 cluster loss: 3.1212 recon loss: 11.0162 ALL loss: 7.0687
+epoch:  20 cluster loss: 2.0773 recon loss: 8.8616 ALL loss: 5.4695
+epoch:  25 cluster loss: 1.5430 recon loss: 7.8848 ALL loss: 4.7139
+epoch:  30 cluster loss: 1.1463 recon loss: 7.0101 ALL loss: 4.0782
+epoch:  35 cluster loss: 1.0450 recon loss: 6.6986 ALL loss: 3.8718
+epoch:  40 cluster loss: 0.9314 recon loss: 6.3077 ALL loss: 3.6195
+epoch:  45 cluster loss: 0.8591 recon loss: 5.9983 ALL loss: 3.4287
+post matching 0 outliers
+author, pub count: 282, time use: 0.08 min
+trainning: jingyun_wang
+epoch:   0 cluster loss: 13.4984 recon loss: 20.3160 ALL loss: 16.9072
+epoch:   5 cluster loss: 4.1941 recon loss: 15.4745 ALL loss: 9.8343
+epoch:  10 cluster loss: 2.9600 recon loss: 12.7927 ALL loss: 7.8764
+epoch:  15 cluster loss: 2.1059 recon loss: 12.6468 ALL loss: 7.3764
+epoch:  20 cluster loss: 1.3688 recon loss: 11.7606 ALL loss: 6.5647
+epoch:  25 cluster loss: 1.1457 recon loss: 11.6283 ALL loss: 6.3870
+epoch:  30 cluster loss: 0.7920 recon loss: 10.5473 ALL loss: 5.6697
+epoch:  35 cluster loss: 0.5674 recon loss: 10.3489 ALL loss: 5.4581
+epoch:  40 cluster loss: 0.5328 recon loss: 9.7623 ALL loss: 5.1475
+epoch:  45 cluster loss: 0.4127 recon loss: 9.2068 ALL loss: 4.8098
+post matching 1 outliers
+author, pub count: 279, time use: 0.12 min
+trainning: bo_li
+epoch:   0 cluster loss: 70.6748 recon loss: 23.9393 ALL loss: 47.3071
+epoch:   5 cluster loss: 37.2071 recon loss: 19.7716 ALL loss: 28.4894
+epoch:  10 cluster loss: 22.7744 recon loss: 16.4066 ALL loss: 19.5905
+epoch:  15 cluster loss: 16.1816 recon loss: 14.4042 ALL loss: 15.2929
+epoch:  20 cluster loss: 11.9484 recon loss: 12.5895 ALL loss: 12.2690
+epoch:  25 cluster loss: 9.6920 recon loss: 11.5899 ALL loss: 10.6409
+epoch:  30 cluster loss: 7.4107 recon loss: 10.6831 ALL loss: 9.0469
+epoch:  35 cluster loss: 6.3735 recon loss: 9.7566 ALL loss: 8.0651
+epoch:  40 cluster loss: 5.4484 recon loss: 9.0310 ALL loss: 7.2397
+epoch:  45 cluster loss: 4.7752 recon loss: 8.3052 ALL loss: 6.5402
+post matching 1 outliers
+author, pub count: 1193, time use: 0.44 min
+trainning: ji-guang_li
+epoch:   0 cluster loss: 2.7624 recon loss: 34.5388 ALL loss: 18.6506
+epoch:   5 cluster loss: 1.2981 recon loss: 34.5388 ALL loss: 17.9185
+epoch:  10 cluster loss: 0.6375 recon loss: 34.5388 ALL loss: 17.5881
+epoch:  15 cluster loss: 0.1364 recon loss: 34.5388 ALL loss: 17.3376
+epoch:  20 cluster loss: 0.0243 recon loss: 34.5388 ALL loss: 17.2815
+epoch:  25 cluster loss: 0.0145 recon loss: 34.5388 ALL loss: 17.2767
+epoch:  30 cluster loss: 0.0057 recon loss: 34.5388 ALL loss: 17.2722
+epoch:  35 cluster loss: 0.0075 recon loss: 34.5388 ALL loss: 17.2731
+epoch:  40 cluster loss: 0.0065 recon loss: 34.5388 ALL loss: 17.2727
+epoch:  45 cluster loss: 0.0065 recon loss: 34.5388 ALL loss: 17.2727
+post matching 0 outliers
+author, pub count: 376, time use: 0.91 min
+trainning: jun-jie_zhu
+epoch:   0 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:   5 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  10 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  15 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  20 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  25 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  30 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  35 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  40 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  45 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+post matching 0 outliers
+author, pub count: 690, time use: 3.00 min
+trainning: ping_sun
+epoch:   0 cluster loss: 49.2603 recon loss: 19.2414 ALL loss: 34.2508
+epoch:   5 cluster loss: 27.7933 recon loss: 17.5150 ALL loss: 22.6541
+epoch:  10 cluster loss: 16.2280 recon loss: 15.4781 ALL loss: 15.8531
+epoch:  15 cluster loss: 10.0496 recon loss: 13.9635 ALL loss: 12.0065
+epoch:  20 cluster loss: 6.8756 recon loss: 12.2964 ALL loss: 9.5860
+epoch:  25 cluster loss: 5.3895 recon loss: 11.3843 ALL loss: 8.3869
+epoch:  30 cluster loss: 4.5069 recon loss: 10.4811 ALL loss: 7.4940
+epoch:  35 cluster loss: 3.6390 recon loss: 9.2474 ALL loss: 6.4432
+epoch:  40 cluster loss: 3.1486 recon loss: 7.5853 ALL loss: 5.3670
+epoch:  45 cluster loss: 2.7098 recon loss: 6.8112 ALL loss: 4.7605
+post matching 0 outliers
+author, pub count: 606, time use: 0.23 min
+trainning: ye_wang
+epoch:   0 cluster loss: 38.5711 recon loss: 17.3939 ALL loss: 27.9825
+epoch:   5 cluster loss: 21.0868 recon loss: 13.7132 ALL loss: 17.4000
+epoch:  10 cluster loss: 13.5610 recon loss: 11.0289 ALL loss: 12.2949
+epoch:  15 cluster loss: 11.8470 recon loss: 10.0035 ALL loss: 10.9253
+epoch:  20 cluster loss: 9.3667 recon loss: 9.1053 ALL loss: 9.2360
+epoch:  25 cluster loss: 5.7579 recon loss: 8.5786 ALL loss: 7.1682
+epoch:  30 cluster loss: 5.5774 recon loss: 8.0845 ALL loss: 6.8309
+epoch:  35 cluster loss: 4.4557 recon loss: 7.6340 ALL loss: 6.0449
+epoch:  40 cluster loss: 3.7054 recon loss: 7.1929 ALL loss: 5.4491
+epoch:  45 cluster loss: 3.1709 recon loss: 6.9279 ALL loss: 5.0494
+post matching 0 outliers
+author, pub count: 811, time use: 0.53 min
+trainning: jianguo_he
+epoch:   0 cluster loss: 21.9648 recon loss: 20.8717 ALL loss: 21.4183
+epoch:   5 cluster loss: 7.3290 recon loss: 14.4817 ALL loss: 10.9053
+epoch:  10 cluster loss: 5.1535 recon loss: 10.5196 ALL loss: 7.8365
+epoch:  15 cluster loss: 4.7205 recon loss: 9.4970 ALL loss: 7.1087
+epoch:  20 cluster loss: 3.8364 recon loss: 9.3196 ALL loss: 6.5780
+epoch:  25 cluster loss: 3.1690 recon loss: 9.0609 ALL loss: 6.1149
+epoch:  30 cluster loss: 2.8397 recon loss: 8.9343 ALL loss: 5.8870
+epoch:  35 cluster loss: 2.0386 recon loss: 8.8955 ALL loss: 5.4670
+epoch:  40 cluster loss: 1.5666 recon loss: 8.6897 ALL loss: 5.1281
+epoch:  45 cluster loss: 1.3888 recon loss: 8.7025 ALL loss: 5.0456
+post matching 0 outliers
+author, pub count: 420, time use: 0.45 min
+trainning: rong_yan
+epoch:   0 cluster loss: 37.0088 recon loss: 23.2644 ALL loss: 30.1366
+epoch:   5 cluster loss: 17.4484 recon loss: 20.5072 ALL loss: 18.9778
+epoch:  10 cluster loss: 9.5127 recon loss: 18.3255 ALL loss: 13.9191
+epoch:  15 cluster loss: 5.8052 recon loss: 16.7475 ALL loss: 11.2764
+epoch:  20 cluster loss: 4.3494 recon loss: 15.9197 ALL loss: 10.1345
+epoch:  25 cluster loss: 4.3042 recon loss: 15.3562 ALL loss: 9.8302
+epoch:  30 cluster loss: 2.7421 recon loss: 14.6995 ALL loss: 8.7208
+epoch:  35 cluster loss: 3.2213 recon loss: 12.7694 ALL loss: 7.9954
+epoch:  40 cluster loss: 1.6499 recon loss: 12.6128 ALL loss: 7.1314
+epoch:  45 cluster loss: 1.5759 recon loss: 11.7904 ALL loss: 6.6832
+post matching 0 outliers
+author, pub count: 324, time use: 0.07 min
+trainning: xuejun_jiang
+epoch:   0 cluster loss: 29.5597 recon loss: 29.7235 ALL loss: 29.6416
+epoch:   5 cluster loss: 12.2154 recon loss: 27.9532 ALL loss: 20.0843
+epoch:  10 cluster loss: 5.3525 recon loss: 24.8564 ALL loss: 15.1045
+epoch:  15 cluster loss: 9.1750 recon loss: 22.1890 ALL loss: 15.6820
+epoch:  20 cluster loss: 5.8015 recon loss: 19.9557 ALL loss: 12.8786
+epoch:  25 cluster loss: 3.9706 recon loss: 17.3428 ALL loss: 10.6567
+epoch:  30 cluster loss: 2.8924 recon loss: 12.7496 ALL loss: 7.8210
+epoch:  35 cluster loss: 2.5448 recon loss: 9.6955 ALL loss: 6.1202
+epoch:  40 cluster loss: 2.4360 recon loss: 8.0703 ALL loss: 5.2531
+epoch:  45 cluster loss: 2.3444 recon loss: 6.6100 ALL loss: 4.4772
+post matching 0 outliers
+author, pub count: 365, time use: 0.12 min
+trainning: jingya_li
+epoch:   0 cluster loss: 20.2191 recon loss: 26.5822 ALL loss: 23.4006
+epoch:   5 cluster loss: 5.4907 recon loss: 15.9855 ALL loss: 10.7381
+epoch:  10 cluster loss: 1.5309 recon loss: 9.5000 ALL loss: 5.5154
+epoch:  15 cluster loss: 1.3077 recon loss: 6.5354 ALL loss: 3.9216
+epoch:  20 cluster loss: 0.9831 recon loss: 5.5626 ALL loss: 3.2728
+epoch:  25 cluster loss: 0.6311 recon loss: 3.9367 ALL loss: 2.2839
+epoch:  30 cluster loss: 0.3545 recon loss: 3.7864 ALL loss: 2.0704
+epoch:  35 cluster loss: 0.3472 recon loss: 3.7976 ALL loss: 2.0724
+epoch:  40 cluster loss: 0.2279 recon loss: 3.6280 ALL loss: 1.9279
+epoch:  45 cluster loss: 0.1957 recon loss: 3.7005 ALL loss: 1.9481
+post matching 0 outliers
+author, pub count: 239, time use: 0.13 min
+trainning: gang_xie
+epoch:   0 cluster loss: 41.8801 recon loss: 26.9719 ALL loss: 34.4260
+epoch:   5 cluster loss: 19.2851 recon loss: 18.8767 ALL loss: 19.0809
+epoch:  10 cluster loss: 13.2642 recon loss: 15.6132 ALL loss: 14.4387
+epoch:  15 cluster loss: 8.7992 recon loss: 14.0644 ALL loss: 11.4318
+epoch:  20 cluster loss: 5.0004 recon loss: 13.3476 ALL loss: 9.1740
+epoch:  25 cluster loss: 2.5639 recon loss: 13.8554 ALL loss: 8.2097
+epoch:  30 cluster loss: 1.7135 recon loss: 13.4799 ALL loss: 7.5967
+epoch:  35 cluster loss: 1.3690 recon loss: 12.9749 ALL loss: 7.1720
+epoch:  40 cluster loss: 1.0981 recon loss: 13.8776 ALL loss: 7.4878
+epoch:  45 cluster loss: 0.9708 recon loss: 12.7970 ALL loss: 6.8839
+post matching 0 outliers
+author, pub count: 255, time use: 0.06 min
+trainning: min_gu
+epoch:   0 cluster loss: 27.4328 recon loss: 20.7141 ALL loss: 24.0734
+epoch:   5 cluster loss: 13.5867 recon loss: 19.0501 ALL loss: 16.3184
+epoch:  10 cluster loss: 7.5003 recon loss: 17.3652 ALL loss: 12.4327
+epoch:  15 cluster loss: 4.4128 recon loss: 15.8383 ALL loss: 10.1255
+epoch:  20 cluster loss: 3.1758 recon loss: 14.4569 ALL loss: 8.8164
+epoch:  25 cluster loss: 2.4699 recon loss: 13.1432 ALL loss: 7.8066
+epoch:  30 cluster loss: 2.2213 recon loss: 11.6504 ALL loss: 6.9358
+epoch:  35 cluster loss: 1.7482 recon loss: 9.8247 ALL loss: 5.7865
+epoch:  40 cluster loss: 1.6829 recon loss: 6.6585 ALL loss: 4.1707
+epoch:  45 cluster loss: 1.9699 recon loss: 4.4785 ALL loss: 3.2242
+post matching 0 outliers
+author, pub count: 830, time use: 0.56 min
+trainning: chengliang_zhang
+epoch:   0 cluster loss: 30.5905 recon loss: 18.9579 ALL loss: 24.7742
+epoch:   5 cluster loss: 13.5305 recon loss: 18.1889 ALL loss: 15.8597
+epoch:  10 cluster loss: 6.4872 recon loss: 15.8752 ALL loss: 11.1812
+epoch:  15 cluster loss: 4.0603 recon loss: 14.5019 ALL loss: 9.2811
+epoch:  20 cluster loss: 2.8714 recon loss: 12.4017 ALL loss: 7.6366
+epoch:  25 cluster loss: 2.4330 recon loss: 10.2726 ALL loss: 6.3528
+epoch:  30 cluster loss: 1.9438 recon loss: 9.6997 ALL loss: 5.8217
+epoch:  35 cluster loss: 1.7574 recon loss: 8.8025 ALL loss: 5.2800
+epoch:  40 cluster loss: 1.6009 recon loss: 7.8539 ALL loss: 4.7274
+epoch:  45 cluster loss: 1.2568 recon loss: 7.0197 ALL loss: 4.1382
+post matching 0 outliers
+author, pub count: 246, time use: 0.06 min
+trainning: bing_wang
+epoch:   0 cluster loss: 68.0517 recon loss: 25.7202 ALL loss: 46.8860
+epoch:   5 cluster loss: 36.8655 recon loss: 21.9478 ALL loss: 29.4066
+epoch:  10 cluster loss: 21.9447 recon loss: 18.7910 ALL loss: 20.3678
+epoch:  15 cluster loss: 14.3953 recon loss: 15.9163 ALL loss: 15.1558
+epoch:  20 cluster loss: 10.3511 recon loss: 13.8986 ALL loss: 12.1249
+epoch:  25 cluster loss: 8.1292 recon loss: 12.7080 ALL loss: 10.4186
+epoch:  30 cluster loss: 6.5674 recon loss: 10.9636 ALL loss: 8.7655
+epoch:  35 cluster loss: 5.4584 recon loss: 10.0666 ALL loss: 7.7625
+epoch:  40 cluster loss: 4.8581 recon loss: 9.0624 ALL loss: 6.9602
+epoch:  45 cluster loss: 4.4619 recon loss: 8.0636 ALL loss: 6.2627
+post matching 0 outliers
+author, pub count: 937, time use: 0.27 min
+trainning: hiroshi_furukawa
+epoch:   0 cluster loss: 32.9350 recon loss: 24.5044 ALL loss: 28.7197
+epoch:   5 cluster loss: 13.9055 recon loss: 20.0266 ALL loss: 16.9660
+epoch:  10 cluster loss: 5.6877 recon loss: 17.9785 ALL loss: 11.8331
+epoch:  15 cluster loss: 2.9251 recon loss: 17.0393 ALL loss: 9.9822
+epoch:  20 cluster loss: 1.8925 recon loss: 15.5192 ALL loss: 8.7059
+epoch:  25 cluster loss: 1.9042 recon loss: 15.3480 ALL loss: 8.6261
+epoch:  30 cluster loss: 1.3654 recon loss: 14.5819 ALL loss: 7.9736
+epoch:  35 cluster loss: 1.0822 recon loss: 13.6477 ALL loss: 7.3650
+epoch:  40 cluster loss: 0.8818 recon loss: 13.3449 ALL loss: 7.1134
+epoch:  45 cluster loss: 0.7168 recon loss: 12.8102 ALL loss: 6.7635
+post matching 0 outliers
+author, pub count: 235, time use: 0.05 min
+trainning: dongqing_wu
+epoch:   0 cluster loss: 15.9452 recon loss: 31.7501 ALL loss: 23.8476
+epoch:   5 cluster loss: 0.8141 recon loss: 20.1696 ALL loss: 10.4919
+epoch:  10 cluster loss: 0.3323 recon loss: 11.8897 ALL loss: 6.1110
+epoch:  15 cluster loss: 0.3437 recon loss: 8.1233 ALL loss: 4.2335
+epoch:  20 cluster loss: 0.3632 recon loss: 7.7603 ALL loss: 4.0618
+epoch:  25 cluster loss: 0.3021 recon loss: 7.9342 ALL loss: 4.1181
+epoch:  30 cluster loss: 0.3772 recon loss: 7.8144 ALL loss: 4.0958
+epoch:  35 cluster loss: 0.3155 recon loss: 7.7112 ALL loss: 4.0134
+epoch:  40 cluster loss: 0.2405 recon loss: 7.7564 ALL loss: 3.9985
+epoch:  45 cluster loss: 0.2041 recon loss: 7.8246 ALL loss: 4.0143
+post matching 0 outliers
+author, pub count: 196, time use: 0.06 min
+trainning: jia_zhou
+epoch:   0 cluster loss: 47.0616 recon loss: 24.1344 ALL loss: 35.5980
+epoch:   5 cluster loss: 27.3809 recon loss: 20.7221 ALL loss: 24.0515
+epoch:  10 cluster loss: 16.2477 recon loss: 17.5540 ALL loss: 16.9009
+epoch:  15 cluster loss: 11.0741 recon loss: 16.0508 ALL loss: 13.5625
+epoch:  20 cluster loss: 7.6795 recon loss: 14.4868 ALL loss: 11.0831
+epoch:  25 cluster loss: 6.1122 recon loss: 13.2542 ALL loss: 9.6832
+epoch:  30 cluster loss: 4.7096 recon loss: 11.9529 ALL loss: 8.3312
+epoch:  35 cluster loss: 3.7685 recon loss: 10.6844 ALL loss: 7.2265
+epoch:  40 cluster loss: 3.1129 recon loss: 9.9805 ALL loss: 6.5467
+epoch:  45 cluster loss: 2.8100 recon loss: 9.0439 ALL loss: 5.9270
+post matching 0 outliers
+author, pub count: 425, time use: 0.07 min
+trainning: shaojin_wang
+epoch:   0 cluster loss: 15.5848 recon loss: 28.4298 ALL loss: 22.0073
+epoch:   5 cluster loss: 3.0325 recon loss: 26.1381 ALL loss: 14.5853
+epoch:  10 cluster loss: 2.0057 recon loss: 19.1714 ALL loss: 10.5886
+epoch:  15 cluster loss: 1.3753 recon loss: 15.3545 ALL loss: 8.3649
+epoch:  20 cluster loss: 0.9242 recon loss: 13.1655 ALL loss: 7.0448
+epoch:  25 cluster loss: 1.0813 recon loss: 12.9913 ALL loss: 7.0363
+epoch:  30 cluster loss: 0.9641 recon loss: 12.2087 ALL loss: 6.5864
+epoch:  35 cluster loss: 0.8731 recon loss: 12.2843 ALL loss: 6.5787
+epoch:  40 cluster loss: 0.7513 recon loss: 11.6061 ALL loss: 6.1787
+epoch:  45 cluster loss: 0.6939 recon loss: 9.7006 ALL loss: 5.1973
+post matching 0 outliers
+author, pub count: 246, time use: 0.08 min
+trainning: yao_he
+epoch:   0 cluster loss: 29.2634 recon loss: 17.4977 ALL loss: 23.3805
+epoch:   5 cluster loss: 16.7421 recon loss: 15.3961 ALL loss: 16.0691
+epoch:  10 cluster loss: 9.5567 recon loss: 14.9324 ALL loss: 12.2445
+epoch:  15 cluster loss: 4.6123 recon loss: 13.7999 ALL loss: 9.2061
+epoch:  20 cluster loss: 3.0589 recon loss: 12.9994 ALL loss: 8.0292
+epoch:  25 cluster loss: 1.9409 recon loss: 11.4500 ALL loss: 6.6955
+epoch:  30 cluster loss: 1.5775 recon loss: 10.4994 ALL loss: 6.0385
+epoch:  35 cluster loss: 1.3207 recon loss: 9.7264 ALL loss: 5.5235
+epoch:  40 cluster loss: 1.1152 recon loss: 8.8258 ALL loss: 4.9705
+epoch:  45 cluster loss: 1.0464 recon loss: 7.8502 ALL loss: 4.4483
+post matching 0 outliers
+author, pub count: 410, time use: 0.17 min
+trainning: shaowu_zhang
+epoch:   0 cluster loss: 34.4704 recon loss: 32.5915 ALL loss: 33.5309
+epoch:   5 cluster loss: 16.0736 recon loss: 31.9224 ALL loss: 23.9980
+epoch:  10 cluster loss: 6.4467 recon loss: 30.3586 ALL loss: 18.4026
+epoch:  15 cluster loss: 2.2505 recon loss: 28.1909 ALL loss: 15.2207
+epoch:  20 cluster loss: 1.1448 recon loss: 26.8338 ALL loss: 13.9893
+epoch:  25 cluster loss: 1.0984 recon loss: 24.8190 ALL loss: 12.9587
+epoch:  30 cluster loss: 0.9243 recon loss: 21.1237 ALL loss: 11.0240
+epoch:  35 cluster loss: 0.9368 recon loss: 19.3778 ALL loss: 10.1573
+epoch:  40 cluster loss: 0.8721 recon loss: 16.3154 ALL loss: 8.5938
+epoch:  45 cluster loss: 0.7324 recon loss: 14.1870 ALL loss: 7.4597
+post matching 0 outliers
+author, pub count: 236, time use: 0.06 min
+trainning: guoan_li
+epoch:   0 cluster loss: 9.5535 recon loss: 30.0964 ALL loss: 19.8250
+epoch:   5 cluster loss: 3.7560 recon loss: 27.1404 ALL loss: 15.4482
+epoch:  10 cluster loss: 2.0449 recon loss: 25.9614 ALL loss: 14.0031
+epoch:  15 cluster loss: 1.1722 recon loss: 25.5983 ALL loss: 13.3852
+epoch:  20 cluster loss: 0.5645 recon loss: 25.3269 ALL loss: 12.9457
+epoch:  25 cluster loss: 0.2954 recon loss: 25.1223 ALL loss: 12.7088
+epoch:  30 cluster loss: 0.3329 recon loss: 25.1972 ALL loss: 12.7651
+epoch:  35 cluster loss: 0.2597 recon loss: 25.2820 ALL loss: 12.7709
+epoch:  40 cluster loss: 0.2204 recon loss: 24.7471 ALL loss: 12.4838
+epoch:  45 cluster loss: 0.1861 recon loss: 24.9334 ALL loss: 12.5598
+post matching 0 outliers
+author, pub count: 212, time use: 0.08 min
+trainning: xiaolin_li
+epoch:   0 cluster loss: 52.8643 recon loss: 19.5993 ALL loss: 36.2318
+epoch:   5 cluster loss: 28.6899 recon loss: 16.0187 ALL loss: 22.3543
+epoch:  10 cluster loss: 18.8617 recon loss: 14.3332 ALL loss: 16.5975
+epoch:  15 cluster loss: 12.1508 recon loss: 12.7806 ALL loss: 12.4657
+epoch:  20 cluster loss: 9.2093 recon loss: 12.2044 ALL loss: 10.7068
+epoch:  25 cluster loss: 7.1690 recon loss: 10.6819 ALL loss: 8.9254
+epoch:  30 cluster loss: 5.6704 recon loss: 10.5293 ALL loss: 8.0998
+epoch:  35 cluster loss: 4.5820 recon loss: 9.3169 ALL loss: 6.9495
+epoch:  40 cluster loss: 4.0773 recon loss: 8.8796 ALL loss: 6.4784
+epoch:  45 cluster loss: 3.8225 recon loss: 8.0679 ALL loss: 5.9452
+post matching 0 outliers
+author, pub count: 884, time use: 0.21 min
+trainning: yi_ding
+epoch:   0 cluster loss: 51.8630 recon loss: 20.2223 ALL loss: 36.0427
+epoch:   5 cluster loss: 28.9818 recon loss: 16.8537 ALL loss: 22.9177
+epoch:  10 cluster loss: 20.2226 recon loss: 14.8652 ALL loss: 17.5439
+epoch:  15 cluster loss: 13.3799 recon loss: 12.8044 ALL loss: 13.0921
+epoch:  20 cluster loss: 9.3853 recon loss: 11.8165 ALL loss: 10.6009
+epoch:  25 cluster loss: 7.0688 recon loss: 10.2332 ALL loss: 8.6510
+epoch:  30 cluster loss: 5.6780 recon loss: 9.4793 ALL loss: 7.5786
+epoch:  35 cluster loss: 4.6796 recon loss: 8.4035 ALL loss: 6.5415
+epoch:  40 cluster loss: 3.8090 recon loss: 7.8319 ALL loss: 5.8205
+epoch:  45 cluster loss: 3.4102 recon loss: 7.2766 ALL loss: 5.3434
+post matching 0 outliers
+author, pub count: 965, time use: 0.27 min
+trainning: jingshan_li
+epoch:   0 cluster loss: 2.8966 recon loss: 34.5388 ALL loss: 18.7177
+epoch:   5 cluster loss: 0.5820 recon loss: 34.5388 ALL loss: 17.5604
+epoch:  10 cluster loss: 0.0294 recon loss: 34.5388 ALL loss: 17.2841
+epoch:  15 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  20 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  25 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  30 cluster loss: 0.0000 recon loss: 34.4467 ALL loss: 17.2233
+epoch:  35 cluster loss: 0.0000 recon loss: 34.5254 ALL loss: 17.2627
+epoch:  40 cluster loss: 0.0000 recon loss: 31.6509 ALL loss: 15.8254
+epoch:  45 cluster loss: 0.0000 recon loss: 31.1589 ALL loss: 15.5794
+post matching 0 outliers
+author, pub count: 134, time use: 0.03 min
+trainning: ji-jun_zou
+epoch:   0 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:   5 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  10 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  15 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  20 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  25 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  30 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  35 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  40 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  45 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+post matching 0 outliers
+author, pub count: 267, time use: 0.45 min
+trainning: xin_li
+epoch:   0 cluster loss: 78.0194 recon loss: 24.4308 ALL loss: 51.2251
+epoch:   5 cluster loss: 42.8917 recon loss: 20.4053 ALL loss: 31.6485
+epoch:  10 cluster loss: 26.0570 recon loss: 17.8359 ALL loss: 21.9465
+epoch:  15 cluster loss: 17.8523 recon loss: 15.5677 ALL loss: 16.7100
+epoch:  20 cluster loss: 13.0074 recon loss: 13.9497 ALL loss: 13.4786
+epoch:  25 cluster loss: 9.7769 recon loss: 12.3619 ALL loss: 11.0694
+epoch:  30 cluster loss: 7.9510 recon loss: 11.1260 ALL loss: 9.5385
+epoch:  35 cluster loss: 6.3328 recon loss: 10.2401 ALL loss: 8.2864
+epoch:  40 cluster loss: 5.3580 recon loss: 9.3754 ALL loss: 7.3667
+epoch:  45 cluster loss: 4.6990 recon loss: 8.2851 ALL loss: 6.4920
+post matching 1 outliers
+author, pub count: 1239, time use: 0.35 min
+trainning: xiaowen_sun
+epoch:   0 cluster loss: 11.3250 recon loss: 24.6027 ALL loss: 17.9639
+epoch:   5 cluster loss: 5.1562 recon loss: 19.2385 ALL loss: 12.1974
+epoch:  10 cluster loss: 3.7170 recon loss: 18.0513 ALL loss: 10.8841
+epoch:  15 cluster loss: 2.3165 recon loss: 17.4592 ALL loss: 9.8878
+epoch:  20 cluster loss: 2.3911 recon loss: 17.0879 ALL loss: 9.7395
+epoch:  25 cluster loss: 2.1981 recon loss: 17.2006 ALL loss: 9.6994
+epoch:  30 cluster loss: 2.2397 recon loss: 17.0520 ALL loss: 9.6459
+epoch:  35 cluster loss: 1.6817 recon loss: 16.9362 ALL loss: 9.3090
+epoch:  40 cluster loss: 1.7080 recon loss: 16.7557 ALL loss: 9.2318
+epoch:  45 cluster loss: 1.4404 recon loss: 16.7290 ALL loss: 9.0847
+post matching 0 outliers
+author, pub count: 461, time use: 0.41 min
+trainning: xueliang_li
+epoch:   0 cluster loss: 21.8845 recon loss: 26.4157 ALL loss: 24.1501
+epoch:   5 cluster loss: 4.3555 recon loss: 18.2719 ALL loss: 11.3137
+epoch:  10 cluster loss: 5.0615 recon loss: 16.7050 ALL loss: 10.8832
+epoch:  15 cluster loss: 3.4998 recon loss: 16.5288 ALL loss: 10.0143
+epoch:  20 cluster loss: 3.5685 recon loss: 16.3849 ALL loss: 9.9767
+epoch:  25 cluster loss: 2.2774 recon loss: 16.2931 ALL loss: 9.2852
+epoch:  30 cluster loss: 2.0523 recon loss: 16.2277 ALL loss: 9.1400
+epoch:  35 cluster loss: 2.0962 recon loss: 16.1549 ALL loss: 9.1255
+epoch:  40 cluster loss: 1.4322 recon loss: 16.0469 ALL loss: 8.7396
+epoch:  45 cluster loss: 2.2222 recon loss: 16.1834 ALL loss: 9.2028
+post matching 0 outliers
+author, pub count: 603, time use: 0.37 min
+trainning: wen_qin
+epoch:   0 cluster loss: 13.7226 recon loss: 15.9745 ALL loss: 14.8485
+epoch:   5 cluster loss: 8.2515 recon loss: 13.7596 ALL loss: 11.0056
+epoch:  10 cluster loss: 5.0598 recon loss: 12.8806 ALL loss: 8.9702
+epoch:  15 cluster loss: 3.4109 recon loss: 11.9085 ALL loss: 7.6597
+epoch:  20 cluster loss: 2.0099 recon loss: 11.5802 ALL loss: 6.7951
+epoch:  25 cluster loss: 1.2477 recon loss: 10.4906 ALL loss: 5.8692
+epoch:  30 cluster loss: 1.1958 recon loss: 9.8063 ALL loss: 5.5011
+epoch:  35 cluster loss: 1.1481 recon loss: 9.6312 ALL loss: 5.3897
+epoch:  40 cluster loss: 1.0349 recon loss: 9.2412 ALL loss: 5.1381
+epoch:  45 cluster loss: 1.1496 recon loss: 9.1708 ALL loss: 5.1602
+post matching 0 outliers
+author, pub count: 428, time use: 0.29 min
+trainning: jianping_lei
+epoch:   0 cluster loss: 3.7815 recon loss: 15.4539 ALL loss: 9.6177
+epoch:   5 cluster loss: 2.3037 recon loss: 12.6028 ALL loss: 7.4532
+epoch:  10 cluster loss: 1.6789 recon loss: 12.2854 ALL loss: 6.9822
+epoch:  15 cluster loss: 1.0314 recon loss: 12.2503 ALL loss: 6.6408
+epoch:  20 cluster loss: 0.7896 recon loss: 12.2279 ALL loss: 6.5087
+epoch:  25 cluster loss: 0.4771 recon loss: 12.2484 ALL loss: 6.3627
+epoch:  30 cluster loss: 0.3969 recon loss: 12.2016 ALL loss: 6.2992
+epoch:  35 cluster loss: 0.2781 recon loss: 11.5424 ALL loss: 5.9103
+epoch:  40 cluster loss: 0.2330 recon loss: 12.2427 ALL loss: 6.2378
+epoch:  45 cluster loss: 0.1650 recon loss: 12.2339 ALL loss: 6.1995
+post matching 0 outliers
+author, pub count: 187, time use: 0.15 min
+trainning: zhiqiang_cai
+epoch:   0 cluster loss: 35.6436 recon loss: 24.4397 ALL loss: 30.0417
+epoch:   5 cluster loss: 16.8525 recon loss: 20.6461 ALL loss: 18.7493
+epoch:  10 cluster loss: 7.9967 recon loss: 17.6568 ALL loss: 12.8268
+epoch:  15 cluster loss: 3.8781 recon loss: 17.0287 ALL loss: 10.4534
+epoch:  20 cluster loss: 2.3317 recon loss: 16.8227 ALL loss: 9.5772
+epoch:  25 cluster loss: 1.7592 recon loss: 16.1971 ALL loss: 8.9782
+epoch:  30 cluster loss: 1.4835 recon loss: 15.6732 ALL loss: 8.5783
+epoch:  35 cluster loss: 1.4592 recon loss: 15.5701 ALL loss: 8.5147
+epoch:  40 cluster loss: 0.8855 recon loss: 15.3192 ALL loss: 8.1023
+epoch:  45 cluster loss: 1.0935 recon loss: 15.0398 ALL loss: 8.0666
+post matching 0 outliers
+author, pub count: 271, time use: 0.06 min
+trainning: jingwei_zhao
+epoch:   0 cluster loss: 30.7879 recon loss: 28.0828 ALL loss: 29.4354
+epoch:   5 cluster loss: 10.7879 recon loss: 24.1779 ALL loss: 17.4829
+epoch:  10 cluster loss: 3.7598 recon loss: 17.1534 ALL loss: 10.4566
+epoch:  15 cluster loss: 2.7546 recon loss: 12.1974 ALL loss: 7.4760
+epoch:  20 cluster loss: 2.2759 recon loss: 10.0417 ALL loss: 6.1588
+epoch:  25 cluster loss: 1.6285 recon loss: 8.6007 ALL loss: 5.1146
+epoch:  30 cluster loss: 1.2570 recon loss: 8.3870 ALL loss: 4.8220
+epoch:  35 cluster loss: 1.0068 recon loss: 6.7246 ALL loss: 3.8657
+epoch:  40 cluster loss: 0.7439 recon loss: 6.5686 ALL loss: 3.6562
+epoch:  45 cluster loss: 0.9820 recon loss: 6.3279 ALL loss: 3.6549
+post matching 0 outliers
+author, pub count: 249, time use: 0.10 min
+trainning: xiaofan_wang
+epoch:   0 cluster loss: 16.3167 recon loss: 19.5468 ALL loss: 17.9318
+epoch:   5 cluster loss: 8.3603 recon loss: 16.0381 ALL loss: 12.1992
+epoch:  10 cluster loss: 5.6438 recon loss: 15.9151 ALL loss: 10.7794
+epoch:  15 cluster loss: 3.8490 recon loss: 14.4553 ALL loss: 9.1522
+epoch:  20 cluster loss: 2.7628 recon loss: 14.3295 ALL loss: 8.5461
+epoch:  25 cluster loss: 2.0127 recon loss: 13.6144 ALL loss: 7.8135
+epoch:  30 cluster loss: 1.3487 recon loss: 13.2937 ALL loss: 7.3212
+epoch:  35 cluster loss: 0.9227 recon loss: 13.0506 ALL loss: 6.9866
+epoch:  40 cluster loss: 0.9511 recon loss: 13.2753 ALL loss: 7.1132
+epoch:  45 cluster loss: 0.7040 recon loss: 12.8889 ALL loss: 6.7964
+post matching 0 outliers
+author, pub count: 324, time use: 0.12 min
+trainning: kenichi_kato
+epoch:   0 cluster loss: 11.9743 recon loss: 17.2377 ALL loss: 14.6060
+epoch:   5 cluster loss: 6.4906 recon loss: 16.6364 ALL loss: 11.5635
+epoch:  10 cluster loss: 2.8143 recon loss: 15.9813 ALL loss: 9.3978
+epoch:  15 cluster loss: 1.8477 recon loss: 15.9592 ALL loss: 8.9034
+epoch:  20 cluster loss: 1.1639 recon loss: 15.7550 ALL loss: 8.4595
+epoch:  25 cluster loss: 0.8806 recon loss: 14.9420 ALL loss: 7.9113
+epoch:  30 cluster loss: 0.7984 recon loss: 14.7156 ALL loss: 7.7570
+epoch:  35 cluster loss: 0.6120 recon loss: 12.5077 ALL loss: 6.5599
+epoch:  40 cluster loss: 0.6277 recon loss: 11.9751 ALL loss: 6.3014
+epoch:  45 cluster loss: 0.5702 recon loss: 11.0217 ALL loss: 5.7960
+post matching 0 outliers
+author, pub count: 334, time use: 0.25 min
+trainning: cuiling_li
+epoch:   0 cluster loss: 18.6717 recon loss: 14.4507 ALL loss: 16.5612
+epoch:   5 cluster loss: 9.4260 recon loss: 12.3738 ALL loss: 10.8999
+epoch:  10 cluster loss: 4.7579 recon loss: 11.8674 ALL loss: 8.3127
+epoch:  15 cluster loss: 2.7943 recon loss: 10.7697 ALL loss: 6.7820
+epoch:  20 cluster loss: 2.4863 recon loss: 10.2489 ALL loss: 6.3676
+epoch:  25 cluster loss: 1.5736 recon loss: 10.5314 ALL loss: 6.0525
+epoch:  30 cluster loss: 1.3006 recon loss: 9.8071 ALL loss: 5.5539
+epoch:  35 cluster loss: 1.0828 recon loss: 10.1459 ALL loss: 5.6143
+epoch:  40 cluster loss: 1.0410 recon loss: 10.0846 ALL loss: 5.5628
+epoch:  45 cluster loss: 0.7688 recon loss: 9.5641 ALL loss: 5.1665
+post matching 0 outliers
+author, pub count: 206, time use: 0.05 min
+trainning: xiying_zhang
+epoch:   0 cluster loss: 34.4010 recon loss: 31.2537 ALL loss: 32.8273
+epoch:   5 cluster loss: 11.2468 recon loss: 30.7098 ALL loss: 20.9783
+epoch:  10 cluster loss: 4.4008 recon loss: 30.2842 ALL loss: 17.3425
+epoch:  15 cluster loss: 2.0080 recon loss: 23.4234 ALL loss: 12.7157
+epoch:  20 cluster loss: 1.6572 recon loss: 17.8072 ALL loss: 9.7322
+epoch:  25 cluster loss: 1.5163 recon loss: 14.2733 ALL loss: 7.8948
+epoch:  30 cluster loss: 1.4384 recon loss: 9.9316 ALL loss: 5.6850
+epoch:  35 cluster loss: 1.4220 recon loss: 8.1587 ALL loss: 4.7903
+epoch:  40 cluster loss: 1.2173 recon loss: 7.4138 ALL loss: 4.3155
+epoch:  45 cluster loss: 1.0345 recon loss: 6.1044 ALL loss: 3.5694
+post matching 0 outliers
+author, pub count: 316, time use: 0.22 min
+trainning: jingbo_zhao
+epoch:   0 cluster loss: 47.3991 recon loss: 24.5570 ALL loss: 35.9781
+epoch:   5 cluster loss: 22.0932 recon loss: 22.0143 ALL loss: 22.0537
+epoch:  10 cluster loss: 10.0320 recon loss: 19.3325 ALL loss: 14.6822
+epoch:  15 cluster loss: 6.8293 recon loss: 16.0655 ALL loss: 11.4474
+epoch:  20 cluster loss: 5.5476 recon loss: 12.9822 ALL loss: 9.2649
+epoch:  25 cluster loss: 4.4928 recon loss: 10.2202 ALL loss: 7.3565
+epoch:  30 cluster loss: 3.7926 recon loss: 8.9726 ALL loss: 6.3826
+epoch:  35 cluster loss: 2.9545 recon loss: 7.7927 ALL loss: 5.3736
+epoch:  40 cluster loss: 2.4888 recon loss: 7.7781 ALL loss: 5.1335
+epoch:  45 cluster loss: 2.1447 recon loss: 7.2978 ALL loss: 4.7213
+post matching 0 outliers
+author, pub count: 434, time use: 0.18 min
+trainning: qiming_li
+epoch:   0 cluster loss: 53.0046 recon loss: 33.7842 ALL loss: 43.3944
+epoch:   5 cluster loss: 24.5830 recon loss: 25.7499 ALL loss: 25.1665
+epoch:  10 cluster loss: 14.8002 recon loss: 21.3891 ALL loss: 18.0947
+epoch:  15 cluster loss: 12.9357 recon loss: 20.1573 ALL loss: 16.5465
+epoch:  20 cluster loss: 7.6406 recon loss: 18.3451 ALL loss: 12.9929
+epoch:  25 cluster loss: 4.6127 recon loss: 18.0313 ALL loss: 11.3220
+epoch:  30 cluster loss: 3.7541 recon loss: 17.8648 ALL loss: 10.8095
+epoch:  35 cluster loss: 2.3757 recon loss: 17.0816 ALL loss: 9.7287
+epoch:  40 cluster loss: 1.7196 recon loss: 16.5776 ALL loss: 9.1486
+epoch:  45 cluster loss: 1.6928 recon loss: 15.8304 ALL loss: 8.7616
+post matching 1 outliers
+author, pub count: 259, time use: 0.05 min
+trainning: kenji_harada
+epoch:   0 cluster loss: 40.6131 recon loss: 24.7642 ALL loss: 32.6886
+epoch:   5 cluster loss: 21.1512 recon loss: 18.2104 ALL loss: 19.6808
+epoch:  10 cluster loss: 14.3517 recon loss: 15.5185 ALL loss: 14.9351
+epoch:  15 cluster loss: 9.7683 recon loss: 14.0116 ALL loss: 11.8900
+epoch:  20 cluster loss: 6.5998 recon loss: 13.2845 ALL loss: 9.9422
+epoch:  25 cluster loss: 4.5224 recon loss: 12.4662 ALL loss: 8.4943
+epoch:  30 cluster loss: 3.3168 recon loss: 12.5170 ALL loss: 7.9169
+epoch:  35 cluster loss: 2.7310 recon loss: 11.8194 ALL loss: 7.2752
+epoch:  40 cluster loss: 2.1497 recon loss: 11.4437 ALL loss: 6.7967
+epoch:  45 cluster loss: 2.1872 recon loss: 10.9024 ALL loss: 6.5448
+post matching 0 outliers
+author, pub count: 343, time use: 0.06 min
+trainning: jingxia_li
+epoch:   0 cluster loss: 8.4139 recon loss: 14.6865 ALL loss: 11.5502
+epoch:   5 cluster loss: 2.8332 recon loss: 11.1220 ALL loss: 6.9776
+epoch:  10 cluster loss: 1.1385 recon loss: 8.8484 ALL loss: 4.9934
+epoch:  15 cluster loss: 0.6770 recon loss: 6.9354 ALL loss: 3.8062
+epoch:  20 cluster loss: 0.6621 recon loss: 6.2451 ALL loss: 3.4536
+epoch:  25 cluster loss: 0.5047 recon loss: 5.8705 ALL loss: 3.1876
+epoch:  30 cluster loss: 0.4336 recon loss: 5.4719 ALL loss: 2.9528
+epoch:  35 cluster loss: 0.2388 recon loss: 5.3389 ALL loss: 2.7888
+epoch:  40 cluster loss: 0.3840 recon loss: 5.2604 ALL loss: 2.8222
+epoch:  45 cluster loss: 0.2583 recon loss: 5.2842 ALL loss: 2.7713
+post matching 0 outliers
+author, pub count: 200, time use: 0.11 min
+trainning: guangsheng_zhou
+epoch:   0 cluster loss: 6.8072 recon loss: 34.5388 ALL loss: 20.6730
+epoch:   5 cluster loss: 4.0676 recon loss: 34.5388 ALL loss: 19.3032
+epoch:  10 cluster loss: 2.9104 recon loss: 34.5369 ALL loss: 18.7236
+epoch:  15 cluster loss: 1.1786 recon loss: 34.3420 ALL loss: 17.7603
+epoch:  20 cluster loss: 0.9082 recon loss: 34.1037 ALL loss: 17.5059
+epoch:  25 cluster loss: 0.6964 recon loss: 33.8980 ALL loss: 17.2972
+epoch:  30 cluster loss: 0.6394 recon loss: 33.2711 ALL loss: 16.9553
+epoch:  35 cluster loss: 0.4319 recon loss: 31.2863 ALL loss: 15.8591
+epoch:  40 cluster loss: 0.4156 recon loss: 28.7193 ALL loss: 14.5675
+epoch:  45 cluster loss: 0.5304 recon loss: 25.2408 ALL loss: 12.8856
+post matching 0 outliers
+author, pub count: 292, time use: 0.07 min
+trainning: ke_tang
+epoch:   0 cluster loss: 45.3756 recon loss: 28.5815 ALL loss: 36.9786
+epoch:   5 cluster loss: 21.2792 recon loss: 24.6508 ALL loss: 22.9650
+epoch:  10 cluster loss: 11.1775 recon loss: 20.8129 ALL loss: 15.9952
+epoch:  15 cluster loss: 8.1342 recon loss: 16.4253 ALL loss: 12.2798
+epoch:  20 cluster loss: 6.5309 recon loss: 14.1440 ALL loss: 10.3375
+epoch:  25 cluster loss: 5.0190 recon loss: 12.7519 ALL loss: 8.8855
+epoch:  30 cluster loss: 4.1000 recon loss: 10.4286 ALL loss: 7.2643
+epoch:  35 cluster loss: 3.3773 recon loss: 9.8347 ALL loss: 6.6060
+epoch:  40 cluster loss: 2.8597 recon loss: 9.3438 ALL loss: 6.1017
+epoch:  45 cluster loss: 2.6164 recon loss: 8.7052 ALL loss: 5.6608
+post matching 0 outliers
+author, pub count: 370, time use: 0.08 min
+trainning: teng_wang
+epoch:   0 cluster loss: 44.9231 recon loss: 22.1489 ALL loss: 33.5360
+epoch:   5 cluster loss: 24.8773 recon loss: 19.4164 ALL loss: 22.1468
+epoch:  10 cluster loss: 15.3553 recon loss: 17.1913 ALL loss: 16.2733
+epoch:  15 cluster loss: 10.1242 recon loss: 15.4341 ALL loss: 12.7792
+epoch:  20 cluster loss: 7.4631 recon loss: 13.9375 ALL loss: 10.7003
+epoch:  25 cluster loss: 5.6362 recon loss: 12.7761 ALL loss: 9.2062
+epoch:  30 cluster loss: 4.5360 recon loss: 11.6086 ALL loss: 8.0723
+epoch:  35 cluster loss: 3.5137 recon loss: 10.7882 ALL loss: 7.1510
+epoch:  40 cluster loss: 3.2307 recon loss: 9.4985 ALL loss: 6.3646
+epoch:  45 cluster loss: 2.5478 recon loss: 8.4526 ALL loss: 5.5002
+post matching 0 outliers
+author, pub count: 460, time use: 0.07 min
+trainning: xuefeng_chen
+epoch:   0 cluster loss: 39.5405 recon loss: 34.5225 ALL loss: 37.0315
+epoch:   5 cluster loss: 17.5773 recon loss: 34.4407 ALL loss: 26.0090
+epoch:  10 cluster loss: 3.9964 recon loss: 34.3908 ALL loss: 19.1936
+epoch:  15 cluster loss: 0.8860 recon loss: 34.1296 ALL loss: 17.5078
+epoch:  20 cluster loss: 0.5761 recon loss: 31.5753 ALL loss: 16.0757
+epoch:  25 cluster loss: 0.4529 recon loss: 30.3997 ALL loss: 15.4263
+epoch:  30 cluster loss: 0.5016 recon loss: 29.2259 ALL loss: 14.8638
+epoch:  35 cluster loss: 0.4541 recon loss: 28.5021 ALL loss: 14.4781
+epoch:  40 cluster loss: 0.4604 recon loss: 28.2005 ALL loss: 14.3305
+epoch:  45 cluster loss: 0.3636 recon loss: 28.3811 ALL loss: 14.3723
+post matching 0 outliers
+author, pub count: 331, time use: 0.28 min
+trainning: tadashi_kondo
+epoch:   0 cluster loss: 22.5022 recon loss: 18.8123 ALL loss: 20.6572
+epoch:   5 cluster loss: 10.6078 recon loss: 17.4334 ALL loss: 14.0206
+epoch:  10 cluster loss: 5.6600 recon loss: 16.7633 ALL loss: 11.2116
+epoch:  15 cluster loss: 4.0667 recon loss: 15.5559 ALL loss: 9.8113
+epoch:  20 cluster loss: 3.0830 recon loss: 13.0589 ALL loss: 8.0709
+epoch:  25 cluster loss: 2.0970 recon loss: 12.3358 ALL loss: 7.2164
+epoch:  30 cluster loss: 1.8079 recon loss: 11.5740 ALL loss: 6.6910
+epoch:  35 cluster loss: 1.5905 recon loss: 9.9975 ALL loss: 5.7940
+epoch:  40 cluster loss: 1.2898 recon loss: 9.8703 ALL loss: 5.5801
+epoch:  45 cluster loss: 1.1870 recon loss: 8.9850 ALL loss: 5.0860
+post matching 0 outliers
+author, pub count: 292, time use: 0.09 min
+trainning: wei_ke
+epoch:   0 cluster loss: 23.4971 recon loss: 27.2969 ALL loss: 25.3970
+epoch:   5 cluster loss: 9.7582 recon loss: 24.0513 ALL loss: 16.9048
+epoch:  10 cluster loss: 4.9858 recon loss: 20.4198 ALL loss: 12.7028
+epoch:  15 cluster loss: 4.0181 recon loss: 18.1766 ALL loss: 11.0973
+epoch:  20 cluster loss: 3.5580 recon loss: 16.3734 ALL loss: 9.9657
+epoch:  25 cluster loss: 3.1251 recon loss: 15.8489 ALL loss: 9.4870
+epoch:  30 cluster loss: 2.4724 recon loss: 15.0292 ALL loss: 8.7508
+epoch:  35 cluster loss: 2.2668 recon loss: 14.6632 ALL loss: 8.4650
+epoch:  40 cluster loss: 1.9009 recon loss: 14.3606 ALL loss: 8.1307
+epoch:  45 cluster loss: 1.6196 recon loss: 14.2230 ALL loss: 7.9213
+post matching 1 outliers
+author, pub count: 456, time use: 0.37 min
+trainning: haifeng_wang
+epoch:   0 cluster loss: 62.1085 recon loss: 24.9544 ALL loss: 43.5315
+epoch:   5 cluster loss: 34.6294 recon loss: 22.0620 ALL loss: 28.3457
+epoch:  10 cluster loss: 20.5807 recon loss: 19.9928 ALL loss: 20.2867
+epoch:  15 cluster loss: 13.2988 recon loss: 18.0792 ALL loss: 15.6890
+epoch:  20 cluster loss: 8.1961 recon loss: 16.2652 ALL loss: 12.2307
+epoch:  25 cluster loss: 6.1764 recon loss: 14.9503 ALL loss: 10.5633
+epoch:  30 cluster loss: 4.8562 recon loss: 14.4536 ALL loss: 9.6549
+epoch:  35 cluster loss: 3.9708 recon loss: 13.1022 ALL loss: 8.5365
+epoch:  40 cluster loss: 3.2144 recon loss: 12.4330 ALL loss: 7.8237
+epoch:  45 cluster loss: 3.0019 recon loss: 11.0073 ALL loss: 7.0046
+post matching 0 outliers
+author, pub count: 540, time use: 0.10 min
+trainning: min_dong
+epoch:   0 cluster loss: 43.0010 recon loss: 19.1469 ALL loss: 31.0740
+epoch:   5 cluster loss: 24.2480 recon loss: 16.3797 ALL loss: 20.3138
+epoch:  10 cluster loss: 14.3990 recon loss: 15.3143 ALL loss: 14.8567
+epoch:  15 cluster loss: 8.2699 recon loss: 14.8337 ALL loss: 11.5518
+epoch:  20 cluster loss: 4.7686 recon loss: 13.6860 ALL loss: 9.2273
+epoch:  25 cluster loss: 4.2066 recon loss: 13.3006 ALL loss: 8.7536
+epoch:  30 cluster loss: 2.5864 recon loss: 12.9259 ALL loss: 7.7561
+epoch:  35 cluster loss: 2.1407 recon loss: 12.7061 ALL loss: 7.4234
+epoch:  40 cluster loss: 2.2440 recon loss: 12.6335 ALL loss: 7.4387
+epoch:  45 cluster loss: 1.6503 recon loss: 12.1250 ALL loss: 6.8876
+post matching 0 outliers
+author, pub count: 371, time use: 0.09 min
+trainning: xinhua_zhu
+epoch:   0 cluster loss: 25.9987 recon loss: 23.4104 ALL loss: 24.7046
+epoch:   5 cluster loss: 12.4067 recon loss: 21.4928 ALL loss: 16.9497
+epoch:  10 cluster loss: 5.3721 recon loss: 18.8148 ALL loss: 12.0935
+epoch:  15 cluster loss: 3.2406 recon loss: 18.3062 ALL loss: 10.7734
+epoch:  20 cluster loss: 2.7847 recon loss: 17.9244 ALL loss: 10.3545
+epoch:  25 cluster loss: 1.9412 recon loss: 17.1199 ALL loss: 9.5306
+epoch:  30 cluster loss: 1.4492 recon loss: 15.4001 ALL loss: 8.4246
+epoch:  35 cluster loss: 1.4165 recon loss: 14.7087 ALL loss: 8.0626
+epoch:  40 cluster loss: 1.0796 recon loss: 14.0520 ALL loss: 7.5658
+epoch:  45 cluster loss: 1.0119 recon loss: 13.2745 ALL loss: 7.1432
+post matching 0 outliers
+author, pub count: 301, time use: 0.09 min
+trainning: liping_zhao
+epoch:   0 cluster loss: 38.0515 recon loss: 22.7285 ALL loss: 30.3900
+epoch:   5 cluster loss: 20.5527 recon loss: 18.9818 ALL loss: 19.7673
+epoch:  10 cluster loss: 12.3894 recon loss: 16.8361 ALL loss: 14.6127
+epoch:  15 cluster loss: 7.4430 recon loss: 14.2595 ALL loss: 10.8513
+epoch:  20 cluster loss: 5.5360 recon loss: 12.1248 ALL loss: 8.8304
+epoch:  25 cluster loss: 4.4742 recon loss: 10.7687 ALL loss: 7.6215
+epoch:  30 cluster loss: 3.5930 recon loss: 9.4120 ALL loss: 6.5025
+epoch:  35 cluster loss: 3.0811 recon loss: 8.9537 ALL loss: 6.0174
+epoch:  40 cluster loss: 2.7532 recon loss: 8.1896 ALL loss: 5.4714
+epoch:  45 cluster loss: 2.4668 recon loss: 7.4295 ALL loss: 4.9482
+post matching 2 outliers
+author, pub count: 466, time use: 0.10 min
+trainning: takashi_nakamura
+epoch:   0 cluster loss: 48.9458 recon loss: 28.9056 ALL loss: 38.9257
+epoch:   5 cluster loss: 24.7027 recon loss: 24.9730 ALL loss: 24.8378
+epoch:  10 cluster loss: 13.2607 recon loss: 19.6944 ALL loss: 16.4776
+epoch:  15 cluster loss: 7.9639 recon loss: 15.5844 ALL loss: 11.7741
+epoch:  20 cluster loss: 6.1070 recon loss: 11.8106 ALL loss: 8.9588
+epoch:  25 cluster loss: 4.7073 recon loss: 9.5284 ALL loss: 7.1179
+epoch:  30 cluster loss: 3.8608 recon loss: 7.7182 ALL loss: 5.7895
+epoch:  35 cluster loss: 3.3155 recon loss: 6.2499 ALL loss: 4.7827
+epoch:  40 cluster loss: 2.8655 recon loss: 5.4410 ALL loss: 4.1533
+epoch:  45 cluster loss: 2.9717 recon loss: 4.6811 ALL loss: 3.8264
+post matching 0 outliers
+author, pub count: 1767, time use: 1.63 min
+trainning: feng_chen
+epoch:   0 cluster loss: 63.7081 recon loss: 19.3787 ALL loss: 41.5434
+epoch:   5 cluster loss: 34.0672 recon loss: 16.3675 ALL loss: 25.2174
+epoch:  10 cluster loss: 21.3692 recon loss: 14.0349 ALL loss: 17.7021
+epoch:  15 cluster loss: 14.1751 recon loss: 12.8188 ALL loss: 13.4969
+epoch:  20 cluster loss: 9.9438 recon loss: 11.2568 ALL loss: 10.6003
+epoch:  25 cluster loss: 7.4711 recon loss: 9.3765 ALL loss: 8.4238
+epoch:  30 cluster loss: 5.9677 recon loss: 8.0435 ALL loss: 7.0056
+epoch:  35 cluster loss: 4.9248 recon loss: 7.0786 ALL loss: 6.0017
+epoch:  40 cluster loss: 4.3078 recon loss: 6.4425 ALL loss: 5.3751
+epoch:  45 cluster loss: 3.7164 recon loss: 5.8003 ALL loss: 4.7583
+post matching 0 outliers
+author, pub count: 1626, time use: 1.11 min
+trainning: xianhong_wang
+epoch:   0 cluster loss: 16.0858 recon loss: 25.7838 ALL loss: 20.9348
+epoch:   5 cluster loss: 7.3550 recon loss: 25.8040 ALL loss: 16.5795
+epoch:  10 cluster loss: 4.1988 recon loss: 22.6266 ALL loss: 13.4127
+epoch:  15 cluster loss: 1.9047 recon loss: 20.2693 ALL loss: 11.0870
+epoch:  20 cluster loss: 1.8601 recon loss: 19.1432 ALL loss: 10.5017
+epoch:  25 cluster loss: 1.2490 recon loss: 18.6264 ALL loss: 9.9377
+epoch:  30 cluster loss: 0.8672 recon loss: 18.7169 ALL loss: 9.7921
+epoch:  35 cluster loss: 0.8102 recon loss: 18.5455 ALL loss: 9.6778
+epoch:  40 cluster loss: 0.5711 recon loss: 18.6302 ALL loss: 9.6007
+epoch:  45 cluster loss: 0.6969 recon loss: 18.6899 ALL loss: 9.6934
+post matching 0 outliers
+author, pub count: 334, time use: 0.36 min
+trainning: hua_cui
+epoch:   0 cluster loss: 24.8996 recon loss: 22.0957 ALL loss: 23.4977
+epoch:   5 cluster loss: 8.9362 recon loss: 21.9018 ALL loss: 15.4190
+epoch:  10 cluster loss: 2.2346 recon loss: 22.0059 ALL loss: 12.1202
+epoch:  15 cluster loss: 1.5858 recon loss: 19.6733 ALL loss: 10.6296
+epoch:  20 cluster loss: 1.2639 recon loss: 16.4378 ALL loss: 8.8508
+epoch:  25 cluster loss: 0.7114 recon loss: 13.4185 ALL loss: 7.0649
+epoch:  30 cluster loss: 1.1075 recon loss: 11.7667 ALL loss: 6.4371
+epoch:  35 cluster loss: 0.5401 recon loss: 10.8765 ALL loss: 5.7083
+epoch:  40 cluster loss: 1.2035 recon loss: 10.3883 ALL loss: 5.7959
+epoch:  45 cluster loss: 0.5963 recon loss: 10.4075 ALL loss: 5.5019
+post matching 0 outliers
+author, pub count: 287, time use: 0.07 min
+trainning: akira_yamada
+epoch:   0 cluster loss: 31.3639 recon loss: 15.4858 ALL loss: 23.4248
+epoch:   5 cluster loss: 24.4470 recon loss: 14.5950 ALL loss: 19.5210
+epoch:  10 cluster loss: 13.4404 recon loss: 13.7349 ALL loss: 13.5877
+epoch:  15 cluster loss: 8.2663 recon loss: 12.3829 ALL loss: 10.3246
+epoch:  20 cluster loss: 5.3307 recon loss: 10.9222 ALL loss: 8.1264
+epoch:  25 cluster loss: 3.6741 recon loss: 10.1706 ALL loss: 6.9224
+epoch:  30 cluster loss: 2.7579 recon loss: 9.5103 ALL loss: 6.1341
+epoch:  35 cluster loss: 2.1526 recon loss: 8.2183 ALL loss: 5.1854
+epoch:  40 cluster loss: 1.9208 recon loss: 7.4465 ALL loss: 4.6836
+epoch:  45 cluster loss: 1.6447 recon loss: 6.8595 ALL loss: 4.2521
+post matching 0 outliers
+author, pub count: 852, time use: 0.91 min
+trainning: chao_zhang
+epoch:   0 cluster loss: 70.9319 recon loss: 22.6644 ALL loss: 46.7981
+epoch:   5 cluster loss: 39.0165 recon loss: 19.2666 ALL loss: 29.1415
+epoch:  10 cluster loss: 24.3957 recon loss: 16.5812 ALL loss: 20.4884
+epoch:  15 cluster loss: 16.8047 recon loss: 14.5131 ALL loss: 15.6589
+epoch:  20 cluster loss: 12.2409 recon loss: 12.8789 ALL loss: 12.5599
+epoch:  25 cluster loss: 9.2896 recon loss: 11.6546 ALL loss: 10.4721
+epoch:  30 cluster loss: 7.3334 recon loss: 10.7217 ALL loss: 9.0275
+epoch:  35 cluster loss: 5.9872 recon loss: 9.5012 ALL loss: 7.7442
+epoch:  40 cluster loss: 5.2817 recon loss: 9.0258 ALL loss: 7.1537
+epoch:  45 cluster loss: 4.6475 recon loss: 7.9447 ALL loss: 6.2961
+post matching 0 outliers
+author, pub count: 1074, time use: 0.27 min
+trainning: kentaro_shimizu
+epoch:   0 cluster loss: 12.0674 recon loss: 25.1690 ALL loss: 18.6182
+epoch:   5 cluster loss: 3.4371 recon loss: 21.1920 ALL loss: 12.3146
+epoch:  10 cluster loss: 2.2126 recon loss: 19.8473 ALL loss: 11.0299
+epoch:  15 cluster loss: 0.8429 recon loss: 15.9586 ALL loss: 8.4007
+epoch:  20 cluster loss: 0.6937 recon loss: 15.0392 ALL loss: 7.8664
+epoch:  25 cluster loss: 0.5511 recon loss: 14.0532 ALL loss: 7.3022
+epoch:  30 cluster loss: 0.3963 recon loss: 12.4378 ALL loss: 6.4171
+epoch:  35 cluster loss: 0.4558 recon loss: 10.8296 ALL loss: 5.6427
+epoch:  40 cluster loss: 0.3621 recon loss: 10.1593 ALL loss: 5.2607
+epoch:  45 cluster loss: 0.5140 recon loss: 5.6458 ALL loss: 3.0799
+post matching 0 outliers
+author, pub count: 290, time use: 0.26 min
+trainning: li_chen
+epoch:   0 cluster loss: 47.3638 recon loss: 17.5050 ALL loss: 32.4344
+epoch:   5 cluster loss: 26.3727 recon loss: 15.1298 ALL loss: 20.7513
+epoch:  10 cluster loss: 16.7431 recon loss: 13.4923 ALL loss: 15.1177
+epoch:  15 cluster loss: 10.9529 recon loss: 12.0080 ALL loss: 11.4805
+epoch:  20 cluster loss: 8.2279 recon loss: 10.5202 ALL loss: 9.3741
+epoch:  25 cluster loss: 5.6706 recon loss: 9.2275 ALL loss: 7.4490
+epoch:  30 cluster loss: 4.4561 recon loss: 8.1299 ALL loss: 6.2930
+epoch:  35 cluster loss: 3.7886 recon loss: 7.3740 ALL loss: 5.5813
+epoch:  40 cluster loss: 3.2400 recon loss: 6.8657 ALL loss: 5.0529
+epoch:  45 cluster loss: 2.9238 recon loss: 6.2115 ALL loss: 4.5676
+post matching 0 outliers
+author, pub count: 962, time use: 0.28 min
+trainning: xiaojie_xu
+epoch:   0 cluster loss: 25.0243 recon loss: 31.3640 ALL loss: 28.1942
+epoch:   5 cluster loss: 9.3959 recon loss: 24.6015 ALL loss: 16.9987
+epoch:  10 cluster loss: 6.1834 recon loss: 18.0029 ALL loss: 12.0932
+epoch:  15 cluster loss: 3.6305 recon loss: 14.5233 ALL loss: 9.0769
+epoch:  20 cluster loss: 2.4811 recon loss: 13.3445 ALL loss: 7.9128
+epoch:  25 cluster loss: 1.6775 recon loss: 12.7040 ALL loss: 7.1907
+epoch:  30 cluster loss: 1.3573 recon loss: 11.3246 ALL loss: 6.3410
+epoch:  35 cluster loss: 1.1956 recon loss: 9.9379 ALL loss: 5.5668
+epoch:  40 cluster loss: 0.8016 recon loss: 9.3885 ALL loss: 5.0951
+epoch:  45 cluster loss: 0.8682 recon loss: 8.5028 ALL loss: 4.6855
+post matching 0 outliers
+author, pub count: 263, time use: 0.11 min
+trainning: hongxia_ma
+epoch:   0 cluster loss: 34.6796 recon loss: 27.4471 ALL loss: 31.0634
+epoch:   5 cluster loss: 13.6566 recon loss: 25.5830 ALL loss: 19.6198
+epoch:  10 cluster loss: 5.4817 recon loss: 24.9481 ALL loss: 15.2149
+epoch:  15 cluster loss: 3.6433 recon loss: 19.9894 ALL loss: 11.8164
+epoch:  20 cluster loss: 2.8409 recon loss: 15.3235 ALL loss: 9.0822
+epoch:  25 cluster loss: 2.1927 recon loss: 12.7915 ALL loss: 7.4921
+epoch:  30 cluster loss: 1.8317 recon loss: 10.6035 ALL loss: 6.2176
+epoch:  35 cluster loss: 1.4080 recon loss: 9.6432 ALL loss: 5.5256
+epoch:  40 cluster loss: 1.2995 recon loss: 8.5648 ALL loss: 4.9321
+epoch:  45 cluster loss: 1.3464 recon loss: 8.0216 ALL loss: 4.6840
+post matching 0 outliers
+author, pub count: 412, time use: 0.49 min
+trainning: yingqi_zhang
+epoch:   0 cluster loss: 18.1482 recon loss: 20.2794 ALL loss: 19.2138
+epoch:   5 cluster loss: 9.2443 recon loss: 15.9164 ALL loss: 12.5804
+epoch:  10 cluster loss: 5.1338 recon loss: 14.7977 ALL loss: 9.9657
+epoch:  15 cluster loss: 2.4959 recon loss: 13.6364 ALL loss: 8.0662
+epoch:  20 cluster loss: 1.2060 recon loss: 13.3581 ALL loss: 7.2821
+epoch:  25 cluster loss: 1.0281 recon loss: 12.7858 ALL loss: 6.9070
+epoch:  30 cluster loss: 0.6740 recon loss: 12.7741 ALL loss: 6.7241
+epoch:  35 cluster loss: 0.5604 recon loss: 12.0284 ALL loss: 6.2944
+epoch:  40 cluster loss: 0.5145 recon loss: 12.0315 ALL loss: 6.2730
+epoch:  45 cluster loss: 0.5695 recon loss: 11.6818 ALL loss: 6.1256
+post matching 0 outliers
+author, pub count: 265, time use: 0.08 min
+trainning: liuqin_chen
+epoch:   0 cluster loss: 32.2118 recon loss: 31.6076 ALL loss: 31.9097
+epoch:   5 cluster loss: 15.0311 recon loss: 31.4581 ALL loss: 23.2446
+epoch:  10 cluster loss: 5.7763 recon loss: 30.9886 ALL loss: 18.3824
+epoch:  15 cluster loss: 1.1922 recon loss: 30.9973 ALL loss: 16.0947
+epoch:  20 cluster loss: 1.2583 recon loss: 30.9878 ALL loss: 16.1230
+epoch:  25 cluster loss: 0.8084 recon loss: 30.9880 ALL loss: 15.8982
+epoch:  30 cluster loss: 0.9037 recon loss: 30.9733 ALL loss: 15.9385
+epoch:  35 cluster loss: 0.7380 recon loss: 30.9879 ALL loss: 15.8629
+epoch:  40 cluster loss: 0.6340 recon loss: 30.9905 ALL loss: 15.8122
+epoch:  45 cluster loss: 0.6521 recon loss: 30.9877 ALL loss: 15.8199
+post matching 0 outliers
+author, pub count: 229, time use: 0.27 min
+trainning: xiaohua_hu
+epoch:   0 cluster loss: 11.9554 recon loss: 31.7049 ALL loss: 21.8301
+epoch:   5 cluster loss: 4.3996 recon loss: 30.8946 ALL loss: 17.6471
+epoch:  10 cluster loss: 2.7254 recon loss: 30.5141 ALL loss: 16.6197
+epoch:  15 cluster loss: 1.3601 recon loss: 30.3546 ALL loss: 15.8574
+epoch:  20 cluster loss: 1.1026 recon loss: 28.9159 ALL loss: 15.0092
+epoch:  25 cluster loss: 0.9365 recon loss: 29.3099 ALL loss: 15.1232
+epoch:  30 cluster loss: 0.8207 recon loss: 28.2722 ALL loss: 14.5465
+epoch:  35 cluster loss: 1.0875 recon loss: 27.7151 ALL loss: 14.4013
+epoch:  40 cluster loss: 0.6353 recon loss: 27.3699 ALL loss: 14.0026
+epoch:  45 cluster loss: 0.5802 recon loss: 27.5353 ALL loss: 14.0577
+post matching 0 outliers
+author, pub count: 295, time use: 0.12 min
+trainning: jong-seok_lee
+epoch:   0 cluster loss: 2.4659 recon loss: 34.5388 ALL loss: 18.5023
+epoch:   5 cluster loss: 0.8675 recon loss: 27.9360 ALL loss: 14.4017
+epoch:  10 cluster loss: 0.3945 recon loss: 27.0799 ALL loss: 13.7372
+epoch:  15 cluster loss: 0.0100 recon loss: 9.9457 ALL loss: 4.9778
+epoch:  20 cluster loss: 0.0201 recon loss: 0.4640 ALL loss: 0.2420
+epoch:  25 cluster loss: 0.5151 recon loss: 0.6730 ALL loss: 0.5941
+epoch:  30 cluster loss: 0.2045 recon loss: 0.1588 ALL loss: 0.1817
+epoch:  35 cluster loss: 0.2435 recon loss: 0.5786 ALL loss: 0.4110
+epoch:  40 cluster loss: 0.0449 recon loss: 1.1165 ALL loss: 0.5807
+epoch:  45 cluster loss: 0.1966 recon loss: 0.3510 ALL loss: 0.2738
+post matching 0 outliers
+author, pub count: 110, time use: 0.06 min
+trainning: jingyang_wang
+epoch:   0 cluster loss: 35.9719 recon loss: 31.4605 ALL loss: 33.7162
+epoch:   5 cluster loss: 15.3824 recon loss: 25.3604 ALL loss: 20.3714
+epoch:  10 cluster loss: 8.8622 recon loss: 20.6137 ALL loss: 14.7379
+epoch:  15 cluster loss: 4.7362 recon loss: 19.5359 ALL loss: 12.1360
+epoch:  20 cluster loss: 3.0774 recon loss: 18.7155 ALL loss: 10.8965
+epoch:  25 cluster loss: 2.3838 recon loss: 18.5305 ALL loss: 10.4572
+epoch:  30 cluster loss: 1.6909 recon loss: 17.9884 ALL loss: 9.8397
+epoch:  35 cluster loss: 1.3799 recon loss: 17.6363 ALL loss: 9.5081
+epoch:  40 cluster loss: 1.3102 recon loss: 17.5519 ALL loss: 9.4311
+epoch:  45 cluster loss: 1.0211 recon loss: 17.5227 ALL loss: 9.2719
+post matching 0 outliers
+author, pub count: 362, time use: 0.33 min
+trainning: yongdong_zhang
+epoch:   0 cluster loss: 13.7489 recon loss: 32.1594 ALL loss: 22.9542
+epoch:   5 cluster loss: 1.5071 recon loss: 27.4919 ALL loss: 14.4995
+epoch:  10 cluster loss: 1.3922 recon loss: 24.2534 ALL loss: 12.8228
+epoch:  15 cluster loss: 1.2413 recon loss: 23.4856 ALL loss: 12.3634
+epoch:  20 cluster loss: 1.0877 recon loss: 23.4651 ALL loss: 12.2764
+epoch:  25 cluster loss: 1.0454 recon loss: 23.4099 ALL loss: 12.2277
+epoch:  30 cluster loss: 0.8884 recon loss: 23.4058 ALL loss: 12.1471
+epoch:  35 cluster loss: 0.6403 recon loss: 23.3118 ALL loss: 11.9761
+epoch:  40 cluster loss: 0.6817 recon loss: 23.2546 ALL loss: 11.9681
+epoch:  45 cluster loss: 0.5229 recon loss: 23.2076 ALL loss: 11.8653
+post matching 0 outliers
+author, pub count: 423, time use: 0.52 min
+trainning: wenquan_wang
+epoch:   0 cluster loss: 35.7565 recon loss: 24.1626 ALL loss: 29.9595
+epoch:   5 cluster loss: 17.9089 recon loss: 20.5493 ALL loss: 19.2291
+epoch:  10 cluster loss: 9.6392 recon loss: 18.1307 ALL loss: 13.8849
+epoch:  15 cluster loss: 4.7950 recon loss: 16.5367 ALL loss: 10.6658
+epoch:  20 cluster loss: 3.1550 recon loss: 14.8351 ALL loss: 8.9951
+epoch:  25 cluster loss: 2.3842 recon loss: 12.7766 ALL loss: 7.5804
+epoch:  30 cluster loss: 1.9901 recon loss: 11.0920 ALL loss: 6.5411
+epoch:  35 cluster loss: 2.0832 recon loss: 10.1024 ALL loss: 6.0928
+epoch:  40 cluster loss: 1.9228 recon loss: 8.6683 ALL loss: 5.2956
+epoch:  45 cluster loss: 1.9234 recon loss: 8.4996 ALL loss: 5.2115
+post matching 0 outliers
+author, pub count: 444, time use: 0.13 min
+trainning: jie_du
+epoch:   0 cluster loss: 21.8087 recon loss: 18.5630 ALL loss: 20.1859
+epoch:   5 cluster loss: 10.0689 recon loss: 14.6861 ALL loss: 12.3775
+epoch:  10 cluster loss: 5.7741 recon loss: 13.5293 ALL loss: 9.6517
+epoch:  15 cluster loss: 3.4585 recon loss: 11.6821 ALL loss: 7.5703
+epoch:  20 cluster loss: 2.6548 recon loss: 11.0233 ALL loss: 6.8390
+epoch:  25 cluster loss: 1.6971 recon loss: 9.6786 ALL loss: 5.6879
+epoch:  30 cluster loss: 1.9555 recon loss: 9.5768 ALL loss: 5.7661
+epoch:  35 cluster loss: 1.2837 recon loss: 9.1058 ALL loss: 5.1948
+epoch:  40 cluster loss: 1.0960 recon loss: 8.5329 ALL loss: 4.8145
+epoch:  45 cluster loss: 1.0619 recon loss: 8.6152 ALL loss: 4.8386
+post matching 0 outliers
+author, pub count: 257, time use: 0.05 min
+trainning: xiang_gao
+epoch:   0 cluster loss: 69.6747 recon loss: 26.2383 ALL loss: 47.9565
+epoch:   5 cluster loss: 35.2538 recon loss: 23.5252 ALL loss: 29.3895
+epoch:  10 cluster loss: 20.1010 recon loss: 20.7990 ALL loss: 20.4500
+epoch:  15 cluster loss: 12.8329 recon loss: 18.3840 ALL loss: 15.6085
+epoch:  20 cluster loss: 9.8366 recon loss: 16.1957 ALL loss: 13.0162
+epoch:  25 cluster loss: 7.7868 recon loss: 14.6785 ALL loss: 11.2327
+epoch:  30 cluster loss: 6.2037 recon loss: 13.7292 ALL loss: 9.9664
+epoch:  35 cluster loss: 5.3223 recon loss: 12.7568 ALL loss: 9.0396
+epoch:  40 cluster loss: 4.5276 recon loss: 11.5976 ALL loss: 8.0626
+epoch:  45 cluster loss: 3.8976 recon loss: 9.9925 ALL loss: 6.9451
+post matching 1 outliers
+author, pub count: 814, time use: 0.37 min
+trainning: xiaowen_li
+epoch:   0 cluster loss: 68.4092 recon loss: 30.4358 ALL loss: 49.4225
+epoch:   5 cluster loss: 30.5442 recon loss: 27.7655 ALL loss: 29.1549
+epoch:  10 cluster loss: 14.3941 recon loss: 25.5060 ALL loss: 19.9500
+epoch:  15 cluster loss: 8.4487 recon loss: 21.5564 ALL loss: 15.0025
+epoch:  20 cluster loss: 6.4735 recon loss: 19.4833 ALL loss: 12.9784
+epoch:  25 cluster loss: 5.9646 recon loss: 17.3654 ALL loss: 11.6650
+epoch:  30 cluster loss: 4.9701 recon loss: 15.2810 ALL loss: 10.1256
+epoch:  35 cluster loss: 4.6166 recon loss: 13.3796 ALL loss: 8.9981
+epoch:  40 cluster loss: 4.0326 recon loss: 12.1256 ALL loss: 8.0791
+epoch:  45 cluster loss: 3.4250 recon loss: 10.8039 ALL loss: 7.1144
+post matching 0 outliers
+author, pub count: 676, time use: 0.28 min
+trainning: jiyan_liu
+epoch:   0 cluster loss: 12.8232 recon loss: 16.0301 ALL loss: 14.4267
+epoch:   5 cluster loss: 6.5158 recon loss: 13.6043 ALL loss: 10.0600
+epoch:  10 cluster loss: 3.0479 recon loss: 10.7349 ALL loss: 6.8914
+epoch:  15 cluster loss: 2.1187 recon loss: 9.2532 ALL loss: 5.6859
+epoch:  20 cluster loss: 1.7892 recon loss: 8.8112 ALL loss: 5.3002
+epoch:  25 cluster loss: 2.5170 recon loss: 7.8809 ALL loss: 5.1989
+epoch:  30 cluster loss: 1.0787 recon loss: 7.9062 ALL loss: 4.4924
+epoch:  35 cluster loss: 1.4265 recon loss: 7.4407 ALL loss: 4.4336
+epoch:  40 cluster loss: 1.1710 recon loss: 7.1745 ALL loss: 4.1728
+epoch:  45 cluster loss: 0.6753 recon loss: 6.9620 ALL loss: 3.8187
+post matching 0 outliers
+author, pub count: 329, time use: 0.09 min
+trainning: yadong_huang
+epoch:   0 cluster loss: 21.2783 recon loss: 28.1942 ALL loss: 24.7362
+epoch:   5 cluster loss: 8.9231 recon loss: 26.5848 ALL loss: 17.7540
+epoch:  10 cluster loss: 2.2508 recon loss: 24.6234 ALL loss: 13.4371
+epoch:  15 cluster loss: 1.1276 recon loss: 22.4721 ALL loss: 11.7999
+epoch:  20 cluster loss: 0.8860 recon loss: 21.4330 ALL loss: 11.1595
+epoch:  25 cluster loss: 0.6895 recon loss: 20.7948 ALL loss: 10.7422
+epoch:  30 cluster loss: 0.7994 recon loss: 18.8494 ALL loss: 9.8244
+epoch:  35 cluster loss: 0.7182 recon loss: 15.2257 ALL loss: 7.9720
+epoch:  40 cluster loss: 0.5660 recon loss: 12.0790 ALL loss: 6.3225
+epoch:  45 cluster loss: 0.9389 recon loss: 11.0325 ALL loss: 5.9857
+post matching 0 outliers
+author, pub count: 253, time use: 0.08 min
+trainning: jianhua_qin
+epoch:   0 cluster loss: 13.4345 recon loss: 22.9937 ALL loss: 18.2141
+epoch:   5 cluster loss: 3.6805 recon loss: 14.7207 ALL loss: 9.2006
+epoch:  10 cluster loss: 1.6389 recon loss: 11.3203 ALL loss: 6.4796
+epoch:  15 cluster loss: 1.3265 recon loss: 9.5778 ALL loss: 5.4521
+epoch:  20 cluster loss: 1.1319 recon loss: 8.4274 ALL loss: 4.7797
+epoch:  25 cluster loss: 1.0217 recon loss: 8.4514 ALL loss: 4.7366
+epoch:  30 cluster loss: 0.6248 recon loss: 8.0313 ALL loss: 4.3281
+epoch:  35 cluster loss: 0.4939 recon loss: 7.8281 ALL loss: 4.1610
+epoch:  40 cluster loss: 0.6867 recon loss: 7.4528 ALL loss: 4.0698
+epoch:  45 cluster loss: 0.6629 recon loss: 7.4109 ALL loss: 4.0369
+post matching 1 outliers
+author, pub count: 325, time use: 0.17 min
+trainning: xiu-li_wang
+epoch:   0 cluster loss: 20.9255 recon loss: 24.4735 ALL loss: 22.6995
+epoch:   5 cluster loss: 0.7568 recon loss: 9.0714 ALL loss: 4.9141
+epoch:  10 cluster loss: 0.0000 recon loss: 3.0289 ALL loss: 1.5144
+epoch:  15 cluster loss: 0.0000 recon loss: 1.7249 ALL loss: 0.8625
+epoch:  20 cluster loss: 0.0000 recon loss: 1.7120 ALL loss: 0.8560
+epoch:  25 cluster loss: 0.0000 recon loss: 1.7237 ALL loss: 0.8618
+epoch:  30 cluster loss: 0.0000 recon loss: 1.7325 ALL loss: 0.8662
+epoch:  35 cluster loss: 0.0000 recon loss: 1.7355 ALL loss: 0.8678
+epoch:  40 cluster loss: 0.0000 recon loss: 1.7381 ALL loss: 0.8690
+epoch:  45 cluster loss: 0.0000 recon loss: 1.7417 ALL loss: 0.8708
+post matching 0 outliers
+author, pub count: 1212, time use: 7.16 min
+trainning: jianhua_gao
+epoch:   0 cluster loss: 42.3663 recon loss: 24.5387 ALL loss: 33.4525
+epoch:   5 cluster loss: 21.8721 recon loss: 19.7146 ALL loss: 20.7933
+epoch:  10 cluster loss: 12.4107 recon loss: 17.7230 ALL loss: 15.0668
+epoch:  15 cluster loss: 8.3308 recon loss: 15.3605 ALL loss: 11.8456
+epoch:  20 cluster loss: 5.5991 recon loss: 13.5623 ALL loss: 9.5807
+epoch:  25 cluster loss: 4.5464 recon loss: 12.9435 ALL loss: 8.7449
+epoch:  30 cluster loss: 3.9981 recon loss: 11.5054 ALL loss: 7.7518
+epoch:  35 cluster loss: 3.0639 recon loss: 10.4791 ALL loss: 6.7715
+epoch:  40 cluster loss: 2.4811 recon loss: 9.7649 ALL loss: 6.1230
+epoch:  45 cluster loss: 2.0904 recon loss: 9.4084 ALL loss: 5.7494
+post matching 0 outliers
+author, pub count: 432, time use: 0.16 min
+trainning: yahong_zhang
+epoch:   0 cluster loss: 30.4874 recon loss: 21.8986 ALL loss: 26.1930
+epoch:   5 cluster loss: 14.1788 recon loss: 18.5050 ALL loss: 16.3419
+epoch:  10 cluster loss: 8.0774 recon loss: 14.5612 ALL loss: 11.3193
+epoch:  15 cluster loss: 5.1941 recon loss: 13.1498 ALL loss: 9.1720
+epoch:  20 cluster loss: 3.4202 recon loss: 12.2194 ALL loss: 7.8198
+epoch:  25 cluster loss: 2.2825 recon loss: 11.3994 ALL loss: 6.8410
+epoch:  30 cluster loss: 1.9137 recon loss: 10.6406 ALL loss: 6.2771
+epoch:  35 cluster loss: 1.5006 recon loss: 10.4976 ALL loss: 5.9991
+epoch:  40 cluster loss: 1.2338 recon loss: 10.1281 ALL loss: 5.6810
+epoch:  45 cluster loss: 1.1830 recon loss: 9.4587 ALL loss: 5.3209
+post matching 0 outliers
+author, pub count: 276, time use: 0.20 min
+trainning: roberto_chiesa
+epoch:   0 cluster loss: 10.1940 recon loss: 27.6427 ALL loss: 18.9183
+epoch:   5 cluster loss: 1.4243 recon loss: 19.7082 ALL loss: 10.5663
+epoch:  10 cluster loss: 0.2237 recon loss: 16.6743 ALL loss: 8.4490
+epoch:  15 cluster loss: 0.1653 recon loss: 15.6682 ALL loss: 7.9168
+epoch:  20 cluster loss: 0.0977 recon loss: 15.5015 ALL loss: 7.7996
+epoch:  25 cluster loss: 0.0884 recon loss: 15.4948 ALL loss: 7.7916
+epoch:  30 cluster loss: 0.0716 recon loss: 15.4556 ALL loss: 7.7636
+epoch:  35 cluster loss: 0.0716 recon loss: 15.5814 ALL loss: 7.8265
+epoch:  40 cluster loss: 0.8539 recon loss: 15.5192 ALL loss: 8.1866
+epoch:  45 cluster loss: 0.7293 recon loss: 15.5137 ALL loss: 8.1215
+post matching 0 outliers
+author, pub count: 328, time use: 0.43 min
+trainning: klaus_jung
+epoch:   0 cluster loss: 10.2024 recon loss: 34.3488 ALL loss: 22.2756
+epoch:   5 cluster loss: 2.9857 recon loss: 34.2303 ALL loss: 18.6080
+epoch:  10 cluster loss: 3.6648 recon loss: 32.6552 ALL loss: 18.1600
+epoch:  15 cluster loss: 1.3417 recon loss: 30.6509 ALL loss: 15.9963
+epoch:  20 cluster loss: 0.2630 recon loss: 28.9089 ALL loss: 14.5859
+epoch:  25 cluster loss: 0.3938 recon loss: 27.4610 ALL loss: 13.9274
+epoch:  30 cluster loss: 0.3796 recon loss: 24.3423 ALL loss: 12.3610
+epoch:  35 cluster loss: 0.5350 recon loss: 22.7217 ALL loss: 11.6283
+epoch:  40 cluster loss: 0.5750 recon loss: 20.9024 ALL loss: 10.7387
+epoch:  45 cluster loss: 0.6266 recon loss: 18.0335 ALL loss: 9.3301
+post matching 0 outliers
+author, pub count: 325, time use: 0.34 min
+trainning: fuhai_li
+epoch:   0 cluster loss: 27.5944 recon loss: 25.1741 ALL loss: 26.3842
+epoch:   5 cluster loss: 11.9863 recon loss: 22.9437 ALL loss: 17.4650
+epoch:  10 cluster loss: 6.3119 recon loss: 17.0256 ALL loss: 11.6687
+epoch:  15 cluster loss: 4.8737 recon loss: 13.3735 ALL loss: 9.1236
+epoch:  20 cluster loss: 3.5645 recon loss: 10.4704 ALL loss: 7.0174
+epoch:  25 cluster loss: 2.9091 recon loss: 9.1296 ALL loss: 6.0193
+epoch:  30 cluster loss: 3.5401 recon loss: 8.4220 ALL loss: 5.9810
+epoch:  35 cluster loss: 3.0172 recon loss: 7.2688 ALL loss: 5.1430
+epoch:  40 cluster loss: 2.5175 recon loss: 7.2151 ALL loss: 4.8663
+epoch:  45 cluster loss: 2.1672 recon loss: 6.4261 ALL loss: 4.2966
+post matching 0 outliers
+author, pub count: 225, time use: 0.05 min
+trainning: ulrike_schmidt
+epoch:   0 cluster loss: 16.4145 recon loss: 34.5346 ALL loss: 25.4746
+epoch:   5 cluster loss: 4.2649 recon loss: 31.9386 ALL loss: 18.1017
+epoch:  10 cluster loss: 2.1764 recon loss: 26.2133 ALL loss: 14.1948
+epoch:  15 cluster loss: 1.8006 recon loss: 22.5132 ALL loss: 12.1569
+epoch:  20 cluster loss: 1.7997 recon loss: 21.0797 ALL loss: 11.4397
+epoch:  25 cluster loss: 1.7471 recon loss: 20.4188 ALL loss: 11.0829
+epoch:  30 cluster loss: 1.5781 recon loss: 19.8752 ALL loss: 10.7267
+epoch:  35 cluster loss: 2.1080 recon loss: 18.1759 ALL loss: 10.1420
+epoch:  40 cluster loss: 1.3529 recon loss: 17.3419 ALL loss: 9.3474
+epoch:  45 cluster loss: 1.1772 recon loss: 17.0739 ALL loss: 9.1255
+post matching 0 outliers
+author, pub count: 334, time use: 0.23 min
+trainning: ye_yuan
+epoch:   0 cluster loss: 45.9726 recon loss: 23.3432 ALL loss: 34.6579
+epoch:   5 cluster loss: 23.4500 recon loss: 18.7408 ALL loss: 21.0954
+epoch:  10 cluster loss: 14.2127 recon loss: 16.4629 ALL loss: 15.3378
+epoch:  15 cluster loss: 8.9812 recon loss: 15.5230 ALL loss: 12.2521
+epoch:  20 cluster loss: 6.2300 recon loss: 14.2476 ALL loss: 10.2388
+epoch:  25 cluster loss: 4.8086 recon loss: 13.4086 ALL loss: 9.1086
+epoch:  30 cluster loss: 3.7689 recon loss: 12.6134 ALL loss: 8.1912
+epoch:  35 cluster loss: 3.1110 recon loss: 12.0398 ALL loss: 7.5754
+epoch:  40 cluster loss: 2.6401 recon loss: 11.2944 ALL loss: 6.9673
+epoch:  45 cluster loss: 2.3084 recon loss: 10.2953 ALL loss: 6.3018
+post matching 0 outliers
+author, pub count: 420, time use: 0.08 min
+trainning: hiroshi_miyamoto
+epoch:   0 cluster loss: 22.3696 recon loss: 28.0739 ALL loss: 25.2217
+epoch:   5 cluster loss: 14.3579 recon loss: 27.2852 ALL loss: 20.8215
+epoch:  10 cluster loss: 6.8684 recon loss: 23.3983 ALL loss: 15.1333
+epoch:  15 cluster loss: 13.0616 recon loss: 20.9937 ALL loss: 17.0277
+epoch:  20 cluster loss: 7.7691 recon loss: 20.3998 ALL loss: 14.0844
+epoch:  25 cluster loss: 4.1532 recon loss: 17.3065 ALL loss: 10.7299
+epoch:  30 cluster loss: 2.7098 recon loss: 16.3465 ALL loss: 9.5281
+epoch:  35 cluster loss: 2.1778 recon loss: 14.9852 ALL loss: 8.5815
+epoch:  40 cluster loss: 1.8417 recon loss: 14.1532 ALL loss: 7.9975
+epoch:  45 cluster loss: 1.4393 recon loss: 13.2295 ALL loss: 7.3344
+post matching 0 outliers
+author, pub count: 501, time use: 0.20 min
+trainning: tao_yang
+epoch:   0 cluster loss: 93.5659 recon loss: 28.1918 ALL loss: 60.8789
+epoch:   5 cluster loss: 49.3591 recon loss: 23.9878 ALL loss: 36.6734
+epoch:  10 cluster loss: 28.5877 recon loss: 20.4823 ALL loss: 24.5350
+epoch:  15 cluster loss: 19.2608 recon loss: 18.0006 ALL loss: 18.6307
+epoch:  20 cluster loss: 14.3798 recon loss: 16.2671 ALL loss: 15.3235
+epoch:  25 cluster loss: 11.1752 recon loss: 14.3089 ALL loss: 12.7421
+epoch:  30 cluster loss: 9.1379 recon loss: 12.9359 ALL loss: 11.0369
+epoch:  35 cluster loss: 7.7185 recon loss: 11.7436 ALL loss: 9.7310
+epoch:  40 cluster loss: 6.6433 recon loss: 10.4488 ALL loss: 8.5460
+epoch:  45 cluster loss: 5.7768 recon loss: 9.7363 ALL loss: 7.7565
+post matching 0 outliers
+author, pub count: 1163, time use: 0.32 min
+trainning: akihiro_matsumoto
+epoch:   0 cluster loss: 30.2939 recon loss: 18.2661 ALL loss: 24.2800
+epoch:   5 cluster loss: 22.4777 recon loss: 15.0772 ALL loss: 18.7774
+epoch:  10 cluster loss: 13.2198 recon loss: 13.9422 ALL loss: 13.5810
+epoch:  15 cluster loss: 7.8410 recon loss: 13.6330 ALL loss: 10.7370
+epoch:  20 cluster loss: 3.9731 recon loss: 13.5632 ALL loss: 8.7681
+epoch:  25 cluster loss: 2.4462 recon loss: 13.5407 ALL loss: 7.9935
+epoch:  30 cluster loss: 2.7092 recon loss: 13.2346 ALL loss: 7.9719
+epoch:  35 cluster loss: 1.8200 recon loss: 13.2224 ALL loss: 7.5212
+epoch:  40 cluster loss: 1.6501 recon loss: 13.2509 ALL loss: 7.4505
+epoch:  45 cluster loss: 1.1696 recon loss: 13.1277 ALL loss: 7.1487
+post matching 1 outliers
+author, pub count: 414, time use: 0.24 min
+trainning: zhenjun_yang
+epoch:   0 cluster loss: 16.2417 recon loss: 17.9662 ALL loss: 17.1039
+epoch:   5 cluster loss: 6.9473 recon loss: 14.6411 ALL loss: 10.7942
+epoch:  10 cluster loss: 4.8981 recon loss: 14.0271 ALL loss: 9.4626
+epoch:  15 cluster loss: 3.3066 recon loss: 13.8175 ALL loss: 8.5620
+epoch:  20 cluster loss: 1.3591 recon loss: 14.0319 ALL loss: 7.6955
+epoch:  25 cluster loss: 0.9932 recon loss: 13.9186 ALL loss: 7.4559
+epoch:  30 cluster loss: 0.6872 recon loss: 13.4384 ALL loss: 7.0628
+epoch:  35 cluster loss: 0.5633 recon loss: 12.4089 ALL loss: 6.4861
+epoch:  40 cluster loss: 0.7446 recon loss: 12.6251 ALL loss: 6.6848
+epoch:  45 cluster loss: 0.5833 recon loss: 12.8397 ALL loss: 6.7115
+post matching 0 outliers
+author, pub count: 261, time use: 0.07 min
+trainning: lin_ding
+epoch:   0 cluster loss: 36.2931 recon loss: 21.7708 ALL loss: 29.0320
+epoch:   5 cluster loss: 14.8521 recon loss: 17.8041 ALL loss: 16.3281
+epoch:  10 cluster loss: 8.6181 recon loss: 15.3271 ALL loss: 11.9726
+epoch:  15 cluster loss: 6.7722 recon loss: 13.4176 ALL loss: 10.0949
+epoch:  20 cluster loss: 5.4348 recon loss: 12.1196 ALL loss: 8.7772
+epoch:  25 cluster loss: 4.4027 recon loss: 10.6845 ALL loss: 7.5436
+epoch:  30 cluster loss: 3.6120 recon loss: 9.7958 ALL loss: 6.7039
+epoch:  35 cluster loss: 3.4774 recon loss: 9.2152 ALL loss: 6.3463
+epoch:  40 cluster loss: 2.8960 recon loss: 8.5955 ALL loss: 5.7458
+epoch:  45 cluster loss: 2.4711 recon loss: 8.2708 ALL loss: 5.3710
+post matching 0 outliers
+author, pub count: 433, time use: 0.11 min
+trainning: yong_shi
+epoch:   0 cluster loss: 32.7845 recon loss: 30.7734 ALL loss: 31.7790
+epoch:   5 cluster loss: 13.4896 recon loss: 28.1709 ALL loss: 20.8302
+epoch:  10 cluster loss: 7.0040 recon loss: 23.6615 ALL loss: 15.3327
+epoch:  15 cluster loss: 4.9503 recon loss: 21.9003 ALL loss: 13.4253
+epoch:  20 cluster loss: 4.0056 recon loss: 19.6677 ALL loss: 11.8366
+epoch:  25 cluster loss: 3.5094 recon loss: 18.3098 ALL loss: 10.9096
+epoch:  30 cluster loss: 2.8281 recon loss: 16.7027 ALL loss: 9.7654
+epoch:  35 cluster loss: 2.7218 recon loss: 16.2134 ALL loss: 9.4676
+epoch:  40 cluster loss: 2.2794 recon loss: 15.4604 ALL loss: 8.8699
+epoch:  45 cluster loss: 2.4561 recon loss: 13.6443 ALL loss: 8.0502
+post matching 1 outliers
+author, pub count: 540, time use: 0.27 min
+trainning: xiaogang_wang
+epoch:   0 cluster loss: 46.8796 recon loss: 31.8338 ALL loss: 39.3567
+epoch:   5 cluster loss: 19.2035 recon loss: 28.6676 ALL loss: 23.9355
+epoch:  10 cluster loss: 9.9281 recon loss: 26.8196 ALL loss: 18.3738
+epoch:  15 cluster loss: 6.2176 recon loss: 24.0588 ALL loss: 15.1382
+epoch:  20 cluster loss: 5.1604 recon loss: 22.2037 ALL loss: 13.6820
+epoch:  25 cluster loss: 3.7062 recon loss: 20.5233 ALL loss: 12.1147
+epoch:  30 cluster loss: 3.5028 recon loss: 18.2156 ALL loss: 10.8592
+epoch:  35 cluster loss: 2.5303 recon loss: 15.7025 ALL loss: 9.1164
+epoch:  40 cluster loss: 2.1866 recon loss: 14.1639 ALL loss: 8.1752
+epoch:  45 cluster loss: 2.2956 recon loss: 11.1822 ALL loss: 6.7389
+post matching 0 outliers
+author, pub count: 294, time use: 0.05 min
+trainning: xiao-dong_luo
+epoch:   0 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:   5 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  10 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  15 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  20 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  25 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  30 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  35 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  40 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+epoch:  45 cluster loss: 0.0000 recon loss: 34.5388 ALL loss: 17.2694
+post matching 0 outliers
+author, pub count: 231, time use: 0.37 min
+trainning: takaaki_tanaka
+epoch:   0 cluster loss: 21.5986 recon loss: 16.5137 ALL loss: 19.0561
+epoch:   5 cluster loss: 12.5496 recon loss: 14.4221 ALL loss: 13.4858
+epoch:  10 cluster loss: 7.6888 recon loss: 13.1753 ALL loss: 10.4320
+epoch:  15 cluster loss: 5.0210 recon loss: 11.4018 ALL loss: 8.2114
+epoch:  20 cluster loss: 3.4093 recon loss: 10.6741 ALL loss: 7.0417
+epoch:  25 cluster loss: 2.4096 recon loss: 10.3918 ALL loss: 6.4007
+epoch:  30 cluster loss: 1.7961 recon loss: 9.8905 ALL loss: 5.8433
+epoch:  35 cluster loss: 1.5854 recon loss: 9.2724 ALL loss: 5.4289
+epoch:  40 cluster loss: 1.3991 recon loss: 9.0387 ALL loss: 5.2189
+epoch:  45 cluster loss: 1.2297 recon loss: 8.5712 ALL loss: 4.9005
+post matching 0 outliers
+author, pub count: 326, time use: 0.10 min
+trainning: jie_lu
+epoch:   0 cluster loss: 53.2904 recon loss: 23.5885 ALL loss: 38.4395
+epoch:   5 cluster loss: 29.7489 recon loss: 17.0971 ALL loss: 23.4230
+epoch:  10 cluster loss: 18.7711 recon loss: 13.9303 ALL loss: 16.3507
+epoch:  15 cluster loss: 12.7727 recon loss: 12.3994 ALL loss: 12.5861
+epoch:  20 cluster loss: 9.2216 recon loss: 11.2256 ALL loss: 10.2236
+epoch:  25 cluster loss: 7.3651 recon loss: 10.4841 ALL loss: 8.9246
+epoch:  30 cluster loss: 5.6128 recon loss: 10.0073 ALL loss: 7.8100
+epoch:  35 cluster loss: 4.8286 recon loss: 9.4899 ALL loss: 7.1592
+epoch:  40 cluster loss: 3.8132 recon loss: 8.6018 ALL loss: 6.2075
+epoch:  45 cluster loss: 3.2652 recon loss: 8.0974 ALL loss: 5.6813
+post matching 0 outliers
+author, pub count: 991, time use: 1.12 min
+trainning: rui_zhang
+epoch:   0 cluster loss: 68.1088 recon loss: 23.1400 ALL loss: 45.6244
+epoch:   5 cluster loss: 39.1613 recon loss: 19.0919 ALL loss: 29.1266
+epoch:  10 cluster loss: 23.7328 recon loss: 15.9901 ALL loss: 19.8615
+epoch:  15 cluster loss: 16.5095 recon loss: 14.2973 ALL loss: 15.4034
+epoch:  20 cluster loss: 12.2546 recon loss: 12.7106 ALL loss: 12.4826
+epoch:  25 cluster loss: 9.3507 recon loss: 11.5881 ALL loss: 10.4694
+epoch:  30 cluster loss: 7.5212 recon loss: 10.3126 ALL loss: 8.9169
+epoch:  35 cluster loss: 6.2964 recon loss: 9.9267 ALL loss: 8.1116
+epoch:  40 cluster loss: 5.4306 recon loss: 8.9570 ALL loss: 7.1938
+epoch:  45 cluster loss: 4.8406 recon loss: 8.1169 ALL loss: 6.4788
+post matching 0 outliers
+author, pub count: 816, time use: 0.13 min
+trainning: shulin_chen
+epoch:   0 cluster loss: 14.5303 recon loss: 17.5733 ALL loss: 16.0518
+epoch:   5 cluster loss: 6.7684 recon loss: 15.3518 ALL loss: 11.0601
+epoch:  10 cluster loss: 4.4578 recon loss: 13.3372 ALL loss: 8.8975
+epoch:  15 cluster loss: 3.9357 recon loss: 12.0143 ALL loss: 7.9750
+epoch:  20 cluster loss: 3.1281 recon loss: 11.2810 ALL loss: 7.2046
+epoch:  25 cluster loss: 2.2744 recon loss: 10.7107 ALL loss: 6.4925
+epoch:  30 cluster loss: 1.5924 recon loss: 9.6260 ALL loss: 5.6092
+epoch:  35 cluster loss: 1.4294 recon loss: 9.1805 ALL loss: 5.3050
+epoch:  40 cluster loss: 1.2534 recon loss: 8.4107 ALL loss: 4.8321
+epoch:  45 cluster loss: 1.1574 recon loss: 7.8803 ALL loss: 4.5188
+post matching 0 outliers
+author, pub count: 426, time use: 0.10 min
+trainning: jifeng_zhang
+epoch:   0 cluster loss: 17.4127 recon loss: 15.2439 ALL loss: 16.3283
+epoch:   5 cluster loss: 8.4649 recon loss: 14.7309 ALL loss: 11.5979
+epoch:  10 cluster loss: 4.2803 recon loss: 13.1788 ALL loss: 8.7295
+epoch:  15 cluster loss: 2.0790 recon loss: 13.0912 ALL loss: 7.5851
+epoch:  20 cluster loss: 1.5869 recon loss: 12.3593 ALL loss: 6.9731
+epoch:  25 cluster loss: 1.0137 recon loss: 11.9346 ALL loss: 6.4741
+epoch:  30 cluster loss: 0.6856 recon loss: 11.9193 ALL loss: 6.3024
+epoch:  35 cluster loss: 0.6327 recon loss: 11.5547 ALL loss: 6.0937
+epoch:  40 cluster loss: 0.5766 recon loss: 11.4243 ALL loss: 6.0005
+epoch:  45 cluster loss: 0.4246 recon loss: 11.4173 ALL loss: 5.9209
+post matching 3 outliers
+author, pub count: 252, time use: 0.08 min
+trainning: honghai_liu
+epoch:   0 cluster loss: 20.5598 recon loss: 31.5713 ALL loss: 26.0656
+epoch:   5 cluster loss: 9.2230 recon loss: 28.5009 ALL loss: 18.8620
+epoch:  10 cluster loss: 4.8323 recon loss: 26.4796 ALL loss: 15.6560
+epoch:  15 cluster loss: 3.4312 recon loss: 25.5183 ALL loss: 14.4748
+epoch:  20 cluster loss: 2.0655 recon loss: 24.8296 ALL loss: 13.4475
+epoch:  25 cluster loss: 1.6018 recon loss: 24.5961 ALL loss: 13.0989
+epoch:  30 cluster loss: 1.3927 recon loss: 24.5164 ALL loss: 12.9546
+epoch:  35 cluster loss: 1.0045 recon loss: 24.3491 ALL loss: 12.6768
+epoch:  40 cluster loss: 0.8424 recon loss: 24.3984 ALL loss: 12.6204
+epoch:  45 cluster loss: 0.7774 recon loss: 24.0294 ALL loss: 12.4034
+post matching 0 outliers
+author, pub count: 343, time use: 0.10 min
+trainning: hideaki_miyake
+epoch:   0 cluster loss: 0.0000 recon loss: 31.3212 ALL loss: 15.6606
+epoch:   5 cluster loss: 0.0000 recon loss: 31.3212 ALL loss: 15.6606
+epoch:  10 cluster loss: 0.0000 recon loss: 31.3212 ALL loss: 15.6606
+epoch:  15 cluster loss: 0.0000 recon loss: 31.3212 ALL loss: 15.6606
+epoch:  20 cluster loss: 0.2384 recon loss: 31.3212 ALL loss: 15.7798
+epoch:  25 cluster loss: 0.0003 recon loss: 31.3212 ALL loss: 15.6608
+epoch:  30 cluster loss: 0.0668 recon loss: 31.3212 ALL loss: 15.6940
+epoch:  35 cluster loss: 0.0286 recon loss: 31.3212 ALL loss: 15.6749
+epoch:  40 cluster loss: 0.0177 recon loss: 31.3213 ALL loss: 15.6695
+epoch:  45 cluster loss: 0.0428 recon loss: 31.3212 ALL loss: 15.6820
+post matching 0 outliers
+author, pub count: 447, time use: 1.05 min
+trainning: atsushi_kubo
+epoch:   0 cluster loss: 25.7695 recon loss: 20.8772 ALL loss: 23.3233
+epoch:   5 cluster loss: 12.3836 recon loss: 18.1520 ALL loss: 15.2678
+epoch:  10 cluster loss: 11.1865 recon loss: 17.4565 ALL loss: 14.3215
+epoch:  15 cluster loss: 6.9744 recon loss: 17.3781 ALL loss: 12.1763
+epoch:  20 cluster loss: 4.1152 recon loss: 17.0554 ALL loss: 10.5853
+epoch:  25 cluster loss: 2.6397 recon loss: 16.9389 ALL loss: 9.7893
+epoch:  30 cluster loss: 2.0612 recon loss: 16.9300 ALL loss: 9.4956
+epoch:  35 cluster loss: 1.5929 recon loss: 16.6646 ALL loss: 9.1288
+epoch:  40 cluster loss: 1.2313 recon loss: 16.6212 ALL loss: 8.9262
+epoch:  45 cluster loss: 0.9221 recon loss: 16.6843 ALL loss: 8.8032
+post matching 0 outliers
+author, pub count: 385, time use: 0.12 min
+trainning: changqing_xu
+epoch:   0 cluster loss: 13.0298 recon loss: 15.7409 ALL loss: 14.3854
+epoch:   5 cluster loss: 7.2859 recon loss: 14.9596 ALL loss: 11.1228
+epoch:  10 cluster loss: 3.2484 recon loss: 14.0862 ALL loss: 8.6673
+epoch:  15 cluster loss: 2.2909 recon loss: 14.0938 ALL loss: 8.1923
+epoch:  20 cluster loss: 1.5311 recon loss: 13.5422 ALL loss: 7.5367
+epoch:  25 cluster loss: 1.8181 recon loss: 12.9835 ALL loss: 7.4008
+epoch:  30 cluster loss: 1.6999 recon loss: 12.7558 ALL loss: 7.2278
+epoch:  35 cluster loss: 1.4009 recon loss: 12.4492 ALL loss: 6.9250
+epoch:  40 cluster loss: 1.0929 recon loss: 12.0878 ALL loss: 6.5904
+epoch:  45 cluster loss: 0.8623 recon loss: 11.5121 ALL loss: 6.1872
+post matching 0 outliers
+author, pub count: 327, time use: 0.08 min
+trainning: qiang_yu
+epoch:   0 cluster loss: 55.9065 recon loss: 23.6738 ALL loss: 39.7901
+epoch:   5 cluster loss: 29.3009 recon loss: 20.1493 ALL loss: 24.7251
+epoch:  10 cluster loss: 17.8335 recon loss: 18.1431 ALL loss: 17.9883
+epoch:  15 cluster loss: 11.9749 recon loss: 15.8342 ALL loss: 13.9045
+epoch:  20 cluster loss: 8.2255 recon loss: 13.7237 ALL loss: 10.9746
+epoch:  25 cluster loss: 6.1766 recon loss: 11.9497 ALL loss: 9.0632
+epoch:  30 cluster loss: 5.0865 recon loss: 10.1703 ALL loss: 7.6284
+epoch:  35 cluster loss: 4.2016 recon loss: 8.9080 ALL loss: 6.5548
+epoch:  40 cluster loss: 3.6045 recon loss: 8.0920 ALL loss: 5.8483
+epoch:  45 cluster loss: 3.3029 recon loss: 7.4608 ALL loss: 5.3818
+post matching 4 outliers
+author, pub count: 639, time use: 0.13 min
+trainning: hao_du
+epoch:   0 cluster loss: 10.6573 recon loss: 22.8165 ALL loss: 16.7369
+epoch:   5 cluster loss: 3.5733 recon loss: 15.1169 ALL loss: 9.3451
+epoch:  10 cluster loss: 1.7685 recon loss: 13.2957 ALL loss: 7.5321
+epoch:  15 cluster loss: 1.0499 recon loss: 12.0802 ALL loss: 6.5651
+epoch:  20 cluster loss: 1.1334 recon loss: 11.5672 ALL loss: 6.3503
+epoch:  25 cluster loss: 0.5585 recon loss: 9.7192 ALL loss: 5.1389
+epoch:  30 cluster loss: 0.5674 recon loss: 9.2519 ALL loss: 4.9096
+epoch:  35 cluster loss: 0.4278 recon loss: 8.8145 ALL loss: 4.6211
+epoch:  40 cluster loss: 0.3762 recon loss: 8.1302 ALL loss: 4.2532
+epoch:  45 cluster loss: 0.3885 recon loss: 6.6171 ALL loss: 3.5028
+post matching 0 outliers
+author, pub count: 49, time use: 0.01 min
+trainning: xiaofeng_xie
+epoch:   0 cluster loss: 18.5743 recon loss: 26.4802 ALL loss: 22.5272
+epoch:   5 cluster loss: 6.7217 recon loss: 24.9570 ALL loss: 15.8394
+epoch:  10 cluster loss: 1.8365 recon loss: 23.5050 ALL loss: 12.6707
+epoch:  15 cluster loss: 0.6532 recon loss: 21.5808 ALL loss: 11.1170
+epoch:  20 cluster loss: 0.3884 recon loss: 20.4595 ALL loss: 10.4239
+epoch:  25 cluster loss: 0.3353 recon loss: 20.2862 ALL loss: 10.3107
+epoch:  30 cluster loss: 0.2613 recon loss: 19.8643 ALL loss: 10.0628
+epoch:  35 cluster loss: 0.2593 recon loss: 17.9188 ALL loss: 9.0890
+epoch:  40 cluster loss: 0.6839 recon loss: 17.3005 ALL loss: 8.9922
+epoch:  45 cluster loss: 0.6198 recon loss: 15.2484 ALL loss: 7.9341
+post matching 0 outliers
+author, pub count: 349, time use: 0.20 min
+trainning: gurpreet_kaur
+epoch:   0 cluster loss: 14.5075 recon loss: 20.7897 ALL loss: 17.6486
+epoch:   5 cluster loss: 7.2068 recon loss: 18.2091 ALL loss: 12.7080
+epoch:  10 cluster loss: 4.1750 recon loss: 16.1504 ALL loss: 10.1627
+epoch:  15 cluster loss: 2.5595 recon loss: 14.4241 ALL loss: 8.4918
+epoch:  20 cluster loss: 1.6334 recon loss: 10.2576 ALL loss: 5.9455
+epoch:  25 cluster loss: 1.4100 recon loss: 7.8806 ALL loss: 4.6453
+epoch:  30 cluster loss: 1.4272 recon loss: 5.8974 ALL loss: 3.6623
+epoch:  35 cluster loss: 1.3329 recon loss: 4.3218 ALL loss: 2.8273
+epoch:  40 cluster loss: 1.2405 recon loss: 3.3675 ALL loss: 2.3040
+epoch:  45 cluster loss: 1.2691 recon loss: 2.9137 ALL loss: 2.0914
+post matching 0 outliers
+author, pub count: 214, time use: 0.03 min
+trainning: meng_wei
+epoch:   0 cluster loss: 18.3830 recon loss: 16.2165 ALL loss: 17.2998
+epoch:   5 cluster loss: 9.8801 recon loss: 14.9512 ALL loss: 12.4157
+epoch:  10 cluster loss: 7.2959 recon loss: 13.6808 ALL loss: 10.4883
+epoch:  15 cluster loss: 4.7573 recon loss: 13.1095 ALL loss: 8.9334
+epoch:  20 cluster loss: 3.6298 recon loss: 12.0082 ALL loss: 7.8190
+epoch:  25 cluster loss: 2.7173 recon loss: 12.0182 ALL loss: 7.3678
+epoch:  30 cluster loss: 2.0270 recon loss: 11.3566 ALL loss: 6.6918
+epoch:  35 cluster loss: 1.7878 recon loss: 10.8814 ALL loss: 6.3346
+epoch:  40 cluster loss: 1.3946 recon loss: 10.4002 ALL loss: 5.8974
+epoch:  45 cluster loss: 1.2153 recon loss: 10.1490 ALL loss: 5.6821
+post matching 0 outliers
+author, pub count: 327, time use: 0.07 min
+trainning: junfeng_ji
+epoch:   0 cluster loss: 8.1950 recon loss: 25.1485 ALL loss: 16.6717
+epoch:   5 cluster loss: 2.5788 recon loss: 21.5527 ALL loss: 12.0658
+epoch:  10 cluster loss: 1.4591 recon loss: 21.2275 ALL loss: 11.3433
+epoch:  15 cluster loss: 1.3766 recon loss: 20.4126 ALL loss: 10.8946
+epoch:  20 cluster loss: 1.0798 recon loss: 20.3732 ALL loss: 10.7265
+epoch:  25 cluster loss: 0.6277 recon loss: 20.2057 ALL loss: 10.4167
+epoch:  30 cluster loss: 0.5616 recon loss: 20.1797 ALL loss: 10.3707
+epoch:  35 cluster loss: 0.5016 recon loss: 20.2298 ALL loss: 10.3657
+epoch:  40 cluster loss: 0.4532 recon loss: 20.0389 ALL loss: 10.2461
+epoch:  45 cluster loss: 0.6126 recon loss: 20.2619 ALL loss: 10.4372
+post matching 0 outliers
+author, pub count: 301, time use: 0.19 min
+trainning: haichao_liu
+epoch:   0 cluster loss: 34.5472 recon loss: 22.6963 ALL loss: 28.6217
+epoch:   5 cluster loss: 19.3411 recon loss: 21.7512 ALL loss: 20.5462
+epoch:  10 cluster loss: 7.5214 recon loss: 20.4422 ALL loss: 13.9818
+epoch:  15 cluster loss: 3.7100 recon loss: 20.3907 ALL loss: 12.0504
+epoch:  20 cluster loss: 2.1878 recon loss: 19.1868 ALL loss: 10.6873
+epoch:  25 cluster loss: 1.6814 recon loss: 19.2262 ALL loss: 10.4538
+epoch:  30 cluster loss: 1.4164 recon loss: 18.6593 ALL loss: 10.0379
+epoch:  35 cluster loss: 1.2315 recon loss: 18.6289 ALL loss: 9.9302
+epoch:  40 cluster loss: 0.9434 recon loss: 18.8870 ALL loss: 9.9152
+epoch:  45 cluster loss: 0.9140 recon loss: 18.3165 ALL loss: 9.6152
+post matching 0 outliers
+author, pub count: 210, time use: 0.03 min
+trainning: daniel_huber
+epoch:   0 cluster loss: 21.7315 recon loss: 33.0625 ALL loss: 27.3970
+epoch:   5 cluster loss: 8.1604 recon loss: 32.6052 ALL loss: 20.3828
+epoch:  10 cluster loss: 2.7004 recon loss: 30.5384 ALL loss: 16.6194
+epoch:  15 cluster loss: 2.0033 recon loss: 28.2919 ALL loss: 15.1476
+epoch:  20 cluster loss: 1.4128 recon loss: 23.2294 ALL loss: 12.3211
+epoch:  25 cluster loss: 1.1690 recon loss: 19.6987 ALL loss: 10.4339
+epoch:  30 cluster loss: 1.1284 recon loss: 16.7172 ALL loss: 8.9228
+epoch:  35 cluster loss: 0.9648 recon loss: 13.8747 ALL loss: 7.4198
+epoch:  40 cluster loss: 0.8950 recon loss: 7.7838 ALL loss: 4.3394
+epoch:  45 cluster loss: 0.9465 recon loss: 6.0607 ALL loss: 3.5036
+post matching 0 outliers
+author, pub count: 293, time use: 0.13 min
+trainning: sang-heon_lee
+epoch:   0 cluster loss: 0.9504 recon loss: 34.5388 ALL loss: 17.7446
+epoch:   5 cluster loss: 0.4182 recon loss: 34.5388 ALL loss: 17.4785
+epoch:  10 cluster loss: 0.1713 recon loss: 29.8357 ALL loss: 15.0035
+epoch:  15 cluster loss: 0.0257 recon loss: 21.0485 ALL loss: 10.5371
+epoch:  20 cluster loss: 0.0003 recon loss: 9.3634 ALL loss: 4.6819
+epoch:  25 cluster loss: 0.0002 recon loss: 5.9587 ALL loss: 2.9794
+epoch:  30 cluster loss: 0.0308 recon loss: 1.9635 ALL loss: 0.9971
+epoch:  35 cluster loss: 0.0002 recon loss: 0.1511 ALL loss: 0.0756
+epoch:  40 cluster loss: 0.0001 recon loss: 0.0960 ALL loss: 0.0480
+epoch:  45 cluster loss: 0.0001 recon loss: 0.1197 ALL loss: 0.0599
+post matching 0 outliers
+author, pub count: 271, time use: 0.48 min
+trainning: hongming_xu
+epoch:   0 cluster loss: 2.8221 recon loss: 24.6859 ALL loss: 13.7540
+epoch:   5 cluster loss: 3.8393 recon loss: 23.5271 ALL loss: 13.6832
+epoch:  10 cluster loss: 0.6564 recon loss: 22.8217 ALL loss: 11.7391
+epoch:  15 cluster loss: 1.6706 recon loss: 22.9062 ALL loss: 12.2884
+epoch:  20 cluster loss: 0.8586 recon loss: 22.5711 ALL loss: 11.7149
+epoch:  25 cluster loss: 0.3348 recon loss: 22.5094 ALL loss: 11.4221
+epoch:  30 cluster loss: 0.1731 recon loss: 22.6325 ALL loss: 11.4028
+epoch:  35 cluster loss: 0.1769 recon loss: 22.8847 ALL loss: 11.5308
+epoch:  40 cluster loss: 0.1650 recon loss: 22.6386 ALL loss: 11.4018
+epoch:  45 cluster loss: 0.1365 recon loss: 22.8083 ALL loss: 11.4724
+post matching 0 outliers
+author, pub count: 271, time use: 0.10 min
+trainning: kenji_shimada
+epoch:   0 cluster loss: 13.8940 recon loss: 17.4340 ALL loss: 15.6640
+epoch:   5 cluster loss: 6.7919 recon loss: 15.2963 ALL loss: 11.0441
+epoch:  10 cluster loss: 3.4487 recon loss: 13.1486 ALL loss: 8.2986
+epoch:  15 cluster loss: 1.8667 recon loss: 12.3506 ALL loss: 7.1087
+epoch:  20 cluster loss: 1.1162 recon loss: 12.0257 ALL loss: 6.5709
+epoch:  25 cluster loss: 0.7933 recon loss: 11.9668 ALL loss: 6.3800
+epoch:  30 cluster loss: 1.0441 recon loss: 11.4431 ALL loss: 6.2436
+epoch:  35 cluster loss: 0.5790 recon loss: 11.4961 ALL loss: 6.0375
+epoch:  40 cluster loss: 2.2714 recon loss: 11.2033 ALL loss: 6.7373
+epoch:  45 cluster loss: 0.5982 recon loss: 11.2024 ALL loss: 5.9003
+post matching 0 outliers
+author, pub count: 273, time use: 0.05 min
+trainning: qin_zhang
+epoch:   0 cluster loss: 62.0843 recon loss: 23.8408 ALL loss: 42.9625
+epoch:   5 cluster loss: 30.6659 recon loss: 18.3798 ALL loss: 24.5228
+epoch:  10 cluster loss: 18.5808 recon loss: 14.5983 ALL loss: 16.5896
+epoch:  15 cluster loss: 13.3603 recon loss: 12.1386 ALL loss: 12.7494
+epoch:  20 cluster loss: 9.8509 recon loss: 10.7237 ALL loss: 10.2873
+epoch:  25 cluster loss: 7.8400 recon loss: 9.5692 ALL loss: 8.7046
+epoch:  30 cluster loss: 6.1143 recon loss: 8.6850 ALL loss: 7.3996
+epoch:  35 cluster loss: 5.1842 recon loss: 7.7291 ALL loss: 6.4567
+epoch:  40 cluster loss: 4.4371 recon loss: 7.1190 ALL loss: 5.7781
+epoch:  45 cluster loss: 3.7601 recon loss: 6.3455 ALL loss: 5.0528
+post matching 0 outliers
+author, pub count: 1286, time use: 1.02 min
+trainning: yong_cao
+epoch:   0 cluster loss: 52.7728 recon loss: 20.7190 ALL loss: 36.7459
+epoch:   5 cluster loss: 28.4854 recon loss: 18.7608 ALL loss: 23.6231
+epoch:  10 cluster loss: 16.1952 recon loss: 15.8161 ALL loss: 16.0056
+epoch:  15 cluster loss: 11.1515 recon loss: 14.0643 ALL loss: 12.6079
+epoch:  20 cluster loss: 7.6556 recon loss: 13.0107 ALL loss: 10.3331
+epoch:  25 cluster loss: 5.3663 recon loss: 12.1143 ALL loss: 8.7403
+epoch:  30 cluster loss: 4.1753 recon loss: 11.1883 ALL loss: 7.6818
+epoch:  35 cluster loss: 3.3126 recon loss: 10.4462 ALL loss: 6.8794
+epoch:  40 cluster loss: 2.7396 recon loss: 9.7340 ALL loss: 6.2368
+epoch:  45 cluster loss: 2.3304 recon loss: 8.6125 ALL loss: 5.4715
+post matching 0 outliers
+author, pub count: 753, time use: 0.57 min
+trainning: xingyu_zhang
+epoch:   0 cluster loss: 27.9841 recon loss: 29.5440 ALL loss: 28.7640
+epoch:   5 cluster loss: 11.9203 recon loss: 28.6080 ALL loss: 20.2641
+epoch:  10 cluster loss: 4.2238 recon loss: 28.2599 ALL loss: 16.2419
+epoch:  15 cluster loss: 0.9353 recon loss: 28.0203 ALL loss: 14.4778
+epoch:  20 cluster loss: 0.2252 recon loss: 27.9986 ALL loss: 14.1119
+epoch:  25 cluster loss: 0.2460 recon loss: 27.3061 ALL loss: 13.7760
+epoch:  30 cluster loss: 0.1827 recon loss: 26.3363 ALL loss: 13.2595
+epoch:  35 cluster loss: 0.1722 recon loss: 25.4690 ALL loss: 12.8206
+epoch:  40 cluster loss: 0.1422 recon loss: 25.1461 ALL loss: 12.6442
+epoch:  45 cluster loss: 0.1336 recon loss: 24.6553 ALL loss: 12.3945
+post matching 0 outliers
+author, pub count: 327, time use: 0.55 min
+trainning: gerd_wagner
+epoch:   0 cluster loss: 20.3508 recon loss: 25.7396 ALL loss: 23.0452
+epoch:   5 cluster loss: 4.1178 recon loss: 18.0015 ALL loss: 11.0597
+epoch:  10 cluster loss: 4.3945 recon loss: 15.1832 ALL loss: 9.7889
+epoch:  15 cluster loss: 1.7245 recon loss: 14.9918 ALL loss: 8.3581
+epoch:  20 cluster loss: 1.1985 recon loss: 14.0715 ALL loss: 7.6350
+epoch:  25 cluster loss: 0.7601 recon loss: 13.4053 ALL loss: 7.0827
+epoch:  30 cluster loss: 0.5988 recon loss: 13.5292 ALL loss: 7.0640
+epoch:  35 cluster loss: 0.6321 recon loss: 13.2438 ALL loss: 6.9379
+epoch:  40 cluster loss: 0.5024 recon loss: 13.1628 ALL loss: 6.8326
+epoch:  45 cluster loss: 0.4795 recon loss: 13.3187 ALL loss: 6.8991
+post matching 0 outliers
+author, pub count: 214, time use: 0.07 min
+trainning: hyung-jin_kim
+epoch:   0 cluster loss: 0.0000 recon loss: nan ALL loss: nan
+epoch:   5 cluster loss: 0.0000 recon loss: nan ALL loss: nan
+epoch:  10 cluster loss: 0.0000 recon loss: nan ALL loss: nan
+epoch:  15 cluster loss: 0.0000 recon loss: nan ALL loss: nan
+epoch:  20 cluster loss: 0.0000 recon loss: nan ALL loss: nan
+epoch:  25 cluster loss: 0.0000 recon loss: nan ALL loss: nan
+epoch:  30 cluster loss: 0.0000 recon loss: nan ALL loss: nan
+epoch:  35 cluster loss: 0.0000 recon loss: nan ALL loss: nan
+epoch:  40 cluster loss: 0.0000 recon loss: nan ALL loss: nan
+epoch:  45 cluster loss: 0.0000 recon loss: nan ALL loss: nan
+post matching 0 outliers
+author, pub count: 164, time use: 0.18 min
+trainning: guogang_li
+epoch:   0 cluster loss: 12.4663 recon loss: 17.1475 ALL loss: 14.8069
+epoch:   5 cluster loss: 5.5837 recon loss: 14.7328 ALL loss: 10.1582
+epoch:  10 cluster loss: 2.3506 recon loss: 12.7369 ALL loss: 7.5437
+epoch:  15 cluster loss: 1.5774 recon loss: 10.3278 ALL loss: 5.9526
+epoch:  20 cluster loss: 1.5836 recon loss: 8.6395 ALL loss: 5.1115
+epoch:  25 cluster loss: 1.0306 recon loss: 8.6721 ALL loss: 4.8514
+epoch:  30 cluster loss: 0.5929 recon loss: 8.1757 ALL loss: 4.3843
+epoch:  35 cluster loss: 0.4140 recon loss: 7.5818 ALL loss: 3.9979
+epoch:  40 cluster loss: 0.2965 recon loss: 7.2374 ALL loss: 3.7669
+epoch:  45 cluster loss: 0.2829 recon loss: 7.1113 ALL loss: 3.6971
+post matching 0 outliers
+author, pub count: 242, time use: 0.11 min
+trainning: yanxia_zhao
+epoch:   0 cluster loss: 36.8163 recon loss: 23.7659 ALL loss: 30.2911
+epoch:   5 cluster loss: 18.1873 recon loss: 18.6214 ALL loss: 18.4044
+epoch:  10 cluster loss: 11.4901 recon loss: 16.4196 ALL loss: 13.9548
+epoch:  15 cluster loss: 7.0663 recon loss: 14.3478 ALL loss: 10.7070
+epoch:  20 cluster loss: 4.8457 recon loss: 12.3656 ALL loss: 8.6057
+epoch:  25 cluster loss: 3.0165 recon loss: 12.1205 ALL loss: 7.5685
+epoch:  30 cluster loss: 2.1583 recon loss: 10.7124 ALL loss: 6.4354
+epoch:  35 cluster loss: 1.7404 recon loss: 10.6378 ALL loss: 6.1891
+epoch:  40 cluster loss: 1.3929 recon loss: 9.5319 ALL loss: 5.4624
+epoch:  45 cluster loss: 1.3057 recon loss: 9.1901 ALL loss: 5.2479
+post matching 0 outliers
+author, pub count: 289, time use: 0.07 min
+trainning: jianzhong_zhu
+epoch:   0 cluster loss: 23.7514 recon loss: 18.6024 ALL loss: 21.1769
+epoch:   5 cluster loss: 12.8138 recon loss: 17.5684 ALL loss: 15.1911
+epoch:  10 cluster loss: 6.1062 recon loss: 16.6803 ALL loss: 11.3933
+epoch:  15 cluster loss: 3.3356 recon loss: 15.7184 ALL loss: 9.5270
+epoch:  20 cluster loss: 1.9384 recon loss: 15.6162 ALL loss: 8.7773
+epoch:  25 cluster loss: 1.6642 recon loss: 14.6275 ALL loss: 8.1458
+epoch:  30 cluster loss: 1.2781 recon loss: 15.1303 ALL loss: 8.2042
+epoch:  35 cluster loss: 1.0725 recon loss: 15.0054 ALL loss: 8.0389
+epoch:  40 cluster loss: 1.0245 recon loss: 14.8150 ALL loss: 7.9197
+epoch:  45 cluster loss: 1.0852 recon loss: 14.5391 ALL loss: 7.8121
+post matching 0 outliers
+author, pub count: 189, time use: 0.02 min
+trainning: toshio_sakurai
+epoch:   0 cluster loss: 15.9437 recon loss: 34.5388 ALL loss: 25.2412
+epoch:   5 cluster loss: 7.2974 recon loss: 34.5388 ALL loss: 20.9181
+epoch:  10 cluster loss: 2.3724 recon loss: 34.5388 ALL loss: 18.4556
+epoch:  15 cluster loss: 0.9259 recon loss: 34.5388 ALL loss: 17.7323
+epoch:  20 cluster loss: 0.9124 recon loss: 34.5095 ALL loss: 17.7109
+epoch:  25 cluster loss: 0.4928 recon loss: 34.5388 ALL loss: 17.5158
+epoch:  30 cluster loss: 0.5018 recon loss: 34.3462 ALL loss: 17.4240
+epoch:  35 cluster loss: 0.3904 recon loss: 34.4653 ALL loss: 17.4279
+epoch:  40 cluster loss: 0.2184 recon loss: 34.4946 ALL loss: 17.3565
+epoch:  45 cluster loss: 0.3585 recon loss: 34.2517 ALL loss: 17.3051
+post matching 0 outliers
+author, pub count: 260, time use: 0.10 min
+trainning: shihua_huang
+epoch:   0 cluster loss: 4.4974 recon loss: 31.7633 ALL loss: 18.1303
+epoch:   5 cluster loss: 2.3979 recon loss: 31.2551 ALL loss: 16.8265
+epoch:  10 cluster loss: 2.1742 recon loss: 31.3436 ALL loss: 16.7589
+epoch:  15 cluster loss: 1.2854 recon loss: 31.3953 ALL loss: 16.3403
+epoch:  20 cluster loss: 3.7331 recon loss: 31.3138 ALL loss: 17.5235
+epoch:  25 cluster loss: 0.7720 recon loss: 31.4403 ALL loss: 16.1061
+epoch:  30 cluster loss: 0.4911 recon loss: 31.3579 ALL loss: 15.9245
+epoch:  35 cluster loss: 0.4335 recon loss: 31.2911 ALL loss: 15.8623
+epoch:  40 cluster loss: 0.3578 recon loss: 31.3306 ALL loss: 15.8442
+epoch:  45 cluster loss: 0.4355 recon loss: 31.4683 ALL loss: 15.9519
+post matching 0 outliers
+author, pub count: 318, time use: 0.11 min
+trainning: bo_zhu
+epoch:   0 cluster loss: 54.0043 recon loss: 22.8028 ALL loss: 38.4036
+epoch:   5 cluster loss: 29.5689 recon loss: 19.4285 ALL loss: 24.4987
+epoch:  10 cluster loss: 17.0166 recon loss: 17.1988 ALL loss: 17.1077
+epoch:  15 cluster loss: 10.7001 recon loss: 15.0099 ALL loss: 12.8550
+epoch:  20 cluster loss: 7.9990 recon loss: 12.4571 ALL loss: 10.2280
+epoch:  25 cluster loss: 6.5902 recon loss: 11.1935 ALL loss: 8.8919
+epoch:  30 cluster loss: 5.0329 recon loss: 9.8960 ALL loss: 7.4645
+epoch:  35 cluster loss: 4.0807 recon loss: 8.9150 ALL loss: 6.4979
+epoch:  40 cluster loss: 3.5488 recon loss: 8.3188 ALL loss: 5.9338
+epoch:  45 cluster loss: 3.0381 recon loss: 7.6375 ALL loss: 5.3378
+post matching 0 outliers
+author, pub count: 835, time use: 0.35 min
+trainning: shaoping_nie
+epoch:   0 cluster loss: 17.5414 recon loss: 19.1529 ALL loss: 18.3471
+epoch:   5 cluster loss: 2.9629 recon loss: 13.5210 ALL loss: 8.2420
+epoch:  10 cluster loss: 2.6983 recon loss: 13.3154 ALL loss: 8.0068
+epoch:  15 cluster loss: 0.7862 recon loss: 13.4008 ALL loss: 7.0935
+epoch:  20 cluster loss: 0.1654 recon loss: 13.3549 ALL loss: 6.7601
+epoch:  25 cluster loss: 0.4422 recon loss: 13.3946 ALL loss: 6.9184
+epoch:  30 cluster loss: 0.0002 recon loss: 13.1947 ALL loss: 6.5974
+epoch:  35 cluster loss: 0.3159 recon loss: 13.1362 ALL loss: 6.7261
+epoch:  40 cluster loss: 0.1433 recon loss: 12.8792 ALL loss: 6.5113
+epoch:  45 cluster loss: 0.4194 recon loss: 12.5927 ALL loss: 6.5060
+post matching 0 outliers
+author, pub count: 633, time use: 1.04 min
+trainning: chunjiang_zhao
+epoch:   0 cluster loss: 34.0852 recon loss: 30.3506 ALL loss: 32.2179
+epoch:   5 cluster loss: 15.4962 recon loss: 27.5272 ALL loss: 21.5117
+epoch:  10 cluster loss: 8.7705 recon loss: 26.6775 ALL loss: 17.7240
+epoch:  15 cluster loss: 4.7595 recon loss: 25.1073 ALL loss: 14.9334
+epoch:  20 cluster loss: 2.7629 recon loss: 23.8218 ALL loss: 13.2924
+epoch:  25 cluster loss: 1.7772 recon loss: 22.6735 ALL loss: 12.2254
+epoch:  30 cluster loss: 1.3417 recon loss: 22.0086 ALL loss: 11.6751
+epoch:  35 cluster loss: 1.1474 recon loss: 21.5180 ALL loss: 11.3327
+epoch:  40 cluster loss: 0.8299 recon loss: 21.0992 ALL loss: 10.9646
+epoch:  45 cluster loss: 0.8948 recon loss: 20.8449 ALL loss: 10.8699
+post matching 0 outliers
+author, pub count: 600, time use: 0.92 min
+trainning: sang-wook_park
+epoch:   0 cluster loss: 0.0000 recon loss: -0.0000 ALL loss: 0.0000
+epoch:   5 cluster loss: 0.0000 recon loss: 0.1802 ALL loss: 0.0901
+epoch:  10 cluster loss: 0.0000 recon loss: 0.0000 ALL loss: 0.0000
+epoch:  15 cluster loss: 0.0000 recon loss: -0.0000 ALL loss: 0.0000
+epoch:  20 cluster loss: 0.0000 recon loss: -0.0000 ALL loss: 0.0000
+epoch:  25 cluster loss: 0.0000 recon loss: -0.0000 ALL loss: 0.0000
+epoch:  30 cluster loss: 0.0000 recon loss: -0.0000 ALL loss: 0.0000
+epoch:  35 cluster loss: 0.0000 recon loss: -0.0000 ALL loss: 0.0000
+epoch:  40 cluster loss: 0.0000 recon loss: -0.0000 ALL loss: 0.0000
+epoch:  45 cluster loss: 0.0000 recon loss: -0.0000 ALL loss: 0.0000
+post matching 0 outliers
+author, pub count: 311, time use: 0.70 min
+trainning: heping_xie
+epoch:   0 cluster loss: 17.3028 recon loss: 28.2045 ALL loss: 22.7536
+epoch:   5 cluster loss: 4.1611 recon loss: 28.4645 ALL loss: 16.3128
+epoch:  10 cluster loss: 2.6406 recon loss: 28.2455 ALL loss: 15.4430
+epoch:  15 cluster loss: 2.3294 recon loss: 28.1925 ALL loss: 15.2609
+epoch:  20 cluster loss: 1.3822 recon loss: 27.8384 ALL loss: 14.6103
+epoch:  25 cluster loss: 1.1860 recon loss: 27.8001 ALL loss: 14.4930
+epoch:  30 cluster loss: 1.0118 recon loss: 27.9395 ALL loss: 14.4756
+epoch:  35 cluster loss: 0.7570 recon loss: 28.0277 ALL loss: 14.3923
+epoch:  40 cluster loss: 0.8595 recon loss: 28.0590 ALL loss: 14.4593
+epoch:  45 cluster loss: 0.7856 recon loss: 27.8546 ALL loss: 14.3201
+post matching 1 outliers
+author, pub count: 195, time use: 0.03 min
+trainning: xinjie_zhao
+epoch:   0 cluster loss: 32.3934 recon loss: 25.7549 ALL loss: 29.0741
+epoch:   5 cluster loss: 11.3620 recon loss: 19.9792 ALL loss: 15.6706
+epoch:  10 cluster loss: 3.9712 recon loss: 17.2112 ALL loss: 10.5912
+epoch:  15 cluster loss: 2.3304 recon loss: 15.9234 ALL loss: 9.1269
+epoch:  20 cluster loss: 1.8830 recon loss: 15.4523 ALL loss: 8.6676
+epoch:  25 cluster loss: 1.4514 recon loss: 12.4488 ALL loss: 6.9501
+epoch:  30 cluster loss: 1.1932 recon loss: 11.9830 ALL loss: 6.5881
+epoch:  35 cluster loss: 1.0540 recon loss: 8.2766 ALL loss: 4.6653
+epoch:  40 cluster loss: 1.2660 recon loss: 6.5046 ALL loss: 3.8853
+epoch:  45 cluster loss: 0.8667 recon loss: 5.5396 ALL loss: 3.2031
+post matching 0 outliers
+author, pub count: 313, time use: 0.19 min
+trainning: pengcheng_zhu
+epoch:   0 cluster loss: 39.9163 recon loss: 29.8021 ALL loss: 34.8592
+epoch:   5 cluster loss: 15.9221 recon loss: 27.3917 ALL loss: 21.6569
+epoch:  10 cluster loss: 5.5030 recon loss: 24.5310 ALL loss: 15.0170
+epoch:  15 cluster loss: 3.1228 recon loss: 23.3109 ALL loss: 13.2169
+epoch:  20 cluster loss: 2.7236 recon loss: 22.4354 ALL loss: 12.5795
+epoch:  25 cluster loss: 2.1955 recon loss: 21.0901 ALL loss: 11.6428
+epoch:  30 cluster loss: 2.2208 recon loss: 19.9885 ALL loss: 11.1046
+epoch:  35 cluster loss: 1.5732 recon loss: 18.4521 ALL loss: 10.0127
+epoch:  40 cluster loss: 1.7502 recon loss: 15.6831 ALL loss: 8.7167
+epoch:  45 cluster loss: 1.5977 recon loss: 13.9159 ALL loss: 7.7568
+post matching 0 outliers
+author, pub count: 235, time use: 0.08 min
+trainning: aimin_li
+epoch:   0 cluster loss: 29.6060 recon loss: 22.4723 ALL loss: 26.0392
+epoch:   5 cluster loss: 14.0133 recon loss: 19.9832 ALL loss: 16.9982
+epoch:  10 cluster loss: 7.8611 recon loss: 18.5462 ALL loss: 13.2037
+epoch:  15 cluster loss: 5.2630 recon loss: 17.0373 ALL loss: 11.1501
+epoch:  20 cluster loss: 3.3896 recon loss: 16.4196 ALL loss: 9.9046
+epoch:  25 cluster loss: 2.2528 recon loss: 15.3749 ALL loss: 8.8138
+epoch:  30 cluster loss: 2.0410 recon loss: 14.9858 ALL loss: 8.5134
+epoch:  35 cluster loss: 1.8157 recon loss: 14.2667 ALL loss: 8.0412
+epoch:  40 cluster loss: 1.6191 recon loss: 13.4928 ALL loss: 7.5560
+epoch:  45 cluster loss: 1.4164 recon loss: 13.0483 ALL loss: 7.2323
+post matching 0 outliers
+author, pub count: 549, time use: 0.43 min
+trainning: dongxiao_wang
+epoch:   0 cluster loss: 23.8135 recon loss: 28.2754 ALL loss: 26.0444
+epoch:   5 cluster loss: 10.1421 recon loss: 24.6345 ALL loss: 17.3883
+epoch:  10 cluster loss: 4.4911 recon loss: 23.3098 ALL loss: 13.9004
+epoch:  15 cluster loss: 4.7702 recon loss: 20.0863 ALL loss: 12.4282
+epoch:  20 cluster loss: 3.4598 recon loss: 19.0070 ALL loss: 11.2334
+epoch:  25 cluster loss: 2.8856 recon loss: 18.2874 ALL loss: 10.5865
+epoch:  30 cluster loss: 2.3083 recon loss: 18.0682 ALL loss: 10.1882
+epoch:  35 cluster loss: 1.8378 recon loss: 18.3074 ALL loss: 10.0726
+epoch:  40 cluster loss: 1.5585 recon loss: 17.9846 ALL loss: 9.7716
+epoch:  45 cluster loss: 1.0307 recon loss: 17.9628 ALL loss: 9.4968
+post matching 0 outliers
+author, pub count: 416, time use: 0.33 min
+trainning: peter_neuhaus
+epoch:   0 cluster loss: 3.3177 recon loss: 30.7328 ALL loss: 17.0252
+epoch:   5 cluster loss: 1.7683 recon loss: 29.7812 ALL loss: 15.7748
+epoch:  10 cluster loss: 1.3649 recon loss: 29.9404 ALL loss: 15.6527
+epoch:  15 cluster loss: 1.2148 recon loss: 29.7835 ALL loss: 15.4991
+epoch:  20 cluster loss: 0.7097 recon loss: 29.7047 ALL loss: 15.2072
+epoch:  25 cluster loss: 0.5233 recon loss: 29.8474 ALL loss: 15.1854
+epoch:  30 cluster loss: 0.3430 recon loss: 29.6965 ALL loss: 15.0197
+epoch:  35 cluster loss: 0.2210 recon loss: 29.6652 ALL loss: 14.9431
+epoch:  40 cluster loss: 0.2177 recon loss: 29.5108 ALL loss: 14.8643
+epoch:  45 cluster loss: 0.1720 recon loss: 29.6778 ALL loss: 14.9249
+post matching 0 outliers
+author, pub count: 536, time use: 0.37 min
+trainning: yongfeng_liu
+epoch:   0 cluster loss: 22.5206 recon loss: 15.3307 ALL loss: 18.9257
+epoch:   5 cluster loss: 11.9983 recon loss: 11.2658 ALL loss: 11.6321
+epoch:  10 cluster loss: 6.4451 recon loss: 9.0952 ALL loss: 7.7702
+epoch:  15 cluster loss: 4.1989 recon loss: 8.2751 ALL loss: 6.2370
+epoch:  20 cluster loss: 3.6591 recon loss: 7.3112 ALL loss: 5.4852
+epoch:  25 cluster loss: 2.6480 recon loss: 6.6759 ALL loss: 4.6620
+epoch:  30 cluster loss: 1.9193 recon loss: 5.9970 ALL loss: 3.9582
+epoch:  35 cluster loss: 1.5182 recon loss: 5.7550 ALL loss: 3.6366
+epoch:  40 cluster loss: 1.2675 recon loss: 5.2742 ALL loss: 3.2709
+epoch:  45 cluster loss: 1.0517 recon loss: 5.2390 ALL loss: 3.1454
+post matching 0 outliers
+author, pub count: 543, time use: 0.77 min
+trainning: young-sik_kim
+epoch:   0 cluster loss: 1.0976 recon loss: 34.5388 ALL loss: 17.8182
+epoch:   5 cluster loss: 0.4908 recon loss: 34.5388 ALL loss: 17.5148
+epoch:  10 cluster loss: 0.2350 recon loss: 34.5388 ALL loss: 17.3869
+epoch:  15 cluster loss: 0.0450 recon loss: 34.5388 ALL loss: 17.2919
+epoch:  20 cluster loss: 0.0007 recon loss: 34.5388 ALL loss: 17.2698
+epoch:  25 cluster loss: 0.0001 recon loss: 34.5388 ALL loss: 17.2695
+epoch:  30 cluster loss: 0.0000 recon loss: 15.1764 ALL loss: 7.5882
+epoch:  35 cluster loss: 0.0000 recon loss: 4.9748 ALL loss: 2.4874
+epoch:  40 cluster loss: 0.0000 recon loss: 0.0454 ALL loss: 0.0227
+epoch:  45 cluster loss: 0.0000 recon loss: 0.0003 ALL loss: 0.0002
+post matching 0 outliers
+author, pub count: 298, time use: 0.64 min
+trainning: lixin_cao
+epoch:   0 cluster loss: 53.6006 recon loss: 34.3492 ALL loss: 43.9749
+epoch:   5 cluster loss: 23.4914 recon loss: 33.4403 ALL loss: 28.4659
+epoch:  10 cluster loss: 8.9484 recon loss: 33.2386 ALL loss: 21.0935
+epoch:  15 cluster loss: 2.2371 recon loss: 33.3814 ALL loss: 17.8093
+epoch:  20 cluster loss: 1.2173 recon loss: 33.1922 ALL loss: 17.2047
+epoch:  25 cluster loss: 0.7749 recon loss: 32.3151 ALL loss: 16.5450
+epoch:  30 cluster loss: 0.6832 recon loss: 30.7765 ALL loss: 15.7298
+epoch:  35 cluster loss: 0.5687 recon loss: 29.4835 ALL loss: 15.0261
+epoch:  40 cluster loss: 0.7307 recon loss: 27.8446 ALL loss: 14.2877
+epoch:  45 cluster loss: 0.7056 recon loss: 27.5062 ALL loss: 14.1059
+post matching 0 outliers
+author, pub count: 324, time use: 0.26 min
+trainning: xiangping_zhang
+epoch:   0 cluster loss: 15.2590 recon loss: 34.5388 ALL loss: 24.8989
+epoch:   5 cluster loss: 4.5511 recon loss: 32.1184 ALL loss: 18.3347
+epoch:  10 cluster loss: 1.1008 recon loss: 28.8052 ALL loss: 14.9530
+epoch:  15 cluster loss: 0.8680 recon loss: 27.1434 ALL loss: 14.0057
+epoch:  20 cluster loss: 0.8702 recon loss: 26.5638 ALL loss: 13.7170
+epoch:  25 cluster loss: 0.8070 recon loss: 23.6090 ALL loss: 12.2080
+epoch:  30 cluster loss: 0.9093 recon loss: 22.9933 ALL loss: 11.9513
+epoch:  35 cluster loss: 0.7331 recon loss: 22.9364 ALL loss: 11.8347
+epoch:  40 cluster loss: 1.3753 recon loss: 22.9826 ALL loss: 12.1790
+epoch:  45 cluster loss: 0.8208 recon loss: 23.0283 ALL loss: 11.9245
+post matching 0 outliers
+author, pub count: 306, time use: 0.46 min
+trainning: yi_jin
+epoch:   0 cluster loss: 38.4476 recon loss: 19.3952 ALL loss: 28.9214
+epoch:   5 cluster loss: 22.0135 recon loss: 15.4894 ALL loss: 18.7515
+epoch:  10 cluster loss: 14.2911 recon loss: 12.5746 ALL loss: 13.4329
+epoch:  15 cluster loss: 9.4932 recon loss: 10.9856 ALL loss: 10.2394
+epoch:  20 cluster loss: 6.8753 recon loss: 9.2475 ALL loss: 8.0614
+epoch:  25 cluster loss: 5.4151 recon loss: 8.6454 ALL loss: 7.0302
+epoch:  30 cluster loss: 4.3516 recon loss: 7.6726 ALL loss: 6.0121
+epoch:  35 cluster loss: 3.6803 recon loss: 7.1037 ALL loss: 5.3920
+epoch:  40 cluster loss: 3.0394 recon loss: 6.6855 ALL loss: 4.8624
+epoch:  45 cluster loss: 2.6183 recon loss: 6.0409 ALL loss: 4.3296
+post matching 0 outliers
+author, pub count: 627, time use: 0.13 min
+trainning: hong_wan
+epoch:   0 cluster loss: 37.5468 recon loss: 29.0900 ALL loss: 33.3184
+epoch:   5 cluster loss: 17.1637 recon loss: 26.3497 ALL loss: 21.7567
+epoch:  10 cluster loss: 8.7260 recon loss: 22.4939 ALL loss: 15.6100
+epoch:  15 cluster loss: 4.5894 recon loss: 19.5360 ALL loss: 12.0627
+epoch:  20 cluster loss: 3.0168 recon loss: 19.3862 ALL loss: 11.2015
+epoch:  25 cluster loss: 2.2837 recon loss: 16.6674 ALL loss: 9.4755
+epoch:  30 cluster loss: 1.8617 recon loss: 14.7471 ALL loss: 8.3044
+epoch:  35 cluster loss: 1.5200 recon loss: 14.1112 ALL loss: 7.8156
+epoch:  40 cluster loss: 1.3607 recon loss: 13.9364 ALL loss: 7.6486
+epoch:  45 cluster loss: 0.8881 recon loss: 13.3702 ALL loss: 7.1292
+post matching 0 outliers
+author, pub count: 192, time use: 0.02 min
+trainning: hongwei_bai
+epoch:   0 cluster loss: 32.8068 recon loss: 18.6554 ALL loss: 25.7311
+epoch:   5 cluster loss: 15.2859 recon loss: 18.8114 ALL loss: 17.0487
+epoch:  10 cluster loss: 5.3393 recon loss: 18.5093 ALL loss: 11.9243
+epoch:  15 cluster loss: 1.9227 recon loss: 18.4655 ALL loss: 10.1941
+epoch:  20 cluster loss: 1.4396 recon loss: 18.9828 ALL loss: 10.2112
+epoch:  25 cluster loss: 1.0130 recon loss: 18.5366 ALL loss: 9.7748
+epoch:  30 cluster loss: 0.7735 recon loss: 18.4236 ALL loss: 9.5985
+epoch:  35 cluster loss: 0.5738 recon loss: 18.4406 ALL loss: 9.5072
+epoch:  40 cluster loss: 0.4578 recon loss: 18.0655 ALL loss: 9.2617
+epoch:  45 cluster loss: 0.3343 recon loss: 18.3035 ALL loss: 9.3189
+post matching 0 outliers
+author, pub count: 188, time use: 0.05 min
+trainning: ying_wu
+epoch:   0 cluster loss: 58.9845 recon loss: 23.6674 ALL loss: 41.3260
+epoch:   5 cluster loss: 32.6331 recon loss: 19.0865 ALL loss: 25.8598
+epoch:  10 cluster loss: 20.9765 recon loss: 16.1937 ALL loss: 18.5851
+epoch:  15 cluster loss: 13.8780 recon loss: 13.9218 ALL loss: 13.8999
+epoch:  20 cluster loss: 10.2481 recon loss: 11.9364 ALL loss: 11.0922
+epoch:  25 cluster loss: 8.1078 recon loss: 10.8773 ALL loss: 9.4925
+epoch:  30 cluster loss: 6.1595 recon loss: 10.3314 ALL loss: 8.2455
+epoch:  35 cluster loss: 5.0376 recon loss: 9.0766 ALL loss: 7.0571
+epoch:  40 cluster loss: 4.4723 recon loss: 8.4298 ALL loss: 6.4511
+epoch:  45 cluster loss: 3.9402 recon loss: 8.0258 ALL loss: 5.9830
+post matching 0 outliers
+author, pub count: 857, time use: 0.28 min
+trainning: jan_klein
+epoch:   0 cluster loss: 26.7514 recon loss: 30.6423 ALL loss: 28.6968
+epoch:   5 cluster loss: 8.5480 recon loss: 23.0590 ALL loss: 15.8035
+epoch:  10 cluster loss: 5.2110 recon loss: 18.7144 ALL loss: 11.9627
+epoch:  15 cluster loss: 3.2260 recon loss: 15.9965 ALL loss: 9.6113
+epoch:  20 cluster loss: 2.7751 recon loss: 14.7582 ALL loss: 8.7667
+epoch:  25 cluster loss: 2.5503 recon loss: 14.2406 ALL loss: 8.3955
+epoch:  30 cluster loss: 2.0505 recon loss: 13.1108 ALL loss: 7.5806
+epoch:  35 cluster loss: 1.5458 recon loss: 12.6576 ALL loss: 7.1017
+epoch:  40 cluster loss: 1.3673 recon loss: 10.9864 ALL loss: 6.1768
+epoch:  45 cluster loss: 1.3268 recon loss: 9.1614 ALL loss: 5.2441
+post matching 0 outliers
+author, pub count: 416, time use: 0.27 min
+trainning: xiujuan_zhang
+epoch:   0 cluster loss: 9.2859 recon loss: 12.8403 ALL loss: 11.0631
+epoch:   5 cluster loss: 5.4297 recon loss: 12.6039 ALL loss: 9.0168
+epoch:  10 cluster loss: 2.7195 recon loss: 12.3451 ALL loss: 7.5323
+epoch:  15 cluster loss: 1.1880 recon loss: 11.9427 ALL loss: 6.5653
+epoch:  20 cluster loss: 0.9704 recon loss: 11.5192 ALL loss: 6.2448
+epoch:  25 cluster loss: 0.8623 recon loss: 11.1670 ALL loss: 6.0147
+epoch:  30 cluster loss: 0.7543 recon loss: 10.6593 ALL loss: 5.7068
+epoch:  35 cluster loss: 0.5083 recon loss: 10.5576 ALL loss: 5.5330
+epoch:  40 cluster loss: 0.3513 recon loss: 10.3205 ALL loss: 5.3359
+epoch:  45 cluster loss: 0.4291 recon loss: 10.0630 ALL loss: 5.2461
+post matching 0 outliers
+author, pub count: 160, time use: 0.07 min
+trainning: jiying_zhang
+epoch:   0 cluster loss: 7.2833 recon loss: 13.9790 ALL loss: 10.6311
+epoch:   5 cluster loss: 3.6835 recon loss: 10.5554 ALL loss: 7.1194
+epoch:  10 cluster loss: 2.0285 recon loss: 10.6160 ALL loss: 6.3222
+epoch:  15 cluster loss: 0.7665 recon loss: 10.3287 ALL loss: 5.5476
+epoch:  20 cluster loss: 0.3031 recon loss: 9.9430 ALL loss: 5.1230
+epoch:  25 cluster loss: 0.1722 recon loss: 9.3331 ALL loss: 4.7526
+epoch:  30 cluster loss: 0.1618 recon loss: 9.0157 ALL loss: 4.5887
+epoch:  35 cluster loss: 0.1446 recon loss: 8.5105 ALL loss: 4.3275
+epoch:  40 cluster loss: 0.1256 recon loss: 7.6274 ALL loss: 3.8765
+epoch:  45 cluster loss: 0.1396 recon loss: 7.0373 ALL loss: 3.5885
+post matching 0 outliers
+author, pub count: 290, time use: 0.25 min
+trainning: aimin_zhou
+epoch:   0 cluster loss: 17.4618 recon loss: 22.6319 ALL loss: 20.0469
+epoch:   5 cluster loss: 9.0892 recon loss: 17.4091 ALL loss: 13.2491
+epoch:  10 cluster loss: 5.9649 recon loss: 16.5438 ALL loss: 11.2543
+epoch:  15 cluster loss: 2.6429 recon loss: 16.5950 ALL loss: 9.6189
+epoch:  20 cluster loss: 1.4756 recon loss: 15.3430 ALL loss: 8.4093
+epoch:  25 cluster loss: 1.5981 recon loss: 15.0384 ALL loss: 8.3183
+epoch:  30 cluster loss: 1.1516 recon loss: 15.1364 ALL loss: 8.1440
+epoch:  35 cluster loss: 0.9010 recon loss: 14.7226 ALL loss: 7.8118
+epoch:  40 cluster loss: 0.8925 recon loss: 14.9023 ALL loss: 7.8974
+epoch:  45 cluster loss: 0.6513 recon loss: 14.5328 ALL loss: 7.5920
+post matching 0 outliers
+author, pub count: 194, time use: 0.03 min
+trainning: jian_ji
+epoch:   0 cluster loss: 28.0843 recon loss: 28.5233 ALL loss: 28.3038
+epoch:   5 cluster loss: 11.2143 recon loss: 25.8144 ALL loss: 18.5144
+epoch:  10 cluster loss: 4.2489 recon loss: 22.9176 ALL loss: 13.5832
+epoch:  15 cluster loss: 2.9790 recon loss: 19.7691 ALL loss: 11.3741
+epoch:  20 cluster loss: 2.4484 recon loss: 16.4411 ALL loss: 9.4447
+epoch:  25 cluster loss: 2.0633 recon loss: 14.2635 ALL loss: 8.1634
+epoch:  30 cluster loss: 2.0703 recon loss: 13.0222 ALL loss: 7.5463
+epoch:  35 cluster loss: 1.7408 recon loss: 12.2272 ALL loss: 6.9840
+epoch:  40 cluster loss: 1.5944 recon loss: 11.7026 ALL loss: 6.6485
+epoch:  45 cluster loss: 1.4150 recon loss: 11.5825 ALL loss: 6.4988
+post matching 0 outliers
+author, pub count: 449, time use: 0.30 min
+trainning: seiji_kondo
+epoch:   0 cluster loss: 23.0578 recon loss: 22.8619 ALL loss: 22.9598
+epoch:   5 cluster loss: 12.3604 recon loss: 17.5820 ALL loss: 14.9712
+epoch:  10 cluster loss: 8.8605 recon loss: 15.7703 ALL loss: 12.3154
+epoch:  15 cluster loss: 5.8625 recon loss: 14.6557 ALL loss: 10.2591
+epoch:  20 cluster loss: 3.4864 recon loss: 13.3930 ALL loss: 8.4397
+epoch:  25 cluster loss: 2.7943 recon loss: 13.0821 ALL loss: 7.9382
+epoch:  30 cluster loss: 2.0502 recon loss: 12.8270 ALL loss: 7.4386
+epoch:  35 cluster loss: 1.7615 recon loss: 12.6224 ALL loss: 7.1920
+epoch:  40 cluster loss: 1.4632 recon loss: 12.1892 ALL loss: 6.8262
+epoch:  45 cluster loss: 1.2305 recon loss: 12.0785 ALL loss: 6.6545
+post matching 0 outliers
+author, pub count: 303, time use: 0.05 min
+trainning: mathias_herrmann
+epoch:   0 cluster loss: 8.7617 recon loss: 16.5401 ALL loss: 12.6509
+epoch:   5 cluster loss: 4.1729 recon loss: 15.1100 ALL loss: 9.6414
+epoch:  10 cluster loss: 3.0784 recon loss: 14.1096 ALL loss: 8.5940
+epoch:  15 cluster loss: 1.9412 recon loss: 12.4503 ALL loss: 7.1958
+epoch:  20 cluster loss: 1.5681 recon loss: 12.8232 ALL loss: 7.1956
+epoch:  25 cluster loss: 1.0742 recon loss: 12.7029 ALL loss: 6.8885
+epoch:  30 cluster loss: 0.8864 recon loss: 12.4080 ALL loss: 6.6472
+epoch:  35 cluster loss: 0.5160 recon loss: 12.4058 ALL loss: 6.4609
+epoch:  40 cluster loss: 0.5139 recon loss: 12.0385 ALL loss: 6.2762
+epoch:  45 cluster loss: 0.4914 recon loss: 12.1638 ALL loss: 6.3276
+post matching 0 outliers
+author, pub count: 205, time use: 0.03 min
+trainning: jianming_xu
+epoch:   0 cluster loss: 36.4080 recon loss: 18.5002 ALL loss: 27.4541
+epoch:   5 cluster loss: 20.2081 recon loss: 16.0590 ALL loss: 18.1335
+epoch:  10 cluster loss: 11.7438 recon loss: 15.8931 ALL loss: 13.8185
+epoch:  15 cluster loss: 6.5003 recon loss: 15.5329 ALL loss: 11.0166
+epoch:  20 cluster loss: 3.9523 recon loss: 14.5865 ALL loss: 9.2694
+epoch:  25 cluster loss: 2.6719 recon loss: 13.9760 ALL loss: 8.3239
+epoch:  30 cluster loss: 1.9453 recon loss: 13.0592 ALL loss: 7.5023
+epoch:  35 cluster loss: 1.5967 recon loss: 12.5268 ALL loss: 7.0617
+epoch:  40 cluster loss: 1.4326 recon loss: 12.1030 ALL loss: 6.7678
+epoch:  45 cluster loss: 1.2232 recon loss: 11.4395 ALL loss: 6.3313
+post matching 0 outliers
+author, pub count: 666, time use: 0.42 min
+trainning: yi_wang
+epoch:   0 cluster loss: 71.0043 recon loss: 20.5258 ALL loss: 45.7651
+epoch:   5 cluster loss: 41.4631 recon loss: 18.0048 ALL loss: 29.7339
+epoch:  10 cluster loss: 25.1275 recon loss: 16.5361 ALL loss: 20.8318
+epoch:  15 cluster loss: 17.0434 recon loss: 14.9706 ALL loss: 16.0070
+epoch:  20 cluster loss: 12.1423 recon loss: 13.5836 ALL loss: 12.8629
+epoch:  25 cluster loss: 9.4133 recon loss: 12.1559 ALL loss: 10.7846
+epoch:  30 cluster loss: 7.4403 recon loss: 11.2752 ALL loss: 9.3578
+epoch:  35 cluster loss: 6.2689 recon loss: 10.0117 ALL loss: 8.1403
+epoch:  40 cluster loss: 5.4541 recon loss: 9.7661 ALL loss: 7.6101
+epoch:  45 cluster loss: 4.7521 recon loss: 8.7986 ALL loss: 6.7753
+post matching 3 outliers
+author, pub count: 1197, time use: 0.35 min
+trainning: liqun_ma
+epoch:   0 cluster loss: 28.0552 recon loss: 25.0382 ALL loss: 26.5467
+epoch:   5 cluster loss: 11.8433 recon loss: 21.2134 ALL loss: 16.5283
+epoch:  10 cluster loss: 6.6563 recon loss: 20.4907 ALL loss: 13.5735
+epoch:  15 cluster loss: 3.0426 recon loss: 20.0828 ALL loss: 11.5627
+epoch:  20 cluster loss: 1.8037 recon loss: 19.9015 ALL loss: 10.8526
+epoch:  25 cluster loss: 1.8234 recon loss: 20.1342 ALL loss: 10.9788
+epoch:  30 cluster loss: 1.4348 recon loss: 19.6542 ALL loss: 10.5445
+epoch:  35 cluster loss: 1.1157 recon loss: 19.7828 ALL loss: 10.4493
+epoch:  40 cluster loss: 0.9547 recon loss: 19.4846 ALL loss: 10.2196
+epoch:  45 cluster loss: 1.3586 recon loss: 18.4756 ALL loss: 9.9171
+post matching 0 outliers
+author, pub count: 356, time use: 0.37 min
+trainning: jianguo_tian
+epoch:   0 cluster loss: 4.2420 recon loss: 26.3183 ALL loss: 15.2801
+epoch:   5 cluster loss: 2.5893 recon loss: 25.0580 ALL loss: 13.8237
+epoch:  10 cluster loss: 1.9503 recon loss: 24.8472 ALL loss: 13.3987
+epoch:  15 cluster loss: 1.6787 recon loss: 24.8220 ALL loss: 13.2503
+epoch:  20 cluster loss: 1.3136 recon loss: 24.7701 ALL loss: 13.0418
+epoch:  25 cluster loss: 0.7796 recon loss: 24.7608 ALL loss: 12.7702
+epoch:  30 cluster loss: 0.6292 recon loss: 24.8053 ALL loss: 12.7173
+epoch:  35 cluster loss: 0.4364 recon loss: 24.7885 ALL loss: 12.6125
+epoch:  40 cluster loss: 0.3745 recon loss: 24.8242 ALL loss: 12.5993
+epoch:  45 cluster loss: 0.3275 recon loss: 24.7071 ALL loss: 12.5173
+post matching 2 outliers
+author, pub count: 493, time use: 0.71 min
+trainning: feng_qiu
+epoch:   0 cluster loss: 42.9747 recon loss: 17.8636 ALL loss: 30.4191
+epoch:   5 cluster loss: 22.5446 recon loss: 15.5318 ALL loss: 19.0382
+epoch:  10 cluster loss: 13.9021 recon loss: 14.3152 ALL loss: 14.1086
+epoch:  15 cluster loss: 8.0519 recon loss: 13.6804 ALL loss: 10.8661
+epoch:  20 cluster loss: 6.0157 recon loss: 12.9425 ALL loss: 9.4791
+epoch:  25 cluster loss: 4.5276 recon loss: 12.3114 ALL loss: 8.4195
+epoch:  30 cluster loss: 3.4194 recon loss: 11.5231 ALL loss: 7.4713
+epoch:  35 cluster loss: 2.7444 recon loss: 11.0515 ALL loss: 6.8980
+epoch:  40 cluster loss: 2.1491 recon loss: 10.5020 ALL loss: 6.3255
+epoch:  45 cluster loss: 1.8723 recon loss: 9.6870 ALL loss: 5.7797
+post matching 0 outliers
+author, pub count: 740, time use: 0.43 min
+trainning: wei_chen
+epoch:   0 cluster loss: 74.8109 recon loss: 23.1779 ALL loss: 48.9944
+epoch:   5 cluster loss: 38.9733 recon loss: 18.1292 ALL loss: 28.5513
+epoch:  10 cluster loss: 23.1356 recon loss: 14.9300 ALL loss: 19.0328
+epoch:  15 cluster loss: 15.6207 recon loss: 12.7350 ALL loss: 14.1779
+epoch:  20 cluster loss: 10.8509 recon loss: 10.9817 ALL loss: 10.9163
+epoch:  25 cluster loss: 8.2548 recon loss: 9.6742 ALL loss: 8.9645
+epoch:  30 cluster loss: 6.5295 recon loss: 8.5041 ALL loss: 7.5168
+epoch:  35 cluster loss: 5.6104 recon loss: 7.7857 ALL loss: 6.6980
+epoch:  40 cluster loss: 4.9356 recon loss: 7.1523 ALL loss: 6.0440
+epoch:  45 cluster loss: 4.4088 recon loss: 6.6529 ALL loss: 5.5308
+post matching 11 outliers
+author, pub count: 2911, time use: 2.55 min
+trainning: xuejun_zhu
+epoch:   0 cluster loss: 14.9260 recon loss: 16.0744 ALL loss: 15.5002
+epoch:   5 cluster loss: 7.8071 recon loss: 15.1343 ALL loss: 11.4707
+epoch:  10 cluster loss: 3.7990 recon loss: 14.9380 ALL loss: 9.3685
+epoch:  15 cluster loss: 2.1788 recon loss: 14.8397 ALL loss: 8.5093
+epoch:  20 cluster loss: 1.7972 recon loss: 13.9136 ALL loss: 7.8554
+epoch:  25 cluster loss: 1.3895 recon loss: 12.9660 ALL loss: 7.1778
+epoch:  30 cluster loss: 1.3166 recon loss: 11.5460 ALL loss: 6.4313
+epoch:  35 cluster loss: 1.1200 recon loss: 10.2519 ALL loss: 5.6859
+epoch:  40 cluster loss: 0.9739 recon loss: 9.2653 ALL loss: 5.1196
+epoch:  45 cluster loss: 1.9974 recon loss: 6.9387 ALL loss: 4.4681
+post matching 0 outliers
+author, pub count: 235, time use: 0.04 min
+trainning: jie_guo
+epoch:   0 cluster loss: 79.5896 recon loss: 28.0559 ALL loss: 53.8227
+epoch:   5 cluster loss: 41.5640 recon loss: 25.4143 ALL loss: 33.4891
+epoch:  10 cluster loss: 22.5612 recon loss: 23.1741 ALL loss: 22.8677
+epoch:  15 cluster loss: 13.8326 recon loss: 20.7776 ALL loss: 17.3051
+epoch:  20 cluster loss: 10.0785 recon loss: 18.9303 ALL loss: 14.5044
+epoch:  25 cluster loss: 7.9614 recon loss: 17.8069 ALL loss: 12.8841
+epoch:  30 cluster loss: 6.4737 recon loss: 15.8904 ALL loss: 11.1820
+epoch:  35 cluster loss: 5.4624 recon loss: 13.5821 ALL loss: 9.5222
+epoch:  40 cluster loss: 4.5716 recon loss: 12.3733 ALL loss: 8.4724
+epoch:  45 cluster loss: 3.9272 recon loss: 10.5443 ALL loss: 7.2357
+post matching 2 outliers
+author, pub count: 593, time use: 0.10 min
+Done! Results saved: out/res.json
