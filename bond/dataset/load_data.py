@@ -34,9 +34,9 @@ def load_dataset(mode):
     if mode == "train":
         data_path = join(args.save_path, "src", "train", "train_author.json")
     elif mode == "valid":
-        data_path = join(args.save_path, "src", "sna-valid", "sna_valid_raw.json")
+        data_path = join(args.save_path, "src", "sna-valid", "sna_valid_author_raw.json")
     elif mode == "test":
-        data_path = join(args.save_path, "src", "sna-test", "sna_test_raw.json")
+        data_path = join(args.save_path, "src", "sna-test", "sna_test_author_raw.json")
 
     pubs = load_json(data_path)
     names = []

@@ -1,7 +1,9 @@
-import os
+import os, sys
 import re
 from tqdm import tqdm
 from os.path import join
+# print current working dir
+print(os.getcwd())
 
 from params import set_params
 from dataset.dump_graph import build_graph
@@ -53,16 +55,16 @@ def read_raw_pubs(mode):
     if mode == 'train':
         raw_pubs = load_json(join(base, "train", "train_author.json"))
     elif mode == 'valid':
-        raw_pubs = load_json(join(base, "sna-valid", "sna_valid_raw.json"))
+        raw_pubs = load_json(join(base, "sna-valid", "sna_valid_author_raw.json"))  # fit na-v2 data format
     elif mode == 'test':
-        raw_pubs = load_json(join(base, "sna-test", "sna_test_raw.json"))
+        raw_pubs = load_json(join(base, "sna-test", "sna_test_author_raw.json"))
     else:
         raise ValueError('choose right mode')
     
     return raw_pubs
 
 
-def dump_name_pubs():
+def dump_name_pubs(args):
     """
     Split publications informations by {name} and dump files as {name}.json
 
@@ -107,7 +109,7 @@ def unify_name_order(name):
     return name, name_reverse
 
 
-def dump_features_relations_to_file():
+def dump_features_relations_to_file(args):
     """
     Generate paper features and relations by raw publication data and dump to files.
     Paper features consist of title, org, keywords. Paper relations consist of author_name, org, venue.

@@ -1,4 +1,5 @@
-import os
+import os, sys
+sys.path.append('../../')
 import codecs
 import re
 import random
@@ -48,9 +49,9 @@ def read_raw_pubs(raw_data_root,mode):
     if mode == 'train':
         raw_pubs = load_json(os.path.join(raw_data_root, "train", "train_author.json"))
     elif mode == 'valid':
-        raw_pubs = load_json(os.path.join(raw_data_root, "valid", "sna_valid_raw.json"))
+        raw_pubs = load_json(os.path.join(raw_data_root, "valid", "sna_valid_author_raw.json"))
     elif mode == 'test':
-        raw_pubs = load_json(os.path.join(raw_data_root, 'test', 'sna_test_raw.json'))
+        raw_pubs = load_json(os.path.join(raw_data_root, 'test', 'sna_test_author_raw.json'))
     else:
         raise ValueError('choose right mode')
 
@@ -675,6 +676,7 @@ if __name__ == '__main__':
     # train, version = load_utils.LoadData(name="v3", type="train", task='RND')
     # processdata_RND(version=version)
 
-    version = load_utils.LoadData(name="v3", type="train", task='SND',just_version=True)
+    # 
+    version = load_utils.LoadData(name="v2", type="train", task='SND', just_version=True)  # download data from websites
     processdata_SND(version=version)
 

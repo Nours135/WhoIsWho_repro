@@ -3,10 +3,11 @@ import os
 from os.path import join
 from tqdm import tqdm
 from datetime import datetime
+
 from whoiswho.dataset.data_process import read_pubs,read_raw_pubs
 from whoiswho.utils import load_json, save_json
 
-def evaluate(predict_result,ground_truth):
+def evaluate(predict_result, ground_truth):
     if isinstance(predict_result, str):
         predict_result = load_json(predict_result)
     if isinstance(ground_truth, str):
@@ -75,6 +76,12 @@ def pairwise_evaluate(correct_labels, pred_labels):
 if __name__ == '__main__':
     predict = 'Input the path of result.valid.json'
     ground_truth = 'Input the path of sna_valid_ground_truth.json'
-
-    evaluate(predict,ground_truth)
+    
+    root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+    bond_root_dir = os.path.join(root_dir, 'bond')
+    print(bond_root_dir)
+    predict = os.path.join(bond_root_dir, './out/res.json')
+    ground_truth = os.path.join(bond_root_dir, './dataset/data/src/train/train_author.json')
+    
+    evaluate(predict, ground_truth)
 

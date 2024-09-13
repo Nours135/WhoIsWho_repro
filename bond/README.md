@@ -25,7 +25,9 @@ Download dataset "src" and embedding "paper_emb", organize in directory "dataset
 ### One-line Command
 Execute the following command. You can freely choose the data type(train/valid/test) by '--mode train/valid/test'. Post-matching is performed by default, you can control this operation by '--post_match True/False':
 ```
-python demo.py --post_match True --mode train
+stdbuf -oL -eL python demo.py --model bond --post_match True --mode train --save_path dataset/data/v2 --dump_data 2>&1 | tee reproduce.log
+stdbuf -oL -eL python demo.py --model bond --post_match True --mode valid --save_path dataset/data/v2 2>&1 | tee reproduce_valid.log
+stdbuf -oL -eL python demo.py --model bond --post_match True --mode test --save_path dataset/data/v2 2>&1 | tee reproduce_test.log
 ```
 
 It will do name disambiguation with clearly designed pipeline, you can choose model BOND or BOND+ by the parameter 'model':
@@ -36,7 +38,7 @@ def pipeline(model):
     dump_features_relations_to_file()
     build_graph()
 
-    # Modules-2: Feature Creation & Module-3: Model Construction
+    # Modules-2: Feature Creation & Module-3: ModeConstruction
     if model == 'bond':
         trainer = BONDTrainer()
         trainer.fit(datatype=args.mode)

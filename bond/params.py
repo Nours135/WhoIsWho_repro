@@ -4,8 +4,10 @@ import sys
 def set_params():
     parser = argparse.ArgumentParser()
 
+    parser.add_argument('--model', type=str, default='bond', help='bond or bond+')
+    parser.add_argument('--dump_data', action='store_true', default=False, help='dump data or not')
     parser.add_argument('--mode', type=str, default='train')
-    parser.add_argument('--cuda', type=bool, default=False)
+    parser.add_argument('--cuda', action='store_true')
     parser.add_argument('--gpu', type=int, default=0)
     parser.add_argument('--seed', type=int, default=0)
     parser.add_argument('--epochs', type=int, default=50)
@@ -25,7 +27,7 @@ def set_params():
 
     parser.add_argument('--db_eps', type=float, default=0.1)
     parser.add_argument('--db_min', type=int, default=5)
-    parser.add_argument('--post_match', type=bool, default=True)
+    parser.add_argument('--post_match', action='store_true')
 
     parser.add_argument('--th_a', type=list, default=[0,1])
     parser.add_argument('--th_o', type=list, default=[0.6,0.5])

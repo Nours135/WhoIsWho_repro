@@ -35,7 +35,7 @@ def train_w2v_model(processed_data_root):
 
     model_path = join(processed_data_root, 'out', 'model')
     os.makedirs(model_path, exist_ok=True)
-    model = word2vec.Word2Vec(sentences, size=100, negative=5, min_count=5, window=5)
+    model = word2vec.Word2Vec(sentences, vector_size=100, negative=5, min_count=5, window=5)
     model.save(join(model_path, 'tvt.model'))
     print(f'Finish word2vec training.')
 
@@ -122,9 +122,11 @@ def dump_paper_emb(raw_data_root,processed_data_root,model_name):
 
 
                 words_vec = []
+                # print(w2v_model.wv)
+                # raise Exception('stop for debug')
                 for word in pstr:
-                    if word in w2v_model:
-                        words_vec.append(w2v_model[word])
+                    if word in w2v_model.wv:
+                        words_vec.append(w2v_model.wv[word])
                 if len(words_vec) < 1:
                     words_vec.append(np.zeros(100))
                     tcp.add(i)
@@ -161,8 +163,24 @@ if __name__ == "__main__":
     train w2v model and save paper-embedding.
     """
     version = {"name": 'v3', "task": 'SND', "type": 'train'}
+    version = {"name": 'v2', "task": 'SND', "type": 'train'}
+    v2path = version2path(version)
+    # print(v2path)
+    # raise Exception('stop for debug')
+    raw_data_root = v2path['raw_data_root']
+    processed_data_root = v2path["processed_data_root"]
+    train_w2v_model(processed_data_root)  # if not trained, should run this line
+    dump_paper_emb(raw_data_root,processed_data_root,model_name="tvt")
+    
+    # also dump valid and test
+    version = {"name": 'v2', "task": 'SND', "type": 'valid'}
     v2path = version2path(version)
     raw_data_root = v2path['raw_data_root']
     processed_data_root = v2path["processed_data_root"]
-    # train_w2v_model(processed_data_root)
+    dump_paper_emb(raw_data_root,processed_data_root,model_name="tvt")
+    
+    version = {"name": 'v2', "task": 'SND', "type": 'test'}
+    v2path = version2path(version)
+    raw_data_root = v2path['raw_data_root']
+    processed_data_root = v2path["processed_data_root"]
     dump_paper_emb(raw_data_root,processed_data_root,model_name="tvt")

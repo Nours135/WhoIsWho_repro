@@ -147,7 +147,7 @@ def save_emb(mode, name, pubs, save_path):
         mapping[idx] = pid
 
     # load paper embedding
-    ptext_emb = load_data(join(args.save_path, 'paper_emb', mode, name, 'ptext_emb.pkl'))
+    ptext_emb = load_data(join(args.save_path, 'paper_emb', name, 'ptext_emb.pkl'))
 
     # init node feature matrix(n * dim_size)
     ft = dict()
@@ -159,7 +159,7 @@ def save_emb(mode, name, pubs, save_path):
     np.save(feats_file_path, ft)
 
 
-def build_graph():
+def build_graph(args):
     
     for mode in ["train", "valid", "test"]:
         print("preprocess dataset: ", mode)
@@ -167,9 +167,9 @@ def build_graph():
         if mode == "train":
             raw_pubs = load_json(join(data_base, "train", "train_author.json"))
         elif mode == "valid":
-            raw_pubs = load_json(join(data_base, "sna-valid", "sna_valid_raw.json"))
+            raw_pubs = load_json(join(data_base, "sna-valid", "sna_valid_author_raw.json"))
         elif mode == "test":
-            raw_pubs = load_json(join(data_base, "sna-test", "sna_test_raw.json"))
+            raw_pubs = load_json(join(data_base, "sna-test", "sna_test_author_raw.json"))
         
         for name in tqdm(raw_pubs):
             save_path = join(args.save_path, 'graph', mode, name)

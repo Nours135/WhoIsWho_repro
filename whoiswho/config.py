@@ -15,7 +15,7 @@ def version2path(version: dict) -> dict:
     type = version.get("type","")
 
     # print(os.path.abspath(dirname(__file__)))
-    data_root =  join(os.path.abspath(dirname(__file__)), f'dataset/data/',name, task,'')
+    data_root =  join(os.path.abspath(dirname(__file__)), f'dataset/data/',name, task, 'src', '')
     feat_root = join(os.path.abspath(dirname(__file__)), f'featureGenerator/feat/',name, task,'')
 
     #data

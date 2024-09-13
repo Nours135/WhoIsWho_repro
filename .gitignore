@@ -1,4 +1,6 @@
 __pycache__/
 .DS_Store
 bond/dataset/data/*
+whoiswho/dataset/data/*
 bond/out/*
+*.log
