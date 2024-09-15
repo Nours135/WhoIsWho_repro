@@ -1,7 +1,6 @@
 #! /bin/bash
 
 ## step 1, store data into path dataset data
-
 ```
     .
     ├── dataset
@@ -19,8 +18,8 @@
 # step 2.1, file: whoiswho/dataset/data_process.py
     # call the fowlling function
     # processdata_SND(version=version)
-    # 主要是为了 processed_data/extrace_text/plain_text.txt，为了拿这个训练word2vec，别的提取对不对不重要，也没有可能会删掉
-    # plain_text.txt 包含了train valid test所有的内容
+    # 主要是为了 processed_data/extrace_text/plain_text.txt ，为了拿这个训练word2vec，别的提取对不对不重要，也没有可能会删掉
+    # plain_text.txt 包含了 train valid test 所有的内容
     # 直接改好代码，调出环境，移动到目标文件夹： python data_process.py
 
 ## step 3, train Word2Vec and dump paper_emb.pkl
@@ -58,6 +57,7 @@ stdbuf -oL -eL python demo.py --model bond --post_match --mode valid --save_path
 mv ./out/res.json ./out/res_bond_valid.json && 
 stdbuf -oL -eL python demo.py --model bond --post_match --mode test --save_path dataset/data/v2 2>&1 | tee reproduce_test.log &&
 mv ./out/res.json ./out/res_bond_test.json
+
 
 ## step 6, run evaluation
 python run_evaluate.py
