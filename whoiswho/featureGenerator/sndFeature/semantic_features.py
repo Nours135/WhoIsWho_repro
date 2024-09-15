@@ -162,8 +162,10 @@ if __name__ == "__main__":
     """
     train w2v model and save paper-embedding.
     """
-    version = {"name": 'v3', "task": 'SND', "type": 'train'}
+    # version = {"name": 'v3', "task": 'SND', "type": 'train'}
+    
     version = {"name": 'v2', "task": 'SND', "type": 'train'}
+    version = {"name": 'openalex', "task": 'SND', "type": 'train'}  # for openalex
     v2path = version2path(version)
     # print(v2path)
     # raise Exception('stop for debug')
@@ -173,14 +175,14 @@ if __name__ == "__main__":
     dump_paper_emb(raw_data_root,processed_data_root,model_name="tvt")
     
     # also dump valid and test
-    version = {"name": 'v2', "task": 'SND', "type": 'valid'}
-    v2path = version2path(version)
-    raw_data_root = v2path['raw_data_root']
-    processed_data_root = v2path["processed_data_root"]
-    dump_paper_emb(raw_data_root,processed_data_root,model_name="tvt")
+    # version = {"name": 'v2', "task": 'SND', "type": 'valid'}
+    # v2path = version2path(version)
+    # raw_data_root = v2path['raw_data_root']
+    # processed_data_root = v2path["processed_data_root"]
+    # dump_paper_emb(raw_data_root,processed_data_root,model_name="tvt")
     
-    version = {"name": 'v2', "task": 'SND', "type": 'test'}
-    v2path = version2path(version)
-    raw_data_root = v2path['raw_data_root']
-    processed_data_root = v2path["processed_data_root"]
-    dump_paper_emb(raw_data_root,processed_data_root,model_name="tvt")
+    # version = {"name": 'v2', "task": 'SND', "type": 'test'}
+    # v2path = version2path(version)
+    # raw_data_root = v2path['raw_data_root']
+    # processed_data_root = v2path["processed_data_root"]
+    # dump_paper_emb(raw_data_root,processed_data_root,model_name="tvt")

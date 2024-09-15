@@ -225,13 +225,15 @@ def dump_plain_texts_to_file(raw_data_root,processed_data_root):
     Plain texts consist of all paper attributes and the authors' names and organizations (except year).
     """
     train_pubs_dict = load_json(os.path.join(raw_data_root, 'train', 'train_pub.json'))
-    valid_pubs_dict = load_json(os.path.join(raw_data_root, 'valid', 'sna_valid_pub.json'))
+    
 
     pubs_dict = {}
     pubs_dict.update(train_pubs_dict)
-    pubs_dict.update(valid_pubs_dict)
+    
 
     try:
+        valid_pubs_dict = load_json(os.path.join(raw_data_root, 'valid', 'sna_valid_pub.json'))  # valid is also optional
+        pubs_dict.update(valid_pubs_dict)
         test_pubs_dict = load_json(os.path.join(raw_data_root, 'test', 'sna_test_pub.json'))
         pubs_dict.update(test_pubs_dict)
     except:
@@ -249,6 +251,8 @@ def dump_plain_texts_to_file(raw_data_root,processed_data_root):
 
         # Save title
         title = pub["title"]
+        if title is None: # deal with special cases
+            title = ''
         pstr = title.strip()
         pstr = pstr.lower()
         pstr = re.sub(r, ' ', pstr)
@@ -677,6 +681,9 @@ if __name__ == '__main__':
     # processdata_RND(version=version)
 
     # 
-    version = load_utils.LoadData(name="v2", type="train", task='SND', just_version=True)  # download data from websites
+    # version = load_utils.LoadData(name="v2", type="train", task='SND', just_version=True)  # download data from websites
+    version = {"name": 'openalex', "task": 'SND', "type": 'train'}
+    v2path = version2path(version)
+    print(v2path)
     processdata_SND(version=version)
 
