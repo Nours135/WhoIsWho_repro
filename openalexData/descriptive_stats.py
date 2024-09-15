@@ -33,7 +33,10 @@ def pub_distribution():
     
     author_id_1_pub_l = []
     for author, group_df in df.groupby('author_id_1'):
-        author_id_1_pub_l.append(len(group_df))
+        pub_c = len(group_df)
+        author_id_1_pub_l.append(pub_c)
+        if pub_c > 500:
+            print(f'author_id_1: {author}, pub count: {pub_c}')
     draw_hist(author_id_1_pub_l, title='Publication per author_id_1', xlabel='Publication count', ylabel='Author count', save_path='./figs/pub_per_author_id_1.png')
     
     
