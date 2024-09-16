@@ -20,6 +20,7 @@ def evaluate(predict_result, ground_truth):
     name_nums = 0
     result_list = []
     metrics_dict_l = []
+    gt_author_wise_precision, gt_author_wise_recall, gt_author_wise_f1 = [], [], []
     for name in predict_result:
         #Get clustering labels in predict_result
         predicted_pubs = dict()
@@ -46,6 +47,11 @@ def evaluate(predict_result, ground_truth):
         metrics = cluster_evaluate(true_labels, predict_labels)
         metrics_dict_l.append(metrics)
         
+        # run gt_author_wise_eval
+        precision, recall, f1 = gt_author_wise_metrics(true_labels, predict_labels)
+        gt_author_wise_precision += precision
+        gt_author_wise_recall += recall
+        gt_author_wise_f1 += f1
         name_nums += 1
 
     avg_pairwise_precision = sum([result[0] for result in result_list])/name_nums
@@ -61,6 +67,11 @@ def evaluate(predict_result, ground_truth):
     
     for k, v in avg_metrics.items():
         print(f'Average {k}: {v:.3f}')
+        
+    # print gt author wise metirc
+    print(f'Average GT Author Wise Precision: {sum(gt_author_wise_precision)/len(gt_author_wise_f1):.3f}')
+    print(f'Average GT Author Wise Recall: {sum(gt_author_wise_recall)/len(gt_author_wise_f1):.3f}')
+    print(f'Average GT Author Wise F1: {sum(gt_author_wise_f1)/len(gt_author_wise_f1):.3f}')
     print('\n')
     return avg_pairwise_f1
 
@@ -105,13 +116,9 @@ def cluster_evaluate(correct_labels: List[int], pred_labels: List[int]):
     metrics['Normalized Mutual Information'] = normalized_mutual_info_score(correct_labels, pred_labels)
     metrics['Homogeneity'] = homogeneity_score(correct_labels, pred_labels)
     metrics['Completeness'] = completeness_score(correct_labels, pred_labels)
-    precision, recall, f1 = gt_author_wise_metrics(correct_labels, pred_labels)
-    metrics['authorwise Precision'] = precision
-    metrics['authorwise Recall'] = recall
-    metrics['authorwise F1'] = f1
     return metrics
 
-def gt_author_wise_metrics(correct_labels: List[int], pred_labels: List[int]):
+def gt_author_wise_metrics(correct_labels: List[int], pred_labels: List[int]) -> Tuple[List[float], List[float], List[float]]:
     '''
     for each gt author
         find the most matched predicted author, and calculate the precision, recall and f1
@@ -144,10 +151,21 @@ def gt_author_wise_metrics(correct_labels: List[int], pred_labels: List[int]):
 
     y_true = y_true.astype(int)
     y_voted_labels = y_voted_labels.astype(int)
-    precision = precision_score(y_true, y_voted_labels, average='macro', zero_division=0)  # 使用这个参数能避免报错，但是使得准确率错误偏高 zero_division=1
-    recall = recall_score(y_true, y_voted_labels, average='macro')
-    f1 = f1_score(y_true, y_voted_labels, average='macro') 
-    return precision, recall, f1
+    avg = 'macro'
+    avg = None
+    precision = precision_score(y_true, y_voted_labels, average=avg, zero_division=0)  # 使用这个参数能避免报错，但是使得准确率错误偏高 zero_division=1
+    recall = recall_score(y_true, y_voted_labels, average=avg)
+    f1 = f1_score(y_true, y_voted_labels, average=avg) 
+    
+    # print(labels)
+    # print(labels.shape)
+    # print()
+    # print(f'Precision: {precision}')
+    # print(f'Recall: {recall}')
+    # print(f'F1: {f1}')
+    # print(f'len(precision): {len(precision)}')
+    # raise Exception('stop here')
+    return list(precision), list(recall), list(f1)
     
 
 if __name__ == '__main__':
