@@ -33,12 +33,15 @@
 # mv train {proj_dir}/bond/dataset/data/v2/src
 # mv valid {proj_dir}/bond/dataset/data/v2/src
 # mv test {proj_dir}/bond/dataset/data/v2/src
+# mv test /home/zrli/WhoIsWho_repro-1/bond/dataset/data/v2/src
+# /home/zrli/WhoIsWho_repro-1/
 
 # 移动paper-embs
 # mv ./processed_data/snd-embs {proj_dir}/bond/dataset/data/v2/
-
+# mv ./processed_data/snd-embs /home/zrli/WhoIsWho_repro-1/bond/dataset/data/v2/
 
 # cd {proj_dir}/bond/dataset/data/v2
+# cd /home/zrli/WhoIsWho_repro-1/bond/dataset/data/v2
 # 下面是在给文件夹改名
 # mv snd-embs paper_emb 
 # cd src

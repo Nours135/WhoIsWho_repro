@@ -35,7 +35,7 @@ def train_w2v_model(processed_data_root):
 
     model_path = join(processed_data_root, 'out', 'model')
     os.makedirs(model_path, exist_ok=True)
-    model = word2vec.Word2Vec(sentences, vector_size=100, negative=5, min_count=5, window=5)
+    model = word2vec.Word2Vec(sentences, size=100, negative=5, min_count=5, window=5)
     model.save(join(model_path, 'tvt.model'))
     print(f'Finish word2vec training.')
 
