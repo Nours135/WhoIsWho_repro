@@ -21,6 +21,7 @@ def evaluate(predict_result, ground_truth):
     result_list = []
     metrics_dict_l = []
     gt_author_wise_precision, gt_author_wise_recall, gt_author_wise_f1 = [], [], []
+    author_count_distinction_l = []
     for name in predict_result:
         #Get clustering labels in predict_result
         predicted_pubs = dict()
@@ -48,10 +49,11 @@ def evaluate(predict_result, ground_truth):
         metrics_dict_l.append(metrics)
         
         # run gt_author_wise_eval
-        precision, recall, f1 = gt_author_wise_metrics(true_labels, predict_labels)
+        precision, recall, f1, author_count_distinction = gt_author_wise_metrics(true_labels, predict_labels)
         gt_author_wise_precision += precision
         gt_author_wise_recall += recall
         gt_author_wise_f1 += f1
+        author_count_distinction_l.append(author_count_distinction)
         name_nums += 1
 
     avg_pairwise_precision = sum([result[0] for result in result_list])/name_nums
@@ -72,6 +74,8 @@ def evaluate(predict_result, ground_truth):
     print(f'Average GT Author Wise Precision: {sum(gt_author_wise_precision)/len(gt_author_wise_f1):.3f}')
     print(f'Average GT Author Wise Recall: {sum(gt_author_wise_recall)/len(gt_author_wise_f1):.3f}')
     print(f'Average GT Author Wise F1: {sum(gt_author_wise_f1)/len(gt_author_wise_f1):.3f}')
+    print(f'Author Count Distinction (GT - Pred): {sum([abs(item) for item in author_count_distinction_l])/len(author_count_distinction_l)}')
+    print(f'Author Count Distinction bias: {sum(author_count_distinction_l)/len(author_count_distinction_l)}')
     print('\n')
     return avg_pairwise_f1
 
@@ -118,10 +122,12 @@ def cluster_evaluate(correct_labels: List[int], pred_labels: List[int]):
     metrics['Completeness'] = completeness_score(correct_labels, pred_labels)
     return metrics
 
-def gt_author_wise_metrics(correct_labels: List[int], pred_labels: List[int]) -> Tuple[List[float], List[float], List[float]]:
+def gt_author_wise_metrics(correct_labels: List[int], pred_labels: List[int]) -> Tuple[List[float], List[float], List[float], int]:
     '''
     for each gt author
         find the most matched predicted author, and calculate the precision, recall and f1
+        
+    return: precision, recall, f1, auhtor_count_distinction
     '''
     y_true = np.array(correct_labels)
     y_pred = np.array(pred_labels)
@@ -165,7 +171,10 @@ def gt_author_wise_metrics(correct_labels: List[int], pred_labels: List[int]) ->
     # print(f'F1: {f1}')
     # print(f'len(precision): {len(precision)}')
     # raise Exception('stop here')
-    return list(precision), list(recall), list(f1)
+    
+    gt_author_count = len(labels)
+    predicted_author_count = len(np.unique(y_pred))
+    return list(precision), list(recall), list(f1), gt_author_count - predicted_author_count
     
 
 if __name__ == '__main__':
