@@ -1,3 +1,6 @@
+from typing import List, Tuple
+from sklearn.metrics import adjusted_rand_score, normalized_mutual_info_score, homogeneity_score, completeness_score, v_measure_score, silhouette_score
+from sklearn.metrics import precision_score, recall_score, f1_score
 import numpy as np
 import os
 from os.path import join
@@ -7,6 +10,7 @@ from datetime import datetime
 from whoiswho.dataset.data_process import read_pubs,read_raw_pubs
 from whoiswho.utils import load_json, save_json
 
+
 def evaluate(predict_result, ground_truth):
     if isinstance(predict_result, str):
         predict_result = load_json(predict_result)
@@ -15,6 +19,7 @@ def evaluate(predict_result, ground_truth):
 
     name_nums = 0
     result_list = []
+    metrics_dict_l = []
     for name in predict_result:
         #Get clustering labels in predict_result
         predicted_pubs = dict()
@@ -34,18 +39,38 @@ def evaluate(predict_result, ground_truth):
         for pid in pubs:
             predict_labels.append(predicted_pubs[pid])
 
-        pairwise_precision, pairwise_recall, pairwise_f1 = pairwise_evaluate(true_labels,predict_labels)
+        pairwise_precision, pairwise_recall, pairwise_f1 = pairwise_evaluate(true_labels, predict_labels)
         result_list.append((pairwise_precision,pairwise_recall,pairwise_f1))
+        
+        # run cluster_evaluate
+        metrics = cluster_evaluate(true_labels, predict_labels)
+        metrics_dict_l.append(metrics)
+        
         name_nums += 1
 
+    avg_pairwise_precision = sum([result[0] for result in result_list])/name_nums
+    avg_pairwise_recall = sum([result[1] for result in result_list])/name_nums
     avg_pairwise_f1 = sum([result[2] for result in result_list])/name_nums
+    
+    print(f'Average Pairwise Precision: {avg_pairwise_precision:.3f}')
+    print(f'Average Pairwise Recall: {avg_pairwise_recall:.3f}')
     print(f'Average Pairwise F1: {avg_pairwise_f1:.3f}')
-
+    avg_metrics = dict()
+    for k in metrics_dict_l[0].keys():
+        avg_metrics[k] = sum([metrics[k] for metrics in metrics_dict_l])/name_nums
+    
+    for k, v in avg_metrics.items():
+        print(f'Average {k}: {v:.3f}')
+    print('\n')
     return avg_pairwise_f1
 
 
 
-def pairwise_evaluate(correct_labels, pred_labels):
+def pairwise_evaluate(correct_labels: List[int], pred_labels: List[int]) -> Tuple[float, float, float]:
+    '''
+    Input: Lists of clustering labels for each paper
+    Output: Pairwise precision, recall, and f1
+    '''
     TP = 0.0  # Pairs Correctly Predicted To SameAuthor
     TP_FP = 0.0  # Total Pairs Predicted To SameAuthor
     TP_FN = 0.0  # Total Pairs To SameAuthor
@@ -70,8 +95,60 @@ def pairwise_evaluate(correct_labels, pred_labels):
 
     return pairwise_precision, pairwise_recall, pairwise_f1
 
+def cluster_evaluate(correct_labels: List[int], pred_labels: List[int]):
+    '''
+    Input: Lists of clustering labels for each paper
+        clustering metrics
+    '''
+    # mutual information
+    metrics = {}
+    metrics['Normalized Mutual Information'] = normalized_mutual_info_score(correct_labels, pred_labels)
+    metrics['Homogeneity'] = homogeneity_score(correct_labels, pred_labels)
+    metrics['Completeness'] = completeness_score(correct_labels, pred_labels)
+    precision, recall, f1 = gt_author_wise_metrics(correct_labels, pred_labels)
+    metrics['authorwise Precision'] = precision
+    metrics['authorwise Recall'] = recall
+    metrics['authorwise F1'] = f1
+    return metrics
 
+def gt_author_wise_metrics(correct_labels: List[int], pred_labels: List[int]):
+    '''
+    for each gt author
+        find the most matched predicted author, and calculate the precision, recall and f1
+    '''
+    y_true = np.array(correct_labels)
+    y_pred = np.array(pred_labels)
+    # step 1, for each gt author find the most matched predited author
+    # matrix which will hold the majority-voted labels
+    y_voted_labels = np.zeros(y_true.shape)
+    # Ordering labels
+    ## Labels might be missing e.g with set like 0,2 where 1 is missing
+    ## First find the unique labels, then map the labels to an ordered set
+    ## 0,2 should become 0,1
+    labels = np.unique(y_true)
+    ordered_labels = np.arange(labels.shape[0])
+    for k in range(labels.shape[0]):
+        y_true[y_true==labels[k]] = ordered_labels[k]
+    # Update unique labels
+    labels = np.unique(y_true)
+    # We set the number of bins to be n_classes+2 so that 
+    # we count the actual occurence of classes between two consecutive bins
+    # the bigger being excluded [bin_i, bin_i+1]
+    bins = np.concatenate((labels, [np.max(labels)+1]), axis=0)
 
+    for cluster in np.unique(y_pred):
+        hist, _ = np.histogram(y_true[y_pred==cluster], bins=bins)
+        # Find the most present label in the cluster
+        winner = np.argmax(hist)
+        y_voted_labels[y_pred==cluster] = winner
+
+    y_true = y_true.astype(int)
+    y_voted_labels = y_voted_labels.astype(int)
+    precision = precision_score(y_true, y_voted_labels, average='macro', zero_division=0)  # 使用这个参数能避免报错，但是使得准确率错误偏高 zero_division=1
+    recall = recall_score(y_true, y_voted_labels, average='macro')
+    f1 = f1_score(y_true, y_voted_labels, average='macro') 
+    return precision, recall, f1
+    
 
 if __name__ == '__main__':
     predict = 'Input the path of result.valid.json'
