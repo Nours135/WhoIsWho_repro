@@ -133,7 +133,7 @@ class BONDTrainer:
         return pred
 
     def fit(self, datatype):
-        names, pubs = load_dataset(datatype)
+        names, pubs = load_dataset(datatype)  # list and pubs dict
         results = {}
 
         f1_list = []
@@ -144,6 +144,7 @@ class BONDTrainer:
 
             # ==== Load data ====
             label, ft_list, data = load_graph(name)
+            # !!!???? label 的shape和ft_list的对不上啊
             num_cluster = int(ft_list.shape[0]*args.compress_ratio)
             layer_shape = []
             input_layer_shape = ft_list.shape[1]
@@ -162,9 +163,13 @@ class BONDTrainer:
             else:
                 for pid in pubs[name]:
                     name_pubs.append(pid)
-
             # ==== Init model ====
-            model = GAE(ATTGNN(layer_shape))
+            if args.share_weights:
+                attgnn = ATTGNN.weights_share(model_bak, layer_shape)
+            else:
+                attgnn = ATTGNN(layer_shape)
+            model = GAE(attgnn)  # layer shape: [input_feature_dim, args.hidden_dim[0], args.hidden_dim[1], output_layer_shape]  # output_layer_shape == num_nodes
+            model_bak = model
             ft_list = ft_list.float()
             ft_list = ft_list.to(device)
             data = data.to(device)
@@ -177,22 +182,24 @@ class BONDTrainer:
                 model.train()
                 optimizer.zero_grad()
                 logits, embd = model.encode(ft_list, data.edge_index, data.edge_attr)
-                dis = pairwise_distances(embd.cpu().detach().numpy(), metric='cosine')
+                # # shape of logits: torch.Size([num_nodes, num_nodes]), embd: torch.Size([num_nodes, emb_dim])
+                dis = pairwise_distances(embd.cpu().detach().numpy(), metric='cosine')  # [num_nodes, num_nodes]
                 db_label = DBSCAN(eps=args.db_eps, min_samples=args.db_min, metric='precomputed').fit_predict(dis) 
                 db_label = torch.from_numpy(db_label)
-                db_label = db_label.to(device) 
-                
+                db_label = db_label.to(device)  # [num_nodes]
                 # change to one-hot form
+                # [num_nodes] -> [num_nodes, num_cluster]
                 class_matrix = torch.from_numpy(self.onehot_encoder(db_label))
+                # sample 
                 # get N * N matrix
-                local_label = torch.mm(class_matrix, class_matrix.t())
+                local_label = torch.mm(class_matrix, class_matrix.t())  # [num_nodes, num_nodes], pair wise label (in the same cluster)
                 local_label = local_label.float()
                 local_label = local_label.to(device)
 
-                global_label = torch.matmul(logits, logits.t())
+                global_label = torch.matmul(logits, logits.t())   # similarity matrix
                 
                 loss_cluster = F.binary_cross_entropy_with_logits(global_label, local_label)
-                loss_recon = model.recon_loss(embd, data.edge_index)
+                loss_recon = model.recon_loss(embd, data.edge_index) # calculated edge_index
                 w_cluster = args.cluster_w
                 w_recon = 1 - w_cluster
                 loss_train = w_cluster * loss_cluster + w_recon * loss_recon
