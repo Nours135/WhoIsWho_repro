@@ -12,6 +12,7 @@ def set_params():
     parser.add_argument('--seed', type=int, default=0)
     parser.add_argument('--epochs', type=int, default=50)
     parser.add_argument('--lr', type=float, default=0.0001)
+    parser.add_argument('--share_weights', action='store_true', help='Share weights between authors')
 
     parser.add_argument('--save_path', type=str, default='dataset/data')
     parser.add_argument('--l2_coef', type=float, default=5e-4)

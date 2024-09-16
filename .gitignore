@@ -4,3 +4,7 @@ bond/dataset/data/*
 whoiswho/dataset/data/*
 bond/out/*
 *.log
+openalexData/cached/*
+openalexData/figs/*
+openalexData/src/*
+*.xlsx

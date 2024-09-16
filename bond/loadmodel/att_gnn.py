@@ -34,3 +34,10 @@ class ATTGNN(nn.Module):
     def dropout_ft(self, x_list, dropout):
         y_list = F.dropout(x_list, dropout, training=self.training)
         return y_list
+    
+    @classmethod
+    def weights_share(cls, model, layer_shape):
+        new_model = ATTGNN(layer_shape)  # 
+        new_model.conv1 = model.conv1    # only share Graph conv layers
+        new_model.conv2 = model.conv2
+        return new_model
