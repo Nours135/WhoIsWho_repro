@@ -14,9 +14,9 @@ def pipeline(args):
     # Module-1: Data Loading
     if args.dump_data:
         print("point1")
-        dump_name_pubs(args)
+        # dump_name_pubs(args)
         print("point2")
-        dump_features_relations_to_file(args)
+        # dump_features_relations_to_file(args)
         print("point3")
         build_graph(args)
         print("point4")

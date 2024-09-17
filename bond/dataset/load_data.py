@@ -17,6 +17,9 @@ def load_data(rfname):
 
 
 def load_json(rfname):
+    if not os.path.exists(rfname):
+        print(f"Warning: File not found {rfname}, returning empty dict.")
+        return {}
     with codecs.open(rfname, 'r', encoding='utf-8') as rf:
         return json.load(rf)
 
@@ -30,20 +33,27 @@ def load_dataset(mode):
     Returns:
         names(list):[guanhua_du, ...]
         pubs(dict): {author:[...], title: xxx, ...}
-    """
+    """    
     if mode == "train":
         data_path = join(args.save_path, "src", "train", "train_author.json")
     elif mode == "valid":
         data_path = join(args.save_path, "src", "sna-valid", "sna_valid_author_raw.json")
     elif mode == "test":
         data_path = join(args.save_path, "src", "sna-test", "sna_test_author_raw.json")
+    else:
+        raise ValueError('Invalid mode. Choose "train", "valid", or "test".')
 
-    pubs = load_json(data_path)
+    pubs = {}
     names = []
-    for name in pubs:
-        names.append(name)
+    try:
+        pubs = load_json(data_path)
+        for name in pubs:
+            names.append(name)
+    except FileNotFoundError:
+        print(f"Warning: Skipping mode {mode} as the file was not found.")
+        return names, pubs  # Return empty list and dict if file not found
+
     
-    return names, pubs
 
 
 def load_graph(name, th_a=args.coa_th, th_o=args.coo_th, th_v=args.cov_th):

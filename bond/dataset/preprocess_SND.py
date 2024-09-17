@@ -28,6 +28,23 @@ stopwords_check = ['a', 'was', 'were', 'that', '2', 'key', '1', 'technology', '0
                     'time', 'zhejiang', 'used', 'data', 'these']
 
 
+# def read_pubinfo(mode):
+#     """
+#     Read pubs' meta-information.
+#     """
+#     base = join(args.save_path, "src")
+
+#     if mode == 'train':
+#         pubs = load_json(join(base, "train", "train_pub.json"))
+#     elif mode == 'valid':
+#         pubs = load_json(join(base, "sna-valid", "sna_valid_pub.json"))
+#     elif mode == 'test':
+#         pubs = load_json(join(base, 'sna-test', 'sna_test_pub.json'))
+#     else:
+#         raise ValueError('choose right mode')
+    
+#     return pubs
+
 def read_pubinfo(mode):
     """
     Read pubs' meta-information.
@@ -36,28 +53,60 @@ def read_pubinfo(mode):
 
     if mode == 'train':
         pubs = load_json(join(base, "train", "train_pub.json"))
-    elif mode == 'valid':
-        pubs = load_json(join(base, "sna-valid", "sna_valid_pub.json"))
-    elif mode == 'test':
-        pubs = load_json(join(base, 'sna-test', 'sna_test_pub.json'))
     else:
-        raise ValueError('choose right mode')
-    
+        try:
+            file_path = join(base, f"sna-{mode}", f"sna_{mode}_pub.json")
+            pubs = load_json(file_path)
+        except FileNotFoundError:
+            print(f"Warning: File not found for mode {mode}, returning empty dict.")
+            pubs = {}
+        except json.JSONDecodeError:
+            print(f"Warning: Error decoding JSON for mode {mode}, returning empty dict.")
+            pubs = {}
+        except Exception as e:
+            print(f"An unexpected error occurred: {e}, returning empty dict.")
+            pubs = {}
+
     return pubs
 
+# def read_raw_pubs(mode):
+#     """
+#     Read raw pubs.
+#     """
+#     base = join(args.save_path, "src")
+
+#     if mode == 'train':
+#         raw_pubs = load_json(join(base, "train", "train_author.json"))
+#     elif mode == 'valid':
+#         raw_pubs = load_json(join(base, "sna-valid", "sna_valid_author_raw.json"))  # fit na-v2 data format
+#     elif mode == 'test':
+#         raw_pubs = load_json(join(base, "sna-test", "sna_test_author_raw.json"))
+#     else:
+#         raise ValueError('choose right mode')
+    
+#     return raw_pubs
 
 def read_raw_pubs(mode):
     """
     Read raw pubs.
     """
-    base = join(args.save_path, "src")
+    base = join(args.save_path, "src")  
+    raw_pubs = []
 
     if mode == 'train':
         raw_pubs = load_json(join(base, "train", "train_author.json"))
     elif mode == 'valid':
-        raw_pubs = load_json(join(base, "sna-valid", "sna_valid_author_raw.json"))  # fit na-v2 data format
+        file_path = join(base, "sna-valid", "sna_valid_author_raw.json")
+        if not os.path.exists(file_path):
+            print(f"Warning: File not found for mode {mode}, returning empty list.")
+            return []
+        raw_pubs = load_json(file_path)  # fit na-v2 data format
     elif mode == 'test':
-        raw_pubs = load_json(join(base, "sna-test", "sna_test_author_raw.json"))
+        file_path = join(base, "sna-test", "sna_test_author_raw.json")
+        if not os.path.exists(file_path):
+            print(f"Warning: File not found for mode {mode}, returning empty list.")
+            return []
+        raw_pubs = load_json(file_path)
     else:
         raise ValueError('choose right mode')
     
@@ -138,6 +187,11 @@ def dump_features_relations_to_file(args):
 
                 # Save title (relations)
                 title = pub["title"]
+                
+                # 确保title不是none
+                if title is None:
+                    title = ''  # 提供默认值，或者根据需要进行处理
+                
                 pstr = title.strip()
                 pstr = pstr.lower()
                 pstr = re.sub(r, ' ', pstr)

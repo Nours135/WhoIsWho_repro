@@ -121,7 +121,11 @@ def dump_features_relations_to_file(raw_data_root,processed_data_root):
                 pub = pubs_dict[pid]
                 # Save title (relations)
                 title = pub["title"]
-                pstr = title.strip()
+                if title is None:
+                    print("Warning: Title is None, skipping this entry.")
+                    pstr = ""  # 或者设置一个默认值
+                else:
+                    pstr = title.strip()
                 pstr = pstr.lower()
                 pstr = re.sub(r, ' ', pstr)
                 pstr = re.sub(r'\s{2,}', ' ', pstr).strip()
@@ -197,10 +201,21 @@ def dump_features_relations_to_file(raw_data_root,processed_data_root):
                     pstr = [word for word in pstr if word not in stopwords]
                     pstr = [word for word in pstr if word not in stopwords_extend]
                     pstr = [word for word in pstr if word not in stopwords_check]
+
                     for word in pstr:
                         cov_file.write(pid + '\t' + word + '\n')
                     if len(pstr) == 0:
                         cov_file.write(pid + '\t' + 'null' + '\n')
+                        
+                if title is None:
+                    print("Warning: Title is None, skipping this entry.")
+                    title = ""  # 提供默认值
+                if keyword is None:
+                    print("Warning: Keyword is None, skipping this entry.")
+                    keyword = ""  # 提供默认值
+                if org is None:
+                    print("Warning: Org is None, skipping this entry.")
+                    org = ""  # 提供默认值
 
                 paper_features.append(
                     title + keyword + org

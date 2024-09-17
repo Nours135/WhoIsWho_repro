@@ -159,25 +159,47 @@ def save_emb(mode, name, pubs, save_path):
     np.save(feats_file_path, ft)
 
 
-def build_graph(args):
+# def build_graph(args):
     
-    for mode in ["train", "valid", "test"]:
-        print("preprocess dataset: ", mode)
-        data_base = join(args.save_path, "src")
-        if mode == "train":
-            raw_pubs = load_json(join(data_base, "train", "train_author.json"))
-        elif mode == "valid":
-            raw_pubs = load_json(join(data_base, "sna-valid", "sna_valid_author_raw.json"))
-        elif mode == "test":
-            raw_pubs = load_json(join(data_base, "sna-test", "sna_test_author_raw.json"))
+#     for mode in ["train", "valid", "test"]:
+#         print("preprocess dataset: ", mode)
+#         data_base = join(args.save_path, "src")
+#         if mode == "train":
+#             raw_pubs = load_json(join(data_base, "train", "train_author.json"))
+#         elif mode == "valid":
+#             raw_pubs = load_json(join(data_base, "sna-valid", "sna_valid_author_raw.json"))
+#         elif mode == "test":
+#             raw_pubs = load_json(join(data_base, "sna-test", "sna_test_author_raw.json"))
         
+#         for name in tqdm(raw_pubs):
+#             save_path = join(args.save_path, 'graph', mode, name)
+#             check_mkdir(save_path)
+#             pubs = save_label_pubs(mode, name, raw_pubs, save_path)
+#             save_graph(name, pubs, save_path, mode)
+#             save_emb(mode, name, pubs, save_path)
+
+def build_graph(args):
+    for mode in ["train", "valid", "test"]:
+        print("Preprocessing dataset:", mode)
+        data_base = join(args.save_path, "src")
+        file_path = {
+            "train": join(data_base, "train", "train_author.json"),
+            "valid": join(data_base, "sna-valid", "sna_valid_author_raw.json"),
+            "test": join(data_base, "sna-test", "sna_test_author_raw.json")
+        }.get(mode)
+
+        try:
+            raw_pubs = load_json(file_path)
+        except FileNotFoundError:
+            print(f"Warning: Skipping mode {mode} as the file was not found.")
+            continue  # Skip the current iteration of the loop
+
         for name in tqdm(raw_pubs):
             save_path = join(args.save_path, 'graph', mode, name)
             check_mkdir(save_path)
-            pubs = save_label_pubs(mode, name, raw_pubs, save_path)
-            save_graph(name, pubs, save_path, mode)
-            save_emb(mode, name, pubs, save_path)
-
+            pubs = save_label_pubs(mode, name, raw_pubs, save_path)  # Assuming this function is defined elsewhere
+            save_graph(name, pubs, save_path, mode)  # Assuming this function is defined elsewhere
+            save_emb(mode, name, pubs, save_path)  # Assuming this function is defined elsewhere
 
 if __name__ == "__main__":
     build_graph()

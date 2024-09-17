@@ -35,7 +35,7 @@ def train_w2v_model(processed_data_root):
 
     model_path = join(processed_data_root, 'out', 'model')
     os.makedirs(model_path, exist_ok=True)
-    model = word2vec.Word2Vec(sentences, size=100, negative=5, min_count=5, window=5)
+    model = word2vec.Word2Vec(sentences, vector_size=100, negative=5, min_count=5, window=5)
     model.save(join(model_path, 'tvt.model'))
     print(f'Finish word2vec training.')
 
@@ -107,8 +107,10 @@ def dump_paper_emb(raw_data_root,processed_data_root,model_name):
                     for word in pub["keywords"]:
                         keyword = keyword + word + " "
 
-
-                pstr = pub["title"] + " " + keyword + " " + org
+                # 确保title不是none
+                title = pub.get("title", "") if pub.get("title") is not None else ""
+        
+                pstr = title + " " + keyword + " " + org
                 pstr = pstr.strip()
                 pstr = pstr.lower()
                 pstr = re.sub(puncs, ' ', pstr)
@@ -164,7 +166,7 @@ if __name__ == "__main__":
     """
     # version = {"name": 'v3', "task": 'SND', "type": 'train'}
     
-    version = {"name": 'v2', "task": 'SND', "type": 'train'}
+    # version = {"name": 'v2', "task": 'SND', "type": 'train'}
     version = {"name": 'openalex', "task": 'SND', "type": 'train'}  # for openalex
     v2path = version2path(version)
     # print(v2path)
@@ -173,7 +175,7 @@ if __name__ == "__main__":
     processed_data_root = v2path["processed_data_root"]
     train_w2v_model(processed_data_root)  # if not trained, should run this line
     dump_paper_emb(raw_data_root,processed_data_root,model_name="tvt")
-    
+    print("finish dumping")
     # also dump valid and test
     # version = {"name": 'v2', "task": 'SND', "type": 'valid'}
     # v2path = version2path(version)
