@@ -137,6 +137,7 @@ class BONDTrainer:
         results = {}
 
         f1_list = []
+        start = 0
         for name in names:
             start = time.time()
             print("trainning:", name)
@@ -164,10 +165,11 @@ class BONDTrainer:
                 for pid in pubs[name]:
                     name_pubs.append(pid)
             # ==== Init model ====
-            if args.share_weights:
+            if args.share_weights and start != 0:  # the first model should not load former weights
                 attgnn = ATTGNN.weights_share(model_bak, layer_shape)
             else:
                 attgnn = ATTGNN(layer_shape)
+                start += 1
             model = GAE(attgnn)  # layer shape: [input_feature_dim, args.hidden_dim[0], args.hidden_dim[1], output_layer_shape]  # output_layer_shape == num_nodes
             model_bak = model
             ft_list = ft_list.float()
