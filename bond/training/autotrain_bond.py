@@ -171,12 +171,12 @@ class BONDTrainer:
                 model = torch.load(os.path.join(args.save_path, 'model', 'bond_model.pth'))
             else:
                 if args.share_weights and startflag != 0:  # the first model should not load former weights
-                    attgnn = ATTGNN.weights_share(model_bak, layer_shape)
+                    attgnn = ATTGNN.weights_share(attgnn_bak, layer_shape)
                 else:
                     attgnn = ATTGNN(layer_shape)
                     startflag += 1
                 model = GAE(attgnn)  # layer shape: [input_feature_dim, args.hidden_dim[0], args.hidden_dim[1], output_layer_shape]  # output_layer_shape == num_nodes
-                model_bak = model
+                attgnn_bak = attgnn
             ft_list = ft_list.float()
             ft_list = ft_list.to(device)
             data = data.to(device)
