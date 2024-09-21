@@ -1,3 +1,4 @@
+import os
 import time
 import torch
 import random
@@ -165,19 +166,26 @@ class BONDTrainer:
                 for pid in pubs[name]:
                     name_pubs.append(pid)
             # ==== Init model ====
-            if args.share_weights and startflag != 0:  # the first model should not load former weights
-                attgnn = ATTGNN.weights_share(model_bak, layer_shape)
+            if datatype != 'train' and args.share_weights:
+                # load model from file
+                model = torch.load(os.path.join(args.save_path, 'model', 'bond_model.pth'))
             else:
-                attgnn = ATTGNN(layer_shape)
-                startflag += 1
-            model = GAE(attgnn)  # layer shape: [input_feature_dim, args.hidden_dim[0], args.hidden_dim[1], output_layer_shape]  # output_layer_shape == num_nodes
-            model_bak = model
+                if args.share_weights and startflag != 0:  # the first model should not load former weights
+                    attgnn = ATTGNN.weights_share(model_bak, layer_shape)
+                else:
+                    attgnn = ATTGNN(layer_shape)
+                    startflag += 1
+                model = GAE(attgnn)  # layer shape: [input_feature_dim, args.hidden_dim[0], args.hidden_dim[1], output_layer_shape]  # output_layer_shape == num_nodes
+                model_bak = model
             ft_list = ft_list.float()
             ft_list = ft_list.to(device)
             data = data.to(device)
             model.to(device)
-            
-            optimizer = torch.optim.Adam(model.parameters(), lr=args.lr, weight_decay=args.l2_coef)
+            if datatype != 'train' and args.share_weights:
+                lr = args.lr * 0.1
+            else:
+                lr = args.lr
+            optimizer = torch.optim.Adam(model.parameters(), lr=lr, weight_decay=args.l2_coef)
 
             for epoch in range(args.epochs):
                 # ==== Train ====
@@ -244,3 +252,9 @@ class BONDTrainer:
 
         result_path = save_results(names, pubs, results)
         print("Done! Results saved:", result_path)
+        
+        # save model
+        if datatype == 'train':
+            model_path = os.path.join(args.save_path, 'model')
+            if not os.path.exists(model_path): os.makedirs(model_path)
+            torch.save(model, os.path.join(model_path, 'bond_model.pth'))
